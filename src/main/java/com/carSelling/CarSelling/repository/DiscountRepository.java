@@ -1,10 +1,14 @@
 package com.carSelling.CarSelling.repository;
+import java.util.List;
 
-public class DiscountRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+import com.carSelling.CarSelling.entity.Discount;
 
-	}
+
+@EnableJpaRepositories
+public interface DiscountRepository extends JpaRepository<Discount, Integer>{
+
 
 }

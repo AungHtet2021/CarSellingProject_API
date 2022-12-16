@@ -1,10 +1,12 @@
 package com.carSelling.CarSelling.service;
+import java.util.List;
 
-public class DiscountService {
+import com.carSelling.CarSelling.entity.Discount;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public interface DiscountService {
 
-	}
-
+	public List<Discount> getAll();
+	public Discount get(int id);
+	public Discount create(Discount discount);
+	
 }
