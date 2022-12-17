@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.carSelling.CarSelling.entity.Discount;
 import com.carSelling.CarSelling.service.DiscountService;
 
@@ -25,13 +24,8 @@ public class DiscountController {
 	@Autowired
 	DiscountService discountService;
 	
-	@PostMapping("/create")
-	public Discount createMovie(@Valid @RequestBody Discount discount) {
-		return discountService.create(discount);
-	}
-	
 	@GetMapping("/discountList")
-	public Object getMovies() {
+	public Object getDiscounts() {
 		List<Discount> discountRules = discountService.getAll();
 		if(discountRules.size() > 0) {
 			return discountRules;
@@ -51,6 +45,37 @@ public class DiscountController {
 		}
 		return ResponseEntity.ok().body(discount);
 	}
+
+	
+	@PostMapping("/create")
+	public Discount createMovie(@Valid @RequestBody Discount discount) {
+		return discountService.create(discount);
+	}
+	
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Discount> updateDiscount(
+			@PathVariable int id, @Valid @RequestBody Discount discount
+	) {
+		Discount updatedDiscount = discountService.update(id, discount);
+		if (updatedDiscount == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().body(updatedDiscount);
+	}
+	
+	@DeleteMapping(value = "/delete/{id}")
+	public ResponseEntity<?> deleteDiscount(@PathVariable int id) {
+		Discount discount = discountService.get(id);
+		if (discount == null) {
+			return ResponseEntity.notFound().build();
+		}
+		boolean isDeleted = discountService.delete(id);
+		if (!isDeleted) {
+			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+		}
+		return ResponseEntity.ok().build();
+	}
+	
 
 
 }
