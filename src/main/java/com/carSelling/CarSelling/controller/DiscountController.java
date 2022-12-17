@@ -48,7 +48,7 @@ public class DiscountController {
 
 	
 	@PostMapping("/create")
-	public Discount createMovie(@Valid @RequestBody Discount discount) {
+	public Discount createDiscount(@Valid @RequestBody Discount discount) {
 		return discountService.create(discount);
 	}
 	
