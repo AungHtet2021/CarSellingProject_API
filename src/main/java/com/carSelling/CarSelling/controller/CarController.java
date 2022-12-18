@@ -14,11 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.carSelling.CarSelling.entity.Car;
-import com.carSelling.CarSelling.entity.Discount;
 import com.carSelling.CarSelling.service.CarService;
-import com.carSelling.CarSelling.service.DiscountService;
+import com.carSelling.CarSelling.service.StorageService;
 
 @RestController
 @RequestMapping("/car")
@@ -27,10 +25,80 @@ public class CarController {
 	@Autowired
 	CarService carService;
 	
+
+	@Autowired
+	StorageService storageService;
+	
+	@GetMapping("/carList")
+	public Object getDiscounts() {
+		List<Car> carLists = carService.getAll();
+		if(carLists.size() > 0) {
+			return carLists;
+		} else {
+			return "There is no car list";
+		}
+
+	}
+	
+	@GetMapping("/{car_id}")
+	public ResponseEntity<Car> getCar(
+			@PathVariable("car_id") int carId
+	) {
+		Car car = carService.get(carId);
+		if (car == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().body(car);
+	}
+	
 	@PostMapping("/create")
 	public Car createCar(@Valid @RequestBody Car car) {
 		return carService.create(car);
 	}
 	
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Car> updateCar(
+			@PathVariable int id, @Valid @RequestBody Car car
+	) {
+		Car updateCar = carService.update(id, car);
+		if (updateCar == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().body(updateCar);
+	}
+	
+	
+	@DeleteMapping(value = "/delete/{id}")
+	public ResponseEntity<?> deleteCar(@PathVariable int id) {
+		Car car = carService.get(id);
+		if (car == null) {
+			return ResponseEntity.notFound().build();
+		}
+		boolean isDeleted = carService.delete(id);
+		if (!isDeleted) {
+			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+		}
+		return ResponseEntity.ok().build();
+	}
+	
+	@PostMapping("/file/create")
+	public String createFile(
+			@RequestParam("file") MultipartFile file,
+			@RequestParam("fileType") String fileType
+	) {
+		String fileName = storageService.create(file, fileType);
+		return fileName;
+	}
+	
+	@PutMapping("/file/update")
+	public String updateFile(
+			@RequestParam("file") MultipartFile file,
+			@RequestParam("fileType") String fileType,
+			@RequestParam("filePath") String filePath
+	) {
+		String fileName = storageService.update(file, fileType, filePath);
+		return fileName;
+	}
+
 	
 }

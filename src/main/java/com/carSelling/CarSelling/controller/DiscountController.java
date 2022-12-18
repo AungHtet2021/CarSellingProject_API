@@ -35,7 +35,7 @@ public class DiscountController {
 
 	}
 	
-	@GetMapping("/discount/{discount_id}")
+	@GetMapping("/{discount_id}")
 	public ResponseEntity<Discount> getDiscount(
 			@PathVariable("discount_id") int discountId
 	) {
