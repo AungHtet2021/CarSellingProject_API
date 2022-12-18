@@ -32,7 +32,7 @@ public class Brand implements java.io.Serializable {
 	@NotBlank(message = "Required")
 	private String brandName;
 	
-	@Column(length=30, nullable = false , unique = true)
+	@Column(length=30, nullable = false)
 	@NotBlank(message = "Required ")
 	private String produceCountry;
 }
