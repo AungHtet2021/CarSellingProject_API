@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import com.carSelling.CarSelling.entity.Brand;
 import com.carSelling.CarSelling.repository.BrandRepository;
 @Service
@@ -33,9 +34,10 @@ public class BrandServiceImpl implements BrandService{
 
 	@Override
 	public Brand deleteBrand(int id) {
-		brandRepository.deleteById(null);
+		brandRepository.deleteById(id);
 		return null;
 	}
+
 
 	@Override
 	public Brand updateBrand(Brand brand) {
