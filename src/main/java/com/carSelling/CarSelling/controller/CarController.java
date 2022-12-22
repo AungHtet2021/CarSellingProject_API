@@ -1,4 +1,5 @@
 package com.carSelling.CarSelling.controller;
+import java.io.IOException;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,6 +102,33 @@ public class CarController {
 	) {
 		String fileName = storageService.update(file, fileType, filePath);
 		return fileName;
+	}
+	
+	@GetMapping("/media/{fileType}/{fileName}")
+	public ResponseEntity<?> getPoster(
+			@PathVariable("fileType") String fileType,
+			@PathVariable("fileName") String fileName
+	) throws IOException {
+		MediaType contentType = MediaType.IMAGE_PNG;
+		switch (fileType) {
+			case "mp4" :
+				contentType = MediaType.APPLICATION_OCTET_STREAM;
+				break;
+			case "jpg" :
+				contentType = MediaType.IMAGE_JPEG;
+				break;
+			case "png" :
+				contentType = MediaType.IMAGE_PNG;
+				break;
+			default :
+				return ResponseEntity.badRequest()
+						.body("Unsupported File Type");
+		}
+		byte[] fileBytes = storageService.load(fileName);
+		if (fileBytes == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().contentType(contentType).body(fileBytes);
 	}
 
 	

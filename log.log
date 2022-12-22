@@ -1043,3 +1043,679 @@ List of constraint violations:[
 2022-12-22 10:01:21.167 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2022-12-22 10:01:21.168 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
 2022-12-22 10:01:21.169 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:22:42.737  WARN 10568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h58m11s385ms207µs800ns).
+2022-12-22 12:24:52.966 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:24:52.967 DEBUG 10568 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:24:52.981 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:24:52.981 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:24:52.983 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:24:53.387 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:24:53.387 DEBUG 10568 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:24:53.392 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:24:53.392 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:24:53.394 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:24:53.420 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:24:53.420 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:24:53.425 DEBUG 10568 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:24:53.426 DEBUG 10568 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:24:53.427 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:24:53.456 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:24:53.456 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:24:53.463 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:24:53.463 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:24:53.464 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:23.964 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:37:23.965 DEBUG 10568 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:37:23.972 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:23.972 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:37:23.974 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:24.193 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:37:24.194 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:37:24.201 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:24.201 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:37:24.202 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:24.242 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:37:24.242 DEBUG 10568 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:37:24.247 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:24.248 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:37:24.249 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:24.283 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:37:24.283 DEBUG 10568 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:37:24.290 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:24.290 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:37:24.292 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:34.485 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:37:34.486 DEBUG 10568 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:37:34.490 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:34.491 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:37:34.492 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:35.635 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:37:35.636 DEBUG 10568 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:37:35.642 DEBUG 10568 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:35.643 DEBUG 10568 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:37:35.644 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:35.970 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:37:35.970 DEBUG 10568 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:37:35.977 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:35.977 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:37:35.977 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:36.104 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:37:36.105 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:37:36.111 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:36.111 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:37:36.112 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:36.138 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:37:36.139 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:37:36.146 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:36.147 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:37:36.147 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:36.188 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:37:36.189 DEBUG 10568 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:37:36.199 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:36.199 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:37:36.200 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:41.597 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/15", parameters={}
+2022-12-22 12:37:41.598 DEBUG 10568 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:37:41.628 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:41.629 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=15, name=12, brandId=4, categoryId=6, discountId=0, status=1, quantity=3, price=3333, waiting (truncated)...]
+2022-12-22 12:37:41.630 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:37:41.664 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/media/jpg/1671678994_cr74.jpg", parameters={}
+2022-12-22 12:37:41.669 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 12:37:41.674 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 12:37:41.675 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 12:37:41.676 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 12:37:41.677 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 12:37:41.685 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:37:41.686 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 12:37:41 MMT 2022, status=404, error=Not Found, path=/media/jpg/1671678994_cr7 (truncated)...]
+2022-12-22 12:37:41.698 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 12:38:14.108 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:38:14.109 DEBUG 10568 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:38:14.115 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:38:14.115 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:38:14.116 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:38:14.158 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/media/jpg/1671679692_couple.jpg", parameters={}
+2022-12-22 12:38:14.159 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 12:38:14.161 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 12:38:14.161 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 12:38:14.162 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 12:38:14.162 DEBUG 10568 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 12:38:14.163 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:38:14.164 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 12:38:14 MMT 2022, status=404, error=Not Found, path=/media/jpg/1671679692_cou (truncated)...]
+2022-12-22 12:38:14.165 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 12:39:15.174 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:39:15.175 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:39:15.186 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:39:15.187 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:39:15.189 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:39:15.433 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:39:15.434 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:39:15.440 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:39:15.441 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:39:15.442 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:39:15.476 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:39:15.477 DEBUG 10568 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:39:15.484 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:39:15.485 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:39:15.486 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:39:15.534 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:39:15.535 DEBUG 10568 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:39:15.543 DEBUG 10568 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:39:15.544 DEBUG 10568 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:39:15.546 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:39:17.282 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:39:17.283 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:39:17.290 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:39:17.290 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:39:17.291 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:39:17.345 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/media/jpg/1671679692_couple.jpg", parameters={}
+2022-12-22 12:39:17.345 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 12:39:17.348 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 12:39:17.349 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 12:39:17.349 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 12:39:17.350 DEBUG 10568 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 12:39:17.351 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:39:17.351 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 12:39:17 MMT 2022, status=404, error=Not Found, path=/media/jpg/1671679692_cou (truncated)...]
+2022-12-22 12:39:17.352 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 12:43:14.868  INFO 9820 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 9820 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 12:43:14.871  INFO 9820 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 12:43:15.911  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 12:43:16.005  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 4 JPA repository interfaces.
+2022-12-22 12:43:16.946  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 12:43:16.965  INFO 9820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 12:43:16.967  INFO 9820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 12:43:17.132  INFO 9820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 12:43:17.137  INFO 9820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2200 ms
+2022-12-22 12:43:17.368  INFO 9820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 12:43:17.441  INFO 9820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 12:43:17.685  INFO 9820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 12:43:17.851  INFO 9820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 12:43:18.083  INFO 9820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 12:43:18.110  INFO 9820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 12:43:19.118  INFO 9820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 12:43:19.131  INFO 9820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 12:43:19.681  WARN 9820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 12:43:19.841 DEBUG 9820 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 12:43:20.003 DEBUG 9820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 25 mappings in 'requestMappingHandlerMapping'
+2022-12-22 12:43:20.036 DEBUG 9820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 12:43:20.053 DEBUG 9820 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 12:43:20.202  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 12:43:20.216  INFO 9820 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.943 seconds (JVM running for 6.601)
+2022-12-22 12:43:26.604  INFO 9820 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 12:43:26.605  INFO 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 12:43:26.606 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 12:43:26.608 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 12:43:26.609 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 12:43:26.613 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2c3b0cc8
+2022-12-22 12:43:26.617 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@e890591
+2022-12-22 12:43:26.624 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 12:43:26.627  INFO 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2022-12-22 12:43:26.667 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:43:26.687 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:43:27.079 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:43:27.079 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:43:27.267 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:43:27.268 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:43:27.372 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:43:27.373 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:43:27.398 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:43:27.398 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:43:27.480 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:43:27.481 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:43:27.494 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:43:27.494 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:43:27.498 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:43:27.546 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:43:27.547 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:43:27.555 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:43:27.556 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:43:27.557 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:43:27.648 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:43:27.649 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:43:27.670 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:43:27.672 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:43:27.678 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:43:31.077 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:43:31.079 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:43:31.143 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:43:31.144 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:43:31.147 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:43:31.203 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/media/jpg/1671679692_couple.jpg", parameters={}
+2022-12-22 12:43:31.215 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 12:43:31.219 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 12:43:31.222 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 12:43:31.230 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 12:43:31.233 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 12:43:31.244 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:43:31.244 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 12:43:31 MMT 2022, status=404, error=Not Found, path=/media/jpg/1671679692_cou (truncated)...]
+2022-12-22 12:43:31.252 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 12:44:38.294 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:44:38.295 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:44:38.301 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:38.301 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:44:38.303 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:38.543 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:44:38.544 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:44:38.550 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:38.550 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:44:38.551 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:38.593 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:44:38.594 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:44:38.605 DEBUG 9820 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:38.607 DEBUG 9820 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:44:38.608 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:38.654 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:44:38.654 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:44:38.666 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:38.666 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:44:38.668 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:43.453 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:44:43.454 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:44:43.461 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:43.461 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:44:43.463 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:43.503 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car//media/jpg/1671679692_couple.jpg", parameters={}
+2022-12-22 12:44:43.504 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 12:44:43.509 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 12:44:43.509 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 12:44:43.510 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 12:44:43.512 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 12:44:43.512 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:43.513 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 12:44:43 MMT 2022, status=404, error=Not Found, path=/car//media/jpg/167167969 (truncated)...]
+2022-12-22 12:44:43.515 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 12:44:52.497 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:44:52.498 DEBUG 9820 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:44:52.504 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:52.505 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:44:52.506 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:52.683 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:44:52.684 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:44:52.689 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:52.690 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:44:52.692 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:52.743 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:44:52.743 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:44:52.748 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:52.748 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:44:52.750 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:52.898 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:44:52.898 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:44:52.912 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:52.912 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:44:52.917 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:57.120 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:44:57.122 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:44:57.133 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:44:57.133 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:44:57.134 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:44:57.192 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1671679692_couple.jpg", parameters={}
+2022-12-22 12:44:57.193 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-22 12:44:57.209 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-22 12:44:57.211 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 6, 7 (truncated)...]
+2022-12-22 12:44:57.213 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:49:24.938 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:49:24.940 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:49:24.946 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:49:24.946 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:49:24.948 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:49:25.194 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:49:25.195 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:49:25.200 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:49:25.201 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:49:25.202 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:49:25.305 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:49:25.305 DEBUG 9820 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:49:25.312 DEBUG 9820 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:49:25.312 DEBUG 9820 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:49:25.314 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:49:25.379 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:49:25.381 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:49:25.396 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:49:25.397 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:49:25.400 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:54:19.233 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:54:19.236 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:54:19.255 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:54:19.256 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:54:19.261 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:54:19.471 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:54:19.472 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:54:19.481 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:54:19.481 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:54:19.482 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:54:19.517 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:54:19.519 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:54:19.525 DEBUG 9820 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:54:19.526 DEBUG 9820 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:54:19.526 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:54:19.571 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:54:19.571 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:54:19.579 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:54:19.580 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:54:19.581 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:54:54.941 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:54:54.942 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:54:54.948 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:54:54.949 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:54:54.950 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:55:38.094 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:55:38.095 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:55:38.107 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:55:38.109 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:55:38.112 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:55:38.460 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:55:38.460 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:55:38.467 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:55:38.467 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:55:38.469 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:55:38.517 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:55:38.518 DEBUG 9820 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:55:38.525 DEBUG 9820 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:55:38.526 DEBUG 9820 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:55:38.527 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:55:38.575 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:55:38.576 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:55:38.589 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:55:38.589 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:55:38.592 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:55:41.633 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:55:41.635 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:55:41.641 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:55:41.641 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:55:41.643 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:09.096 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:57:09.098 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:57:09.109 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:09.109 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:57:09.112 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:09.341 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:57:09.342 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:57:09.351 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:09.352 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:57:09.353 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:09.388 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:57:09.389 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:57:09.396 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:09.396 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:57:09.402 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:09.440 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:57:09.440 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:57:09.449 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:09.451 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:57:09.452 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:17.602 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:57:17.606 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:57:17.615 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:17.616 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:57:17.618 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:20.187 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:57:20.188 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:57:20.196 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:20.197 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:57:20.198 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:20.340 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:57:20.340 DEBUG 9820 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:57:20.346 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:20.346 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:57:20.348 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:20.379 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:57:20.380 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:57:20.388 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:20.389 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:57:20.390 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:20.427 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:57:20.428 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:57:20.434 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:20.435 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:57:20.437 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:25.894 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:57:25.895 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:57:25.901 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:25.902 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:57:25.903 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:58.916 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 12:57:58.918 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 12:57:58.924 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:58.925 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 12:57:58.926 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:59.190 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 12:57:59.191 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 12:57:59.198 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:59.199 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 12:57:59.200 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:59.233 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 12:57:59.233 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 12:57:59.240 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:59.240 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 12:57:59.241 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:57:59.274 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 12:57:59.275 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 12:57:59.283 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:57:59.283 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 12:57:59.285 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:58:17.453 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 12:58:17.455 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 12:58:17.461 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:58:17.461 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 12:58:17.462 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:58:22.744 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/car/update", parameters={}
+2022-12-22 12:58:22.747 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+2022-12-22 12:58:22.750 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 12:58:22.758 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/car/update", parameters={}
+2022-12-22 12:58:22.762  WARN 9820 --- [http-nio-8088-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-12-22 12:58:22.762 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-12-22 12:58:22.764 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-12-22 12:58:22.765 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 12:58:22.768 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 12:58:22.769 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 12:58:22 MMT 2022, status=405, error=Method Not Allowed, path=/car/update}]
+2022-12-22 12:58:22.773 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-12-22 13:01:03.922 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 13:01:03.923 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 13:01:03.927 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:03.927 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 13:01:03.928 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:01:04.112 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 13:01:04.112 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 13:01:04.118 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:04.118 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 13:01:04.118 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:01:04.162 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 13:01:04.162 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 13:01:04.167 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:04.167 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 13:01:04.169 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:01:04.224 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:01:04.224 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:01:04.229 DEBUG 9820 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:04.229 DEBUG 9820 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:01:04.230 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:01:05.909 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:01:05.910 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:01:05.917 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:05.918 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 13:01:05.919 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:01:12.944 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/car/update", parameters={}
+2022-12-22 13:01:12.944 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+2022-12-22 13:01:12.945 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:01:12.967 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/car/update", parameters={}
+2022-12-22 13:01:12.967  WARN 9820 --- [http-nio-8088-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2022-12-22 13:01:12.967 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-12-22 13:01:12.967 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2022-12-22 13:01:12.968 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 13:01:12.970 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:12.970 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 13:01:12 MMT 2022, status=405, error=Method Not Allowed, path=/car/update}]
+2022-12-22 13:01:12.973 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-12-22 13:01:32.957 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:01:32.957 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:01:32.964 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:32.965 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 13:01:32.966 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:01:35.724 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : PUT "/car/update", parameters={}
+2022-12-22 13:01:35.724  WARN 9820 --- [http-nio-8088-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2022-12-22 13:01:35.725 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-12-22 13:01:35.726 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2022-12-22 13:01:35.727 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 13:01:35.728 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:01:35.731 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 13:01:35 MMT 2022, status=405, error=Method Not Allowed, path=/car/update}]
+2022-12-22 13:01:35.733 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-12-22 13:02:24.853 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 13:02:24.856 DEBUG 9820 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 13:02:24.864 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:24.866 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 13:02:24.868 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:25.343 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 13:02:25.343 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 13:02:25.349 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:25.350 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 13:02:25.351 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:25.430 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 13:02:25.431 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 13:02:25.438 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:25.438 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 13:02:25.440 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:25.627 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:02:25.627 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:02:25.635 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:25.635 DEBUG 9820 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:02:25.637 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:33.390 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:02:33.391 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:02:33.398 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:33.398 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 13:02:33.399 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:58.757 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 13:02:58.758 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 13:02:58.765 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:58.765 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 13:02:58.767 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:59.023 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 13:02:59.024 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 13:02:59.030 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:59.030 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 13:02:59.032 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:59.093 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 13:02:59.094 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 13:02:59.100 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:59.100 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 13:02:59.101 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:02:59.154 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:02:59.155 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:02:59.167 DEBUG 9820 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:02:59.168 DEBUG 9820 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:02:59.169 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:03:09.269 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:03:09.270 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:03:09.277 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:03:09.277 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 13:03:09.278 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:03:12.776 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "//car/update", parameters={}
+2022-12-22 13:03:12.778 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 13:03:12.779 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:03:12.787 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "//car/update", parameters={}
+2022-12-22 13:03:12.788 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 13:03:12.792 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 13:03:12.794 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 13:03:12.794 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2022-12-22 13:03:12.794 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 13:03:12.795 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:03:12.796 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 13:03:12 MMT 2022, status=404, error=Not Found, path=//car/update}]
+2022-12-22 13:03:12.797 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 13:03:37.657 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 13:03:37.658 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 13:03:37.662 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:03:37.662 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 13:03:37.664 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:03:37.808 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 13:03:37.809 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 13:03:37.813 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:03:37.814 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 13:03:37.814 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:03:37.847 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 13:03:37.847 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 13:03:37.853 DEBUG 9820 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:03:37.854 DEBUG 9820 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 13:03:37.855 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:03:37.878 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:03:37.879 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:03:37.886 DEBUG 9820 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:03:37.887 DEBUG 9820 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:03:37.888 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:03:39.854 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:03:39.855 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:03:39.860 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:03:39.860 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 13:03:39.861 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:04:14.092 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/car/update", parameters={}
+2022-12-22 13:04:14.096  WARN 9820 --- [http-nio-8088-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2022-12-22 13:04:14.096 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-12-22 13:04:14.097 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2022-12-22 13:04:14.099 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 13:04:14.100 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:04:14.100 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 13:04:14 MMT 2022, status=405, error=Method Not Allowed, path=/car/update}]
+2022-12-22 13:04:14.101 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-12-22 13:05:08.746 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 13:05:08.747 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 13:05:08.753 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:08.753 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 13:05:08.754 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:09.016 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 13:05:09.018 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 13:05:09.023 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:09.024 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 13:05:09.025 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:09.066 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 13:05:09.066 DEBUG 9820 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 13:05:09.073 DEBUG 9820 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:09.073 DEBUG 9820 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 13:05:09.074 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:09.139 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:05:09.141 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:05:09.147 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:09.147 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:05:09.149 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:10.412 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:05:10.413 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:05:10.419 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:10.420 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 13:05:10.421 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:17.575 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/car/update18", parameters={}
+2022-12-22 13:05:17.576 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+2022-12-22 13:05:17.578 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:17.596 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : PUT "/car/update18", parameters={}
+2022-12-22 13:05:17.597  WARN 9820 --- [http-nio-8088-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2022-12-22 13:05:17.598 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-12-22 13:05:17.600 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2022-12-22 13:05:17.601 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 13:05:17.602 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:17.602 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 13:05:17 MMT 2022, status=405, error=Method Not Allowed, path=/car/update18}]
+2022-12-22 13:05:17.603 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-12-22 13:05:25.961 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 13:05:25.962 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 13:05:25.966 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:25.966 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 13:05:25.967 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:26.125 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 13:05:26.125 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 13:05:26.130 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:26.131 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 13:05:26.131 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:26.173 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 13:05:26.173 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 13:05:26.177 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:26.177 DEBUG 9820 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 13:05:26.177 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:26.219 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:05:26.219 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:05:26.224 DEBUG 9820 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:26.224 DEBUG 9820 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:05:26.225 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:34.589 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:05:34.590 DEBUG 9820 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:05:34.596 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:34.596 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 13:05:34.597 DEBUG 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:40.298 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/car/update/18", parameters={}
+2022-12-22 13:05:40.299 DEBUG 9820 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#updateCar(int, Car)
+2022-12-22 13:05:40.300 DEBUG 9820 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:40.315 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "/car/update/18", parameters={}
+2022-12-22 13:05:40.316 DEBUG 9820 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#updateCar(int, Car)
+2022-12-22 13:05:40.397 DEBUG 9820 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=18, name=KMT111, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, w (truncated)...]
+2022-12-22 13:05:40.650 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:40.651 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT111, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, w (truncated)...]
+2022-12-22 13:05:40.653 DEBUG 9820 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:40.673 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:05:40.674 DEBUG 9820 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:05:40.682 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:40.683 DEBUG 9820 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:05:40.684 DEBUG 9820 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:05:45.084 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:05:45.085 DEBUG 9820 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:05:45.093 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:05:45.093 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT111, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, w (truncated)...]
+2022-12-22 13:05:45.094 DEBUG 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:06:01.693 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 13:06:01.791 DEBUG 9820 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 13:06:01.811 DEBUG 9820 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:06:01.811 DEBUG 9820 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671690961_cr74.jpg"]
+2022-12-22 13:06:01.814 DEBUG 9820 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:06:01.846 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : PUT "/car/update/18", parameters={}
+2022-12-22 13:06:01.847 DEBUG 9820 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#updateCar(int, Car)
+2022-12-22 13:06:01.848 DEBUG 9820 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=18, name=KMT1112, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323,  (truncated)...]
+2022-12-22 13:06:01.862 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:06:01.862 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT1112, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323,  (truncated)...]
+2022-12-22 13:06:01.864 DEBUG 9820 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:06:01.868 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 13:06:01.869 DEBUG 9820 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 13:06:01.876 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:06:01.876 DEBUG 9820 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 13:06:01.879 DEBUG 9820 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:06:06.189 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/18", parameters={}
+2022-12-22 13:06:06.190 DEBUG 9820 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 13:06:06.194 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 13:06:06.195 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT1112, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323,  (truncated)...]
+2022-12-22 13:06:06.196 DEBUG 9820 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 13:06:06.236 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1671690961_cr74.jpg", parameters={}
+2022-12-22 13:06:06.236 DEBUG 9820 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-22 13:06:06.239 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-22 13:06:06.241 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 9, 6, 7 (truncated)...]
+2022-12-22 13:06:06.242 DEBUG 9820 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 16:03:54.299  WARN 9820 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h34m5s317ms177µs800ns).
