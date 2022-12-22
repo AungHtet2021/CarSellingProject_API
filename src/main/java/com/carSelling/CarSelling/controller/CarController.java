@@ -3,6 +3,7 @@ import java.util.List;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import com.carSelling.CarSelling.entity.Car;
+import com.carSelling.CarSelling.entity.Category;
 import com.carSelling.CarSelling.service.CarService;
 import com.carSelling.CarSelling.service.StorageService;
 
@@ -30,7 +32,7 @@ public class CarController {
 	StorageService storageService;
 	
 	@GetMapping("/carList")
-	public Object getDiscounts() {
+	public Object getCars() {
 		List<Car> carLists = carService.getAll();
 		if(carLists.size() > 0) {
 			return carLists;
@@ -51,9 +53,10 @@ public class CarController {
 		return ResponseEntity.ok().body(car);
 	}
 	
-	@PostMapping("/create")
-	public Car createCar(@Valid @RequestBody Car car) {
-		return carService.create(car);
+	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Car> createCategory(@RequestBody Car car){
+		Car newCar=carService.create(car);
+		return new ResponseEntity<Car>(newCar,HttpStatus.OK);
 	}
 	
 	@PutMapping("/update/{id}")

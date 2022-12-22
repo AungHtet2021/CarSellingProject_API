@@ -1,0 +1,1045 @@
+2022-12-22 08:50:58.477  INFO 12944 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 12944 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 08:50:58.490  INFO 12944 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 08:50:59.743  INFO 12944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 08:50:59.879  INFO 12944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 4 JPA repository interfaces.
+2022-12-22 08:51:00.785  INFO 12944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 08:51:00.797  INFO 12944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 08:51:00.797  INFO 12944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 08:51:00.949  INFO 12944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 08:51:00.953  INFO 12944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2367 ms
+2022-12-22 08:51:01.178  INFO 12944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 08:51:01.254  INFO 12944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 08:51:01.481  INFO 12944 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 08:51:01.631  INFO 12944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 08:51:01.869  INFO 12944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 08:51:01.894  INFO 12944 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 08:51:02.864  INFO 12944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 08:51:02.874  INFO 12944 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 08:51:03.418  WARN 12944 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 08:51:03.591 DEBUG 12944 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 08:51:03.742 DEBUG 12944 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 08:51:03.776 DEBUG 12944 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 08:51:03.801 DEBUG 12944 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 08:51:04.180  INFO 12944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 08:51:04.235  INFO 12944 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 6.356 seconds (JVM running for 7.219)
+2022-12-22 08:51:14.292  INFO 12944 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 08:51:14.293  INFO 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 08:51:14.294 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 08:51:14.297 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 08:51:14.299 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 08:51:14.302 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e14b269
+2022-12-22 08:51:14.313 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@71458178
+2022-12-22 08:51:14.313 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 08:51:14.313  INFO 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2022-12-22 08:51:14.347 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 08:51:14.361 DEBUG 12944 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 08:51:14.937 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 08:51:14.939 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 08:51:15.047 DEBUG 12944 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 08:51:15.176 DEBUG 12944 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 08:51:15.177 DEBUG 12944 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 08:51:15.188 DEBUG 12944 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 08:51:15.189 DEBUG 12944 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 08:51:15.193 DEBUG 12944 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 08:53:26.934 DEBUG 12944 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 08:53:26.935 DEBUG 12944 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 08:53:26.944 DEBUG 12944 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 08:53:26.944 DEBUG 12944 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 08:53:26.946 DEBUG 12944 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 08:53:27.080 DEBUG 12944 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 08:53:27.081 DEBUG 12944 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 08:53:27.087 DEBUG 12944 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 08:53:27.087 DEBUG 12944 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 08:53:27.089 DEBUG 12944 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 08:54:43.638 DEBUG 12944 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 08:54:43.639 DEBUG 12944 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 08:54:43.644 DEBUG 12944 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 08:54:43.645 DEBUG 12944 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 08:54:43.647 DEBUG 12944 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 08:54:43.790 DEBUG 12944 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 08:54:43.791 DEBUG 12944 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 08:54:43.799 DEBUG 12944 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 08:54:43.799 DEBUG 12944 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 08:54:43.800 DEBUG 12944 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:02:01.379  INFO 9344 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 9344 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 09:02:01.382  INFO 9344 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 09:02:02.360  INFO 9344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 09:02:02.461  INFO 9344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 4 JPA repository interfaces.
+2022-12-22 09:02:03.324  INFO 9344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 09:02:03.340  INFO 9344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 09:02:03.341  INFO 9344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 09:02:03.496  INFO 9344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 09:02:03.496  INFO 9344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2048 ms
+2022-12-22 09:02:03.699  INFO 9344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 09:02:03.778  INFO 9344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 09:02:03.965  INFO 9344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 09:02:04.097  INFO 9344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 09:02:04.328  INFO 9344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 09:02:04.351  INFO 9344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 09:02:05.274  INFO 9344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 09:02:05.287  INFO 9344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 09:02:05.761  WARN 9344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 09:02:05.904 DEBUG 9344 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 09:02:06.039 DEBUG 9344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 09:02:06.080 DEBUG 9344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 09:02:06.095 DEBUG 9344 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 09:02:06.214  INFO 9344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 09:02:06.229  INFO 9344 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.394 seconds (JVM running for 5.96)
+2022-12-22 09:02:28.947  INFO 9344 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 09:02:28.948  INFO 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 09:02:28.949 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 09:02:28.949 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 09:02:28.949 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 09:02:28.950 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6a7fc4c1
+2022-12-22 09:02:28.954 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2728add3
+2022-12-22 09:02:28.954 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 09:02:28.954  INFO 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-12-22 09:02:28.994 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:02:29.011 DEBUG 9344 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:02:29.302 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:02:29.303 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:02:29.384 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:02:29.415 DEBUG 9344 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:02:29.416 DEBUG 9344 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:02:29.427 DEBUG 9344 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:02:29.427 DEBUG 9344 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:02:29.429 DEBUG 9344 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:03:30.741 DEBUG 9344 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:03:30.742 DEBUG 9344 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:03:30.751 DEBUG 9344 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:03:30.752 DEBUG 9344 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:03:30.753 DEBUG 9344 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:03:30.874 DEBUG 9344 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:03:30.875 DEBUG 9344 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:03:30.881 DEBUG 9344 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:03:30.881 DEBUG 9344 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:03:30.884 DEBUG 9344 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:13:08.024 DEBUG 9344 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:13:08.025 DEBUG 9344 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:13:08.032 DEBUG 9344 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:13:08.033 DEBUG 9344 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:13:08.035 DEBUG 9344 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:13:08.185 DEBUG 9344 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:13:08.186 DEBUG 9344 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:13:08.194 DEBUG 9344 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:13:08.195 DEBUG 9344 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:13:08.196 DEBUG 9344 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:13:54.017 DEBUG 9344 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:13:54.067 DEBUG 9344 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:13:54.116 DEBUG 9344 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:13:54.116 DEBUG 9344 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671677034_couple.jpg"]
+2022-12-22 09:13:54.119 DEBUG 9344 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:13:54.130 DEBUG 9344 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/car/create", parameters={}
+2022-12-22 09:13:54.131 DEBUG 9344 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCar(Car)
+2022-12-22 09:13:54.134 DEBUG 9344 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:13:54.146 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:13:54.147 DEBUG 9344 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCar(Car)
+2022-12-22 09:13:54.286 DEBUG 9344 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=Test, brandId=4, categoryId=6, status=1, quantity=10, price=11999, waitingTime=4, isP (truncated)...]
+2022-12-22 09:13:54.352 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.carSelling.CarSelling.entity.Car com.carSelling.CarSelling.controller.CarController.createCar(com.carSelling.CarSelling.entity.Car): HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'quantity'
+2022-12-22 09:13:54.368 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'quantity'
+2022-12-22 09:13:54.374 ERROR 9344 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'quantity'] with root cause
+
+javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'quantity'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66) ~[spring-boot-autoconfigure-2.7.6.jar:2.7.6]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-12-22 09:13:54.382 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-12-22 09:13:54.387 DEBUG 9344 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 09:13:54.406 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:13:54.407 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 09:13:54 MMT 2022, status=500, error=Internal Server Error, path=/car/create}]
+2022-12-22 09:13:54.419 DEBUG 9344 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-12-22 09:15:30.976  INFO 8456 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 8456 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 09:15:30.979  INFO 8456 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 09:15:32.015  INFO 8456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 09:15:32.101  INFO 8456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2022-12-22 09:15:32.991  INFO 8456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 09:15:33.011  INFO 8456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 09:15:33.012  INFO 8456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 09:15:33.154  INFO 8456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 09:15:33.160  INFO 8456 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2104 ms
+2022-12-22 09:15:33.367  INFO 8456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 09:15:33.437  INFO 8456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 09:15:33.811  INFO 8456 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 09:15:33.966  INFO 8456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 09:15:34.202  INFO 8456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 09:15:34.223  INFO 8456 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 09:15:35.144  INFO 8456 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 09:15:35.158  INFO 8456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 09:15:35.686  WARN 8456 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 09:15:35.824 DEBUG 8456 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 09:15:35.967 DEBUG 8456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 09:15:35.995 DEBUG 8456 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 09:15:36.009 DEBUG 8456 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 09:15:36.144  INFO 8456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 09:15:36.161  INFO 8456 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.74 seconds (JVM running for 6.297)
+2022-12-22 09:16:01.311  INFO 8456 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 09:16:01.312  INFO 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 09:16:01.313 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 09:16:01.315 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 09:16:01.315 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 09:16:01.322 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6296e4bf
+2022-12-22 09:16:01.323 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1aaf73b7
+2022-12-22 09:16:01.324 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 09:16:01.324  INFO 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2022-12-22 09:16:01.347 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:16:01.381 DEBUG 8456 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:16:01.438 DEBUG 8456 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:16:01.439 DEBUG 8456 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671677161_couple.jpg"]
+2022-12-22 09:16:01.449 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:16:01.456 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:16:01.457 DEBUG 8456 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCar(Car)
+2022-12-22 09:16:01.561 DEBUG 8456 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=Test, brandId=4, categoryId=6, status=1, quantity=10, price=11999, waitingTime=4, isP (truncated)...]
+2022-12-22 09:16:01.624 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.carSelling.CarSelling.entity.Car com.carSelling.CarSelling.controller.CarController.createCar(com.carSelling.CarSelling.entity.Car): HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'status'
+2022-12-22 09:16:01.628 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'status'
+2022-12-22 09:16:01.634 ERROR 8456 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'status'] with root cause
+
+javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'status'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66) ~[spring-boot-autoconfigure-2.7.6.jar:2.7.6]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-12-22 09:16:01.641 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-12-22 09:16:01.644 DEBUG 8456 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 09:16:01.661 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:16:01.661 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 09:16:01 MMT 2022, status=500, error=Internal Server Error, path=/car/create}]
+2022-12-22 09:16:01.694 DEBUG 8456 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-12-22 09:19:26.097  INFO 5356 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 5356 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 09:19:26.101  INFO 5356 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 09:19:27.157  INFO 5356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 09:19:27.263  INFO 5356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 4 JPA repository interfaces.
+2022-12-22 09:19:28.165  INFO 5356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 09:19:28.187  INFO 5356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 09:19:28.189  INFO 5356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 09:19:28.344  INFO 5356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 09:19:28.348  INFO 5356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2176 ms
+2022-12-22 09:19:28.551  INFO 5356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 09:19:28.612  INFO 5356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 09:19:28.857  INFO 5356 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 09:19:29.039  INFO 5356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 09:19:29.271  INFO 5356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 09:19:29.294  INFO 5356 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 09:19:30.257  INFO 5356 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 09:19:30.267  INFO 5356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 09:19:30.773  WARN 5356 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 09:19:30.935 DEBUG 5356 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 09:19:31.086 DEBUG 5356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 09:19:31.125 DEBUG 5356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 09:19:31.137 DEBUG 5356 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 09:19:31.267  INFO 5356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 09:19:31.280  INFO 5356 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.774 seconds (JVM running for 6.408)
+2022-12-22 09:19:42.422  INFO 5356 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 09:19:42.424  INFO 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 09:19:42.425 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 09:19:42.426 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 09:19:42.427 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 09:19:42.430 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@61e0f9b9
+2022-12-22 09:19:42.432 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@28888124
+2022-12-22 09:19:42.432 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 09:19:42.433  INFO 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-12-22 09:19:42.451 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:19:42.504 DEBUG 5356 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:19:42.608 DEBUG 5356 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:19:42.610 DEBUG 5356 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671677382_couple.jpg"]
+2022-12-22 09:19:42.634 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:19:42.659 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:19:42.660 DEBUG 5356 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCar(Car)
+2022-12-22 09:19:42.785 DEBUG 5356 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=Test, brandId=4, categoryId=6, status=1, quantity=10, price=11999, waitingTime=4, isP (truncated)...]
+2022-12-22 09:19:42.854 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.carSelling.CarSelling.entity.Car com.carSelling.CarSelling.controller.CarController.createCar(com.carSelling.CarSelling.entity.Car): HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'brandId'
+2022-12-22 09:19:42.861 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'brandId'
+2022-12-22 09:19:42.878 ERROR 5356 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'brandId'] with root cause
+
+javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.NotBlank' validating type 'java.lang.Integer'. Check configuration for 'brandId'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:54) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:109) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66) ~[spring-boot-autoconfigure-2.7.6.jar:2.7.6]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:250) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-12-22 09:19:42.882 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-12-22 09:19:42.887 DEBUG 5356 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 09:19:42.900 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:19:42.901 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 09:19:42 MMT 2022, status=500, error=Internal Server Error, path=/car/create}]
+2022-12-22 09:19:42.922 DEBUG 5356 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-12-22 09:20:30.339  INFO 10500 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 10500 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 09:20:30.343  INFO 10500 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 09:20:31.387  INFO 10500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 09:20:31.496  INFO 10500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 4 JPA repository interfaces.
+2022-12-22 09:20:32.385  INFO 10500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 09:20:32.405  INFO 10500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 09:20:32.406  INFO 10500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 09:20:32.558  INFO 10500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 09:20:32.567  INFO 10500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2155 ms
+2022-12-22 09:20:32.802  INFO 10500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 09:20:32.870  INFO 10500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 09:20:33.088  INFO 10500 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 09:20:33.236  INFO 10500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 09:20:33.474  INFO 10500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 09:20:33.491  INFO 10500 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 09:20:34.512  INFO 10500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 09:20:34.521  INFO 10500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 09:20:35.012  WARN 10500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 09:20:35.152 DEBUG 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 09:20:35.305 DEBUG 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 09:20:35.344 DEBUG 10500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 09:20:35.361 DEBUG 10500 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 09:20:35.503  INFO 10500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 09:20:35.523  INFO 10500 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.746 seconds (JVM running for 6.397)
+2022-12-22 09:21:00.936  INFO 10500 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 09:21:00.937  INFO 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 09:21:00.937 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 09:21:00.938 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 09:21:00.938 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 09:21:00.940 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6d946eee
+2022-12-22 09:21:00.943 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e1b5532
+2022-12-22 09:21:00.944 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 09:21:00.945  INFO 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-12-22 09:21:00.957 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:21:01.000 DEBUG 10500 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:21:01.092 DEBUG 10500 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:21:01.094 DEBUG 10500 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671677461_couple.jpg"]
+2022-12-22 09:21:01.140 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:21:01.200 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:21:01.201 DEBUG 10500 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCar(Car)
+2022-12-22 09:21:01.337 DEBUG 10500 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=Test, brandId=4, categoryId=6, status=1, quantity=10, price=11999, waitingTime=4, isP (truncated)...]
+2022-12-22 09:21:01.384  WARN 10500 --- [http-nio-8088-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.carSelling.CarSelling.entity.Car com.carSelling.CarSelling.controller.CarController.createCar(com.carSelling.CarSelling.entity.Car): [Field error in object 'car' on field 'imagePath': rejected value []; codes [NotBlank.car.imagePath,NotBlank.imagePath,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [car.imagePath,imagePath]; arguments []; default message [imagePath]]; default message [Required]] ]
+2022-12-22 09:21:01.385 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-12-22 09:21:01.393 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-12-22 09:21:01.398 DEBUG 10500 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 09:21:01.412 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:21:01.413 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 09:21:01 MMT 2022, status=400, error=Bad Request, path=/car/create}]
+2022-12-22 09:21:01.429 DEBUG 10500 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-12-22 09:23:46.110 DEBUG 10500 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:23:46.111 DEBUG 10500 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:23:46.481 DEBUG 10500 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:23:46.481 DEBUG 10500 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:23:46.493 DEBUG 10500 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:23:46.799 DEBUG 10500 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:23:46.800 DEBUG 10500 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:23:46.813 DEBUG 10500 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:23:46.814 DEBUG 10500 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:23:46.818 DEBUG 10500 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:24:23.981 DEBUG 10500 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:24:23.989 DEBUG 10500 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:24:23.999 DEBUG 10500 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:24:23.999 DEBUG 10500 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671677663_couple.jpg"]
+2022-12-22 09:24:24.004 DEBUG 10500 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:24:24.016 DEBUG 10500 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:24:24.017 DEBUG 10500 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCar(Car)
+2022-12-22 09:24:24.023 DEBUG 10500 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=we, brandId=4, categoryId=6, status=1, quantity=2, price=2222, waitingTime=2, isPubli (truncated)...]
+2022-12-22 09:24:24.026  WARN 10500 --- [http-nio-8088-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.carSelling.CarSelling.entity.Car com.carSelling.CarSelling.controller.CarController.createCar(com.carSelling.CarSelling.entity.Car): [Field error in object 'car' on field 'imagePath': rejected value []; codes [NotBlank.car.imagePath,NotBlank.imagePath,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [car.imagePath,imagePath]; arguments []; default message [imagePath]]; default message [Required]] ]
+2022-12-22 09:24:24.029 DEBUG 10500 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-12-22 09:24:24.030 DEBUG 10500 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-12-22 09:24:24.030 DEBUG 10500 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 09:24:24.032 DEBUG 10500 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:24:24.033 DEBUG 10500 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 09:24:24 MMT 2022, status=400, error=Bad Request, path=/car/create}]
+2022-12-22 09:24:24.038 DEBUG 10500 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-12-22 09:32:15.724  INFO 9740 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 9740 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 09:32:15.727  INFO 9740 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 09:32:16.764  INFO 9740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 09:32:16.866  INFO 9740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 4 JPA repository interfaces.
+2022-12-22 09:32:17.738  INFO 9740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 09:32:17.757  INFO 9740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 09:32:17.759  INFO 9740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 09:32:17.940  INFO 9740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 09:32:17.945  INFO 9740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2130 ms
+2022-12-22 09:32:18.145  INFO 9740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 09:32:18.208  INFO 9740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 09:32:18.438  INFO 9740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 09:32:18.606  INFO 9740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 09:32:18.821  INFO 9740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 09:32:18.846  INFO 9740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 09:32:19.804  INFO 9740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 09:32:19.824  INFO 9740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 09:32:20.390  WARN 9740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 09:32:20.551 DEBUG 9740 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 09:32:20.694 DEBUG 9740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 09:32:20.730 DEBUG 9740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 09:32:20.744 DEBUG 9740 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 09:32:20.892  INFO 9740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 09:32:20.908  INFO 9740 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.762 seconds (JVM running for 6.327)
+2022-12-22 09:32:57.389  INFO 9740 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 09:32:57.389  INFO 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 09:32:57.390 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 09:32:57.390 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 09:32:57.391 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 09:32:57.392 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1cca2e9d
+2022-12-22 09:32:57.393 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@301e5d23
+2022-12-22 09:32:57.393 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 09:32:57.393  INFO 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-22 09:32:57.407 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:32:57.439 DEBUG 9740 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:32:57.499 DEBUG 9740 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:32:57.502 DEBUG 9740 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671678177_couple.jpg"]
+2022-12-22 09:32:57.520 DEBUG 9740 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:32:57.532 DEBUG 9740 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:32:57.533 DEBUG 9740 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCategory(Car)
+2022-12-22 09:32:57.636 DEBUG 9740 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=we, brandId=4, categoryId=6, status=1, quantity=2, price=2222, waitingTime=2, isPubli (truncated)...]
+2022-12-22 09:32:57.831 DEBUG 9740 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+2022-12-22 09:32:57.848 ERROR 9740 --- [http-nio-8088-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
+
+javax.validation.ConstraintViolationException: Validation failed for classes [com.carSelling.CarSelling.entity.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Required', propertyPath=imagePath, rootBeanClass=class com.carSelling.CarSelling.entity.Car, messageTemplate='Required'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:214) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:100) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3303) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2438) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2/jdk.proxy2.$Proxy109.save(Unknown Source) ~[na:na]
+	at com.carSelling.CarSelling.service.CarServiceImpl.create(CarServiceImpl.java:29) ~[classes/:na]
+	at com.carSelling.CarSelling.controller.CarController.createCategory(CarController.java:58) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.69.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.69.jar:9.0.69]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-12-22 09:32:57.861 DEBUG 9740 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2022-12-22 09:32:57.863 DEBUG 9740 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 09:32:57.883 DEBUG 9740 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:32:57.883 DEBUG 9740 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 09:32:57 MMT 2022, status=500, error=Internal Server Error, path=/car/create}]
+2022-12-22 09:32:57.912 DEBUG 9740 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-12-22 09:34:10.740 DEBUG 9740 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:34:10.741 DEBUG 9740 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:34:10.931 DEBUG 9740 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:34:10.932 DEBUG 9740 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:34:10.944 DEBUG 9740 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:34:11.017 DEBUG 9740 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:34:11.017 DEBUG 9740 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:34:11.029 DEBUG 9740 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:34:11.030 DEBUG 9740 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:34:11.033 DEBUG 9740 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:34:40.355 DEBUG 9740 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:34:40.366 DEBUG 9740 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:34:40.377 DEBUG 9740 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:34:40.377 DEBUG 9740 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671678280_couple.jpg"]
+2022-12-22 09:34:40.379 DEBUG 9740 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:34:40.399 DEBUG 9740 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:34:40.401 DEBUG 9740 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCategory(Car)
+2022-12-22 09:34:40.405 DEBUG 9740 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=ewewe, brandId=4, categoryId=6, status=1, quantity=11, price=21212, waitingTime=3, is (truncated)...]
+2022-12-22 09:34:40.443 DEBUG 9740 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:34:40.444 DEBUG 9740 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=14, name=ewewe, brandId=4, categoryId=6, status=1, quantity=11, price=21212, waitingTime=3, i (truncated)...]
+2022-12-22 09:34:40.447 DEBUG 9740 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:36:32.071  INFO 3532 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 3532 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 09:36:32.075  INFO 3532 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 09:36:33.388  INFO 3532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 09:36:33.557  INFO 3532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 4 JPA repository interfaces.
+2022-12-22 09:36:34.701  INFO 3532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 09:36:34.737  INFO 3532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 09:36:34.742  INFO 3532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 09:36:34.920  INFO 3532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 09:36:34.921  INFO 3532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2775 ms
+2022-12-22 09:36:35.170  INFO 3532 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 09:36:35.252  INFO 3532 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 09:36:35.450  INFO 3532 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 09:36:35.621  INFO 3532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 09:36:36.093  INFO 3532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 09:36:36.122  INFO 3532 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 09:36:37.306  INFO 3532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 09:36:37.315  INFO 3532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 09:36:37.861  WARN 3532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 09:36:38.013 DEBUG 3532 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 09:36:38.187 DEBUG 3532 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 09:36:38.224 DEBUG 3532 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 09:36:38.238 DEBUG 3532 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 09:36:38.358  INFO 3532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 09:36:38.371  INFO 3532 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 6.88 seconds (JVM running for 7.714)
+2022-12-22 09:37:56.310  INFO 3532 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 09:37:56.312  INFO 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 09:37:56.314 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 09:37:56.315 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 09:37:56.315 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 09:37:56.317 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@61e0f9b9
+2022-12-22 09:37:56.337 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@28888124
+2022-12-22 09:37:56.337 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 09:37:56.338  INFO 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2022-12-22 09:37:56.354 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:37:56.380 DEBUG 3532 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:37:56.746 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:37:56.747 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:37:56.825 DEBUG 3532 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:37:56.866 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:37:56.867 DEBUG 3532 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:37:56.875 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:37:56.876 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:37:56.879 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:37:56.914 DEBUG 3532 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:37:56.915 DEBUG 3532 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:37:56.931 DEBUG 3532 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:37:56.932 DEBUG 3532 --- [http-nio-8088-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, status=1, quantity=11, price=21212, waitingTime=3,  (truncated)...]
+2022-12-22 09:37:56.939 DEBUG 3532 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:38:45.464 DEBUG 3532 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:38:45.465 DEBUG 3532 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:38:45.475 DEBUG 3532 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:38:45.475 DEBUG 3532 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:38:45.477 DEBUG 3532 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:38:45.636 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:38:45.637 DEBUG 3532 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:38:45.642 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:38:45.643 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:38:45.645 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:38:45.664 DEBUG 3532 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:38:45.665 DEBUG 3532 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:38:45.673 DEBUG 3532 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:38:45.673 DEBUG 3532 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, status=1, quantity=11, price=21212, waitingTime=3,  (truncated)...]
+2022-12-22 09:38:45.675 DEBUG 3532 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:39:26.601 DEBUG 3532 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:39:26.602 DEBUG 3532 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:39:26.613 DEBUG 3532 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:39:26.613 DEBUG 3532 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, status=1, quantity=11, price=21212, waitingTime=3,  (truncated)...]
+2022-12-22 09:39:26.615 DEBUG 3532 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:39:26.690 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-12-22 09:39:26.700 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-22 09:39:26.702 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-22 09:39:26.703 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-22 09:39:26.711 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 09:39:26.717 DEBUG 3532 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-22 09:39:26.730 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:39:26.731 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 22 09:39:26 MMT 2022, status=404, error=Not Found, path=/favicon.ico}]
+2022-12-22 09:39:26.784 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-22 09:42:42.368 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:42:42.368 DEBUG 3532 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:42:42.378 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:42:42.379 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:42:42.380 DEBUG 3532 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:42:42.692 DEBUG 3532 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:42:42.693 DEBUG 3532 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:42:42.703 DEBUG 3532 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:42:42.704 DEBUG 3532 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:42:42.706 DEBUG 3532 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:42:42.764 DEBUG 3532 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:42:42.765 DEBUG 3532 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:42:42.774 DEBUG 3532 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:42:42.775 DEBUG 3532 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, status=1, quantity=11, price=21212, waitingTime=3,  (truncated)...]
+2022-12-22 09:42:42.777 DEBUG 3532 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:43:08.892 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:43:08.893 DEBUG 3532 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:43:08.900 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:43:08.900 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:43:08.901 DEBUG 3532 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:43:09.038 DEBUG 3532 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:43:09.038 DEBUG 3532 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:43:09.047 DEBUG 3532 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:43:09.048 DEBUG 3532 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:43:09.049 DEBUG 3532 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:43:09.114 DEBUG 3532 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 09:43:09.115 DEBUG 3532 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 09:43:09.127 DEBUG 3532 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:43:09.128 DEBUG 3532 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 09:43:09.130 DEBUG 3532 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:43:09.240 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:43:09.241 DEBUG 3532 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:43:09.245 DEBUG 3532 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:43:09.246 DEBUG 3532 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, status=1, quantity=11, price=21212, waitingTime=3,  (truncated)...]
+2022-12-22 09:43:09.246 DEBUG 3532 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:45:27.343  INFO 10568 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.4.1 on DESKTOP-S2890HG with PID 10568 (C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi\target\classes started by ASUS in C:\Users\ASUS\Desktop\CarApi\CarSellingProjectApi)
+2022-12-22 09:45:27.347  INFO 10568 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-22 09:45:28.376  INFO 10568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-22 09:45:28.482  INFO 10568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 4 JPA repository interfaces.
+2022-12-22 09:45:29.413  INFO 10568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-22 09:45:29.430  INFO 10568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 09:45:29.431  INFO 10568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-22 09:45:29.569  INFO 10568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-22 09:45:29.575  INFO 10568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2162 ms
+2022-12-22 09:45:29.811  INFO 10568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-22 09:45:29.882  INFO 10568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-22 09:45:30.093  INFO 10568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-22 09:45:30.296  INFO 10568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-22 09:45:30.580  INFO 10568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-22 09:45:30.609  INFO 10568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-22 09:45:31.643  INFO 10568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-22 09:45:31.656  INFO 10568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-22 09:45:32.384  WARN 10568 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-22 09:45:32.566 DEBUG 10568 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-22 09:45:32.730 DEBUG 10568 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-12-22 09:45:32.768 DEBUG 10568 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-22 09:45:32.783 DEBUG 10568 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-22 09:45:32.925  INFO 10568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-22 09:45:32.942  INFO 10568 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 6.163 seconds (JVM running for 6.758)
+2022-12-22 09:46:34.738  INFO 10568 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 09:46:34.739  INFO 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 09:46:34.739 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-22 09:46:34.740 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-22 09:46:34.740 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-22 09:46:34.743 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5c459194
+2022-12-22 09:46:34.743 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@62581ef6
+2022-12-22 09:46:34.743 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-22 09:46:34.744  INFO 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-12-22 09:46:34.760 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:46:34.795 DEBUG 10568 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:46:34.876 DEBUG 10568 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:46:34.878 DEBUG 10568 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671678994_cr74.jpg"]
+2022-12-22 09:46:34.894 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:46:34.901 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/car/create", parameters={}
+2022-12-22 09:46:34.902 DEBUG 10568 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCategory(Car)
+2022-12-22 09:46:34.904 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:46:34.916 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:46:34.917 DEBUG 10568 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCategory(Car)
+2022-12-22 09:46:35.040 DEBUG 10568 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=12, brandId=4, categoryId=6, discountId=0, status=1, quantity=3, price=3333, waitingT (truncated)...]
+2022-12-22 09:46:35.215 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:46:35.216 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=15, name=12, brandId=4, categoryId=6, discountId=0, status=1, quantity=3, price=3333, waiting (truncated)...]
+2022-12-22 09:46:35.228 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:46:35.241 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:46:35.242 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:46:35.436 DEBUG 10568 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:46:35.436 DEBUG 10568 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:46:35.440 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:47:00.623 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 09:47:00.624 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 09:47:00.634 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:47:00.634 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 09:47:00.638 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:47:03.594 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:47:03.595 DEBUG 10568 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:47:03.615 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:47:03.616 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:47:03.619 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:47:03.715 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:47:03.716 DEBUG 10568 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:47:03.728 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:47:03.729 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:47:03.733 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:47:03.761 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 09:47:03.761 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 09:47:03.773 DEBUG 10568 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:47:03.774 DEBUG 10568 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 09:47:03.776 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:47:03.824 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:47:03.824 DEBUG 10568 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:47:03.838 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:47:03.838 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:47:03.839 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:49:51.198 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:49:51.199 DEBUG 10568 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:49:51.206 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:49:51.207 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:49:51.209 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:49:51.376 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:49:51.376 DEBUG 10568 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:49:51.381 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:49:51.381 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:49:51.383 DEBUG 10568 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:49:51.406 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 09:49:51.406 DEBUG 10568 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 09:49:51.432 DEBUG 10568 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:49:51.432 DEBUG 10568 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 09:49:51.440 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:49:51.587 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:49:51.588 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:49:51.598 DEBUG 10568 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:49:51.598 DEBUG 10568 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:49:51.600 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:50:22.392 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:50:22.400 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:50:22.406 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:50:22.407 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671679222_cr74.jpg"]
+2022-12-22 09:50:22.410 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:50:22.440 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:50:22.440 DEBUG 10568 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCategory(Car)
+2022-12-22 09:50:22.442 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=ccccccccc, brandId=4, categoryId=6, discountId=10, status=1, quantity=2, price=222, w (truncated)...]
+2022-12-22 09:50:22.463 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:50:22.463 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=16, name=ccccccccc, brandId=4, categoryId=6, discountId=10, status=1, quantity=2, price=222,  (truncated)...]
+2022-12-22 09:50:22.465 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:50:22.472 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:50:22.473 DEBUG 10568 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:50:22.481 DEBUG 10568 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:50:22.482 DEBUG 10568 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:50:22.484 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:50:43.528 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:50:43.528 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:50:43.532 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:50:43.533 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:50:43.534 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:50:44.033 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:50:44.034 DEBUG 10568 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:50:44.039 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:50:44.040 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:50:44.041 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:50:44.087 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 09:50:44.088 DEBUG 10568 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 09:50:44.094 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:50:44.095 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 09:50:44.096 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:50:44.156 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:50:44.157 DEBUG 10568 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:50:44.164 DEBUG 10568 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:50:44.165 DEBUG 10568 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:50:44.166 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:54:30.779 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:54:30.780 DEBUG 10568 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:54:30.785 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:54:30.786 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:54:30.787 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:54:30.950 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:54:30.951 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:54:30.955 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:54:30.956 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:54:30.956 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:54:30.992 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 09:54:30.992 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 09:54:31.000 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:54:31.000 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 09:54:31.001 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:54:31.066 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:54:31.066 DEBUG 10568 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:54:31.072 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:54:31.072 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:54:31.078 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:56:06.869 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 09:56:06.870 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 09:56:06.874 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:56:06.875 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 09:56:06.876 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:56:07.004 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 09:56:07.005 DEBUG 10568 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 09:56:07.009 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:56:07.010 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 09:56:07.011 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:56:07.032 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 09:56:07.032 DEBUG 10568 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 09:56:07.036 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:56:07.037 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 09:56:07.038 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:56:07.058 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:56:07.058 DEBUG 10568 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:56:07.063 DEBUG 10568 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:56:07.064 DEBUG 10568 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:56:07.065 DEBUG 10568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:56:45.937 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:56:45.954 DEBUG 10568 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:56:45.968 DEBUG 10568 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:56:45.968 DEBUG 10568 --- [http-nio-8088-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671679605_cr73.jpg"]
+2022-12-22 09:56:45.970 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:56:45.983 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:56:45.983 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCategory(Car)
+2022-12-22 09:56:45.984 DEBUG 10568 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=rer, brandId=5, categoryId=7, discountId=8, status=1, quantity=4, price=4444, waiting (truncated)...]
+2022-12-22 09:56:46.001 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:56:46.002 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=17, name=rer, brandId=5, categoryId=7, discountId=8, status=1, quantity=4, price=4444, waitin (truncated)...]
+2022-12-22 09:56:46.003 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:56:46.010 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:56:46.010 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:56:46.016 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:56:46.016 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:56:46.017 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:58:12.345 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/car/file/create", parameters={multipart}
+2022-12-22 09:58:12.363 DEBUG 10568 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createFile(MultipartFile, String)
+2022-12-22 09:58:12.381 DEBUG 10568 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:58:12.382 DEBUG 10568 --- [http-nio-8088-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1671679692_couple.jpg"]
+2022-12-22 09:58:12.383 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:58:12.397 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/car/create", parameters={}
+2022-12-22 09:58:12.397 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#createCategory(Car)
+2022-12-22 09:58:12.398 DEBUG 10568 --- [http-nio-8088-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Car(id=0, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, waiti (truncated)...]
+2022-12-22 09:58:12.415 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:58:12.415 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=18, name=KMT, brandId=5, categoryId=6, discountId=8, status=2, quantity=22, price=32323, wait (truncated)...]
+2022-12-22 09:58:12.416 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:58:12.429 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 09:58:12.430 DEBUG 10568 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 09:58:12.435 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 09:58:12.435 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 09:58:12.436 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 09:58:21.198 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/create", parameters={}
+2022-12-22 09:58:21.200 DEBUG 10568 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2022-12-22 09:58:21.207 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.carSelling.CarSelling.entity.Car> com.carSelling.CarSelling.controller.CarController.getCar(int): Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "create"
+2022-12-22 09:58:21.210  WARN 10568 --- [http-nio-8088-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "create"]
+2022-12-22 09:58:21.211 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2022-12-22 09:58:21.215 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-22 09:58:21.216 DEBUG 10568 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-12-22 09:58:21.267 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-12-22 09:58:21.282 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2022-12-22 10:01:06.866 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 10:01:06.867 DEBUG 10568 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 10:01:06.870 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:06.870 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 10:01:06.871 DEBUG 10568 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 10:01:06.951 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 10:01:06.952 DEBUG 10568 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 10:01:06.956 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:06.956 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 10:01:06.958 DEBUG 10568 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 10:01:06.981 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 10:01:06.982 DEBUG 10568 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 10:01:06.985 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:06.985 DEBUG 10568 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 10:01:06.987 DEBUG 10568 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 10:01:07.005 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 10:01:07.005 DEBUG 10568 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 10:01:07.011 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:07.011 DEBUG 10568 --- [http-nio-8088-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 10:01:07.013 DEBUG 10568 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 10:01:20.896 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-22 10:01:20.896 DEBUG 10568 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-22 10:01:20.901 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:20.902 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=6, categoryName=Saloon), Category(id=7, categoryName=Track)]]
+2022-12-22 10:01:20.903 DEBUG 10568 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 10:01:21.060 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-22 10:01:21.060 DEBUG 10568 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-22 10:01:21.064 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:21.064 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=4, brandName=Toyota, produceCountry=Japan), Brand(id=5, brandName=BMW, produceCountry=Germ (truncated)...]
+2022-12-22 10:01:21.065 DEBUG 10568 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 10:01:21.112 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/discount/discountList", parameters={}
+2022-12-22 10:01:21.112 DEBUG 10568 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.DiscountController#getDiscounts()
+2022-12-22 10:01:21.117 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:21.117 DEBUG 10568 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Discount(id=8, discountName=New Year Discount, percentage=20, fromDate=2022-12-21, toDate=2023-01-0 (truncated)...]
+2022-12-22 10:01:21.120 DEBUG 10568 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-22 10:01:21.162 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-22 10:01:21.162 DEBUG 10568 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-22 10:01:21.167 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-22 10:01:21.168 DEBUG 10568 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=14, name=ewewe, brandId=4, categoryId=6, discountId=0, status=1, quantity=11, price=21212, w (truncated)...]
+2022-12-22 10:01:21.169 DEBUG 10568 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
