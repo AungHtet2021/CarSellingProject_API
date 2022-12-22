@@ -78,10 +78,12 @@ public class CarController {
 		if (car == null) {
 			return ResponseEntity.notFound().build();
 		}
+		String imagePath = car.getImagePath();
 		boolean isDeleted = carService.delete(id);
 		if (!isDeleted) {
 			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
 		}
+		storageService.delete(imagePath);
 		return ResponseEntity.ok().build();
 	}
 	
