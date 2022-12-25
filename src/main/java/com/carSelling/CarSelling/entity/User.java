@@ -51,7 +51,7 @@ public class User implements java.io.Serializable{
 	private String imagePath;
 	
 	@Column(nullable=false)
-	private LocalDate DateOFBirth;
+	private LocalDate DateOfBirth;
 	
 	@Column(length=20,nullable=false,unique=true)
 	@NotBlank(message="Required")

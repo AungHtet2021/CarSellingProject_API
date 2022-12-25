@@ -36,13 +36,13 @@ public class Discount implements java.io.Serializable {
 
 	@Column(length = 200, nullable = false)
 	@NotBlank(message = "Required")
-	private int percentage;
+	private String percentage;
 
 	@Column(nullable = false)
-	private Timestamp fromDate;
+	private String fromDate;
 	
 	@Column(nullable = false)
-	private Timestamp toDate;
+	private String toDate;
 
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")

@@ -1,5 +1,7 @@
 package com.carSelling.CarSelling.service;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +28,7 @@ public class UserServiceImpl implements UserService{
 		user.setGmail(user.getGmail());
 		user.setPassword(passwordEncoder.encode(user.getPassword()));
 		user.setImagePath(user.getImagePath());
-		user.setDateOFBirth(user.getDateOFBirth());
+		user.setDateOfBirth(user.getDateOfBirth());
 		user.setPhone(user.getPhone());
 		user.setCreatedAt(user.getCreatedAt());
 		return userRepository.save(user);
@@ -53,6 +55,12 @@ public class UserServiceImpl implements UserService{
 			return null;
 		}
 		return user;
+	}
+
+	@Override
+	public List<User> getUsers() {
+		List users=userRepository.findAll();	
+		return users;
 	}
 
 }

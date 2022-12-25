@@ -1,8 +1,10 @@
 package com.carSelling.CarSelling.controller;
+import java.io.IOException;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import com.carSelling.CarSelling.entity.Car;
+import com.carSelling.CarSelling.entity.Category;
 import com.carSelling.CarSelling.service.CarService;
 import com.carSelling.CarSelling.service.StorageService;
 
@@ -30,7 +33,7 @@ public class CarController {
 	StorageService storageService;
 	
 	@GetMapping("/carList")
-	public Object getDiscounts() {
+	public Object getCars() {
 		List<Car> carLists = carService.getAll();
 		if(carLists.size() > 0) {
 			return carLists;
@@ -51,9 +54,10 @@ public class CarController {
 		return ResponseEntity.ok().body(car);
 	}
 	
-	@PostMapping("/create")
-	public Car createCar(@Valid @RequestBody Car car) {
-		return carService.create(car);
+	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Car> createCategory(@RequestBody Car car){
+		Car newCar=carService.create(car);
+		return new ResponseEntity<Car>(newCar,HttpStatus.OK);
 	}
 	
 	@PutMapping("/update/{id}")
@@ -74,10 +78,12 @@ public class CarController {
 		if (car == null) {
 			return ResponseEntity.notFound().build();
 		}
+		String imagePath = car.getImagePath();
 		boolean isDeleted = carService.delete(id);
 		if (!isDeleted) {
 			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
 		}
+		storageService.delete(imagePath);
 		return ResponseEntity.ok().build();
 	}
 	
@@ -98,6 +104,33 @@ public class CarController {
 	) {
 		String fileName = storageService.update(file, fileType, filePath);
 		return fileName;
+	}
+	
+	@GetMapping("/media/{fileType}/{fileName}")
+	public ResponseEntity<?> getPoster(
+			@PathVariable("fileType") String fileType,
+			@PathVariable("fileName") String fileName
+	) throws IOException {
+		MediaType contentType = MediaType.IMAGE_PNG;
+		switch (fileType) {
+			case "mp4" :
+				contentType = MediaType.APPLICATION_OCTET_STREAM;
+				break;
+			case "jpg" :
+				contentType = MediaType.IMAGE_JPEG;
+				break;
+			case "png" :
+				contentType = MediaType.IMAGE_PNG;
+				break;
+			default :
+				return ResponseEntity.badRequest()
+						.body("Unsupported File Type");
+		}
+		byte[] fileBytes = storageService.load(fileName);
+		if (fileBytes == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().contentType(contentType).body(fileBytes);
 	}
 
 	

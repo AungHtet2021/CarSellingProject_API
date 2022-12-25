@@ -1,9 +1,13 @@
 package com.carSelling.CarSelling.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -56,6 +60,17 @@ public class UserController {
 		return ResponseEntity.ok().body(createdUser);
 	}
 	
+//	@GetMapping(value="/get/brands")
+//	public ResponseEntity<List<Brand>> getBrands(){
+//		List<Brand> brands=brandService.getBrands();
+//		return new ResponseEntity<List<Brand>>(brands,HttpStatus.OK);
+//	}
+	
+	@GetMapping(value="/get/users")
+	public ResponseEntity<List<User>> getUsers(){
+		List<User>users=userService.getUsers();
+		return new ResponseEntity<List<User>>(users,HttpStatus.OK);
+	}
 //	@PostMapping("/file/create")
 //	public String createFile(
 //			@RequestParam("file") MultipartFile file,

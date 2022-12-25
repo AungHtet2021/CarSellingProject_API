@@ -38,20 +38,28 @@ public class Car implements java.io.Serializable{
 	private String name;
 
 	@Column(nullable = false)
-	@NotBlank(message = "Required")
+	private int brandId;
+	
+	@Column(nullable = false)
+	private int categoryId;
+	
+	@Column(nullable = false)
+	private int discountId;
+	
+	@Column(nullable = false)
 	private int status;
 
 	@Column(nullable = false)
 	@NotBlank(message = "Required")
-	private int quantity;
+	private String quantity;
 
 	@Column(nullable = false)
 	@NotBlank(message = "Required")
-	private int price;
+	private String price;
 
 	@Column(nullable = false)
 	@NotBlank(message = "Required")
-	private int waitingTime;
+	private String waitingTime;
 
 	@Column(columnDefinition = "boolean", nullable = false)
 	@ColumnDefault("false")
@@ -62,6 +70,8 @@ public class Car implements java.io.Serializable{
 	@Column(length = 200)
 	@NotBlank(message = "Required")
 	private String imagePath;
+	
+	private String video;
 
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
