@@ -1,5 +1,6 @@
 package com.carSelling.CarSelling.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -15,23 +16,25 @@ public class UserServiceImpl implements UserService{
 	
 	@Autowired
 	UserRepository userRepository;
-	
 	@Autowired
 	PasswordEncoder passwordEncoder;
 	@Override
 	public User create( User user) {
-		User GmailCheckUser=userRepository.findByGmail(user.getGmail());
-		if(GmailCheckUser!=null) {
-			return null;
-		}
-		user.setName(user.getName());
-		user.setGmail(user.getGmail());
-		user.setPassword(passwordEncoder.encode(user.getPassword()));
-		user.setImagePath(user.getImagePath());
-		user.setDateOfBirth(user.getDateOfBirth());
-		user.setPhone(user.getPhone());
-		user.setCreatedAt(user.getCreatedAt());
+//		User GmailCheckUser=userRepository.findByGmail(user.getGmail());
+//		if(GmailCheckUser==null) {
+//			return null;
+//		}
+//		user.setName(user.getName());
+//		user.setGmail(user.getGmail());
+//		user.setPassword(user.getPassword());
+//		user.setImagePath(user.getImagePath());
+//		user.setPhone(user.getPhone());
+//		user.setCreatedAt(LocalDateTime.now());
+//		return userRepository.save(user);
+		user.setCreatedAt(LocalDateTime.now());
 		return userRepository.save(user);
+//		
+	
 	}
 	
 //	@Override
@@ -47,14 +50,15 @@ public class UserServiceImpl implements UserService{
 //	}
 	@Override
 	public User checkLoginUser(String gmail, String password) {
-		User user=userRepository.findByGmail(gmail);
-		if(user==null) {
-			return null;
-		}
-		if(!passwordEncoder.matches(password, user.getPassword())) {
-			return null;
-		}
-		return user;
+//		User user=userRepository.findByGmail(gmail);
+//		if(user==null) {
+//			return null;
+//		}
+//		if(!passwordEncoder.matches(password, user.getPassword())) {
+//			return null;
+//		}
+//		return user;
+		return null;
 	}
 
 	@Override

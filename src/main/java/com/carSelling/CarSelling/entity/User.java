@@ -42,23 +42,24 @@ public class User implements java.io.Serializable{
 	@NotBlank(message="Required")
 	private String gmail;
 	
-	@Column(length=50,nullable=false,unique=true)
+	@Column(nullable=false)
 	@NotBlank(message="Required")
 	private String password;
 	
-	@Column(length=200,nullable=false,unique=true)
+	@Column(length=200,nullable=false)
 	@NotBlank(message="Requied")
 	private String imagePath;
 	
-	@Column(nullable=false)
-	private LocalDate DateOfBirth;
+//	@Column(nullable=false)
+//	private LocalDate DateOfBirth;
 	
 	@Column(length=20,nullable=false,unique=true)
 	@NotBlank(message="Required")
-	private int phone;
+	private String phone;
 	
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
+
 	
 }

@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.entity.LoginRequest;
 import com.carSelling.CarSelling.entity.User;
 import com.carSelling.CarSelling.service.StorageService;
@@ -51,13 +53,16 @@ public class UserController {
 		return ResponseEntity.ok().body(user);
 	}
 	
-	@PostMapping("/register")
+	@PostMapping(value="/register",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> register(@Valid @RequestBody User user){
+//		System.out.println(user);
 		User createdUser =userService.create(user);
 		if(createdUser==null) {
 			return ResponseEntity.badRequest().body("Already Exist Gmail");
 		}
 		return ResponseEntity.ok().body(createdUser);
+		
+//		return new ResponseEntity<User>(createdUser,HttpStatus.OK);
 	}
 	
 //	@GetMapping(value="/get/brands")
@@ -80,6 +85,7 @@ public class UserController {
 //		return fileName;
 //	}
 	
+	@PostMapping("/file/create")
 	public String createFile(
 			@RequestParam("file") MultipartFile file,
 			@RequestParam("fileType") String fileType)
