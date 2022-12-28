@@ -3,6 +3,7 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -41,7 +42,7 @@ public class Car implements java.io.Serializable{
 	private int brandId;
 	
 	@Column(nullable = false)
-	private int categoryId;
+	private int  categoryId;
 	
 	@Column(nullable = false)
 	private int discountId;
@@ -78,5 +79,17 @@ public class Car implements java.io.Serializable{
 	private LocalDateTime createdAt;
 
 	private LocalDateTime updatedAt;
+	
+	
+//    @ManyToOne
+//    @JoinColumn(name="category_id")
+//    private Category category;
+//	   public Category getCategory() {
+//	        return category;
+//	    }
+//
+//	    public void setCategory(Category category) {
+//	        this.category = category;
+//	    }
 
 }
