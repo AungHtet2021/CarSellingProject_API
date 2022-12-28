@@ -24,7 +24,7 @@ import lombok.ToString;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString 
 
 public class User implements java.io.Serializable{
 	

@@ -28,7 +28,6 @@ public class CarController {
 	@Autowired
 	CarService carService;
 	
-
 	@Autowired
 	StorageService storageService;
 	
@@ -40,8 +39,8 @@ public class CarController {
 		} else {
 			return "There is no car list";
 		}
-
 	}
+	
 	
 	@GetMapping("/{car_id}")
 	public ResponseEntity<Car> getCar(
@@ -56,6 +55,7 @@ public class CarController {
 	
 	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Car> createCategory(@RequestBody Car car){
+		
 		Car newCar=carService.create(car);
 		return new ResponseEntity<Car>(newCar,HttpStatus.OK);
 	}
