@@ -11,5 +11,9 @@ public interface CarService {
 	public Car create(Car car);
 	public Car update(int id, Car car);
 	public boolean delete(int id);
+<<<<<<< HEAD
 
+=======
+//	public List<CarDetails> join();
+>>>>>>> 3dc2a04b67164bfe3bad20f08b5d4bc8234cb0ef
 }

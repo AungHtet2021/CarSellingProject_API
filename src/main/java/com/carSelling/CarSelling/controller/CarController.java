@@ -30,6 +30,7 @@ public class CarController {
 	@Autowired
 	CarService carService;
 	
+<<<<<<< HEAD
 
 
 	  @Autowired
@@ -37,6 +38,11 @@ public class CarController {
 	 
 	  
 
+=======
+	  @Autowired
+	    CarRepository carRepository;
+	  
+>>>>>>> 3dc2a04b67164bfe3bad20f08b5d4bc8234cb0ef
 	@Autowired
 	StorageService storageService;
 	
