@@ -31,14 +31,6 @@ public class CarController {
 	CarService carService;
 	
 
-
-
-	  @Autowired
-	    CarRepository carRepository;
-	 
-	  
-
-
 	@Autowired
 	StorageService storageService;
 	
