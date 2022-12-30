@@ -3893,3 +3893,390 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'aung@gmail.c
 2022-12-30 20:00:25.980 DEBUG 8360 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2022-12-30 20:00:25.980 DEBUG 8360 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Dec 30 20:00:25 MMT 2022, status=500, error=Internal Server Error, path=/admin/create (truncated)...]
 2022-12-30 20:00:25.981 DEBUG 8360 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2022-12-30 20:04:36.330  INFO 10216 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.3 on DESKTOP-300RN1B with PID 10216 (D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi\target\classes started by DELL in D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi)
+2022-12-30 20:04:36.333  INFO 10216 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-30 20:04:37.361  INFO 10216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30 20:04:37.459  INFO 10216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 6 JPA repository interfaces.
+2022-12-30 20:04:38.281  INFO 10216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-12-30 20:04:38.299  INFO 10216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30 20:04:38.300  INFO 10216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-30 20:04:38.462  INFO 10216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30 20:04:38.463  INFO 10216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2080 ms
+2022-12-30 20:04:38.694  INFO 10216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30 20:04:38.758  INFO 10216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-30 20:04:38.959  INFO 10216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-30 20:04:39.090  INFO 10216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30 20:04:39.281  INFO 10216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30 20:04:39.301  INFO 10216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-12-30 20:04:40.103  INFO 10216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30 20:04:40.111  INFO 10216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30 20:04:41.118  WARN 10216 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30 20:04:41.209  WARN 10216 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 990173a3-c877-4cd3-8e00-a524f3bf0369
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-30 20:04:41.381 DEBUG 10216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 41 mappings in 'requestMappingHandlerMapping'
+2022-12-30 20:04:41.470 DEBUG 10216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-30 20:04:41.478  WARN 10216 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-30 20:04:41.479  INFO 10216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2022-12-30 20:04:41.480  WARN 10216 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-30 20:04:41.480  INFO 10216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2022-12-30 20:04:41.480  WARN 10216 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-12-30 20:04:41.480  INFO 10216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2022-12-30 20:04:41.534  INFO 10216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c0ab04f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@384f0e32, org.springframework.security.web.context.SecurityContextPersistenceFilter@6761f75b, org.springframework.security.web.header.HeaderWriterFilter@19b3d3a4, org.springframework.security.web.authentication.logout.LogoutFilter@263e512e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c7443f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71135794, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e826fd4, org.springframework.security.web.session.SessionManagementFilter@862624f, org.springframework.security.web.access.ExceptionTranslationFilter@46c9ee28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@633cad4d]
+2022-12-30 20:04:41.616 DEBUG 10216 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-30 20:04:41.663 DEBUG 10216 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-30 20:04:41.785  INFO 10216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-12-30 20:04:41.794  INFO 10216 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 6.035 seconds (JVM running for 6.763)
+2022-12-30 20:06:33.230  INFO 10216 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-30 20:06:33.230  INFO 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-30 20:06:33.230 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-30 20:06:33.230 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-30 20:06:33.230 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-30 20:06:33.232 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@24a1858a
+2022-12-30 20:06:33.232 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@18adc20a
+2022-12-30 20:06:33.233 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-30 20:06:33.233  INFO 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-30 20:06:33.255 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#createFile(MultipartFile, String)
+2022-12-30 20:06:33.263 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/admin/file/create", parameters={multipart}
+2022-12-30 20:06:33.288 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#createFile(MultipartFile, String)
+2022-12-30 20:06:33.355 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:06:33.355 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["/media/jpg/1672407393_1.jpg"]
+2022-12-30 20:06:33.363 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:06:33.367 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#createAdmin(Admin)
+2022-12-30 20:06:33.368 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/admin/create", parameters={}
+2022-12-30 20:06:33.369 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#createAdmin(Admin)
+2022-12-30 20:06:33.443 DEBUG 10216 --- [http-nio-8088-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Admin(id=0, name=aunghtet11111, password=1111, gmail=aung4444@gmail.com, adminRole=ADMIN, imagePath= (truncated)...]
+2022-12-30 20:06:33.542 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:06:33.542 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Admin(id=32, name=aunghtet11111, password=1111, gmail=aung4444@gmail.com, adminRole=ADMIN, imagePath (truncated)...]
+2022-12-30 20:06:33.551 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:20:52.891 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-30 20:20:52.892 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-30 20:20:52.893 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-30 20:20:53.058 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:20:53.059 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=3, brandName=Lexus, produceCountry=Japan), Brand(id=21, brandName=Tesla1, produceCountry=A (truncated)...]
+2022-12-30 20:20:53.067 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:25.736 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#createBrand(Brand)
+2022-12-30 20:21:25.737 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/brand/create", parameters={}
+2022-12-30 20:21:25.738 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#createBrand(Brand)
+2022-12-30 20:21:25.740 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:25.744 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#createBrand(Brand)
+2022-12-30 20:21:25.744 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/brand/create", parameters={}
+2022-12-30 20:21:25.744 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#createBrand(Brand)
+2022-12-30 20:21:25.747 DEBUG 10216 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Brand(id=0, brandName=Toyota, produceCountry=Japan)]
+2022-12-30 20:21:25.758 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:25.759 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Brand(id=33, brandName=Toyota, produceCountry=Japan)]
+2022-12-30 20:21:25.760 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:25.764 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-30 20:21:25.765 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-30 20:21:25.765 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-30 20:21:25.771 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:25.772 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=3, brandName=Lexus, produceCountry=Japan), Brand(id=21, brandName=Tesla1, produceCountry=A (truncated)...]
+2022-12-30 20:21:25.773 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:29.969 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-30 20:21:29.970 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-30 20:21:29.971 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-30 20:21:29.987 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:29.988 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=4, categoryName=Luxry Suv), Category(id=23, categoryName=Saloon1)]]
+2022-12-30 20:21:29.990 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:33.348 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#createCategory(Category)
+2022-12-30 20:21:33.348 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/category/create", parameters={}
+2022-12-30 20:21:33.349 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#createCategory(Category)
+2022-12-30 20:21:33.351 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:33.354 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#createCategory(Category)
+2022-12-30 20:21:33.355 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/category/create", parameters={}
+2022-12-30 20:21:33.355 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#createCategory(Category)
+2022-12-30 20:21:33.357 DEBUG 10216 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Category(id=0, categoryName=sport type)]
+2022-12-30 20:21:33.370 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:33.370 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Category(id=34, categoryName=sport type)]
+2022-12-30 20:21:33.371 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:33.375 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-30 20:21:33.375 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/category/get/categorys", parameters={}
+2022-12-30 20:21:33.375 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CategoryController#getCategorys()
+2022-12-30 20:21:33.379 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:33.380 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Category(id=4, categoryName=Luxry Suv), Category(id=23, categoryName=Saloon1), Category(id=34, cate (truncated)...]
+2022-12-30 20:21:33.381 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.747 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmins()
+2022-12-30 20:21:36.748 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/get/admins", parameters={}
+2022-12-30 20:21:36.749 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmins()
+2022-12-30 20:21:36.758 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:36.759 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Admin(id=10, name=Aung Myo Linn1asasas, password=11111111, gmail=moe@gmail.com, adminRole=SUPERADMI (truncated)...]
+2022-12-30 20:21:36.760 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.821 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.821 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.821 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/jpg/1672335621_CKS_9844.jpg", parameters={}
+2022-12-30 20:21:36.821 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.821 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.822 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/jpg/1672406957_1.jpg", parameters={}
+2022-12-30 20:21:36.822 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/jpg/1672407393_1.jpg", parameters={}
+2022-12-30 20:21:36.822 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/png/1672380187_gate_hura_03.webp", parameters={}
+2022-12-30 20:21:36.822 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.822 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.822 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.822 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.828 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:21:36.833 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:21:36.834 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/png' in response
+2022-12-30 20:21:36.838 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:21:36.850 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:21:36.852 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.856 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:21:36.857 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.893 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.893 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.894 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/jpg/1672407393_1.jpg", parameters={}
+2022-12-30 20:21:36.895 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.895 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/jpg/1672406957_1.jpg", parameters={}
+2022-12-30 20:21:36.905 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -37, 0, 67, 0, 6, 4, 5, 6, 5, 4, 6, 6, 5, 6, 7, 7, 6, 8, 10, 16, 10, 10, 9, 9, 10, 20, (truncated)...]
+2022-12-30 20:21:36.905 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:21:36.907 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.907 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.912 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{82, 73, 70, 70, 106, -98, 3, 0, 87, 69, 66, 80, 86, 80, 56, 88, 10, 0, 0, 0, 32, 0, 0, 0, 127, 7, 0 (truncated)...]
+2022-12-30 20:21:36.913 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:21:36.923 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:21:36.924 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.932 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:21:36.935 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.943 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:36.979 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.980 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/jpg/1672335621_CKS_9844.jpg", parameters={}
+2022-12-30 20:21:36.982 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:36.988 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:21:37.011 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -37, 0, 67, 0, 6, 4, 5, 6, 5, 4, 6, 6, 5, 6, 7, 7, 6, 8, 10, 16, 10, 10, 9, 9, 10, 20, (truncated)...]
+2022-12-30 20:21:37.013 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:37.054 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:37.055 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/png/1672380187_gate_hura_03.webp", parameters={}
+2022-12-30 20:21:37.056 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:37.059 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/png' in response
+2022-12-30 20:21:37.089 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{82, 73, 70, 70, 106, -98, 3, 0, 87, 69, 66, 80, 86, 80, 56, 88, 10, 0, 0, 0, 32, 0, 0, 0, 127, 7, 0 (truncated)...]
+2022-12-30 20:21:37.092 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:53.957 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmin(int)
+2022-12-30 20:21:53.957 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/admin/get/admin/10", parameters={}
+2022-12-30 20:21:53.957 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmin(int)
+2022-12-30 20:21:53.978 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:53.978 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Admin(id=10, name=Aung Myo Linn1asasas, password=11111111, gmail=moe@gmail.com, adminRole=SUPERADMIN (truncated)...]
+2022-12-30 20:21:53.980 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:53.991 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:53.991 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/media/jpg/1672335621_CKS_9844.jpg", parameters={}
+2022-12-30 20:21:53.992 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getPoster(String, String)
+2022-12-30 20:21:53.994 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:21:54.018 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -37, 0, 67, 0, 6, 4, 5, 6, 5, 4, 6, 6, 5, 6, 7, 7, 6, 8, 10, 16, 10, 10, 9, 9, 10, 20, (truncated)...]
+2022-12-30 20:21:54.020 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:21:57.985 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmin(int)
+2022-12-30 20:21:57.986 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/admin/get/admin/10", parameters={}
+2022-12-30 20:21:57.987 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmin(int)
+2022-12-30 20:21:57.991 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:21:57.991 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Admin(id=10, name=Aung Myo Linn1asasas, password=11111111, gmail=moe@gmail.com, adminRole=SUPERADMIN (truncated)...]
+2022-12-30 20:21:57.993 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:03.122 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#updateAdmin(int, Admin)
+2022-12-30 20:22:03.122 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/admin/admin/update/10", parameters={}
+2022-12-30 20:22:03.123 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#updateAdmin(int, Admin)
+2022-12-30 20:22:03.124 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:03.128 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#updateAdmin(int, Admin)
+2022-12-30 20:22:03.129 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : PUT "/admin/admin/update/10", parameters={}
+2022-12-30 20:22:03.129 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#updateAdmin(int, Admin)
+2022-12-30 20:22:03.132 DEBUG 10216 --- [http-nio-8088-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Admin(id=10, name=Aung Myo Linn1, password=11111111, gmail=moe@gmail.com, adminRole=SUPERADMIN, imag (truncated)...]
+2022-12-30 20:22:03.151 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:03.151 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Admin(id=10, name=Aung Myo Linn1, password=11111111, gmail=moe@gmail.com, adminRole=SUPERADMIN, imag (truncated)...]
+2022-12-30 20:22:03.152 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:03.155 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmins()
+2022-12-30 20:22:03.156 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/get/admins", parameters={}
+2022-12-30 20:22:03.156 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmins()
+2022-12-30 20:22:03.162 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:03.163 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Admin(id=10, name=Aung Myo Linn1, password=11111111, gmail=moe@gmail.com, adminRole=SUPERADMIN, ima (truncated)...]
+2022-12-30 20:22:03.164 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:05.366 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#deleteAdmin(int)
+2022-12-30 20:22:05.367 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/admin/delete/10", parameters={}
+2022-12-30 20:22:05.367 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#deleteAdmin(int)
+2022-12-30 20:22:05.368 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:05.372 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#deleteAdmin(int)
+2022-12-30 20:22:05.372 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : DELETE "/admin/delete/10", parameters={}
+2022-12-30 20:22:05.373 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#deleteAdmin(int)
+2022-12-30 20:22:05.389 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-12-30 20:22:05.389 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:05.393 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmins()
+2022-12-30 20:22:05.394 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/admin/get/admins", parameters={}
+2022-12-30 20:22:05.394 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.AdminController#getAdmins()
+2022-12-30 20:22:05.400 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:05.400 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Admin(id=26, name=aunghtetmyo, password=1111, gmail=aungmoe@gmail.com, adminRole=ADMIN, imagePath=/ (truncated)...]
+2022-12-30 20:22:05.401 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:09.795 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:22:09.795 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/user/get/users", parameters={}
+2022-12-30 20:22:09.795 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:22:09.811 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:09.811 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[User(id=9, name=bon, gmail=bon1@gmail.com, password=$2a$10$FZB0bp06.92lB2aT1T.wTeZkkdD.h8C.m4h220yG (truncated)...]
+2022-12-30 20:22:09.814 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:09.860 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.861 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672380219_compositor.jfif", parameters={}
+2022-12-30 20:22:09.862 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.862 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.862 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672293481_1.jpg", parameters={}
+2022-12-30 20:22:09.863 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.895 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:09.900 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:22:09.901 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:09.908 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:09.916 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:22:09.918 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:09.930 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.931 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672293481_1.jpg", parameters={}
+2022-12-30 20:22:09.932 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.933 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:09.936 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:22:09.936 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:09.945 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.946 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672380219_compositor.jfif", parameters={}
+2022-12-30 20:22:09.947 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:09.949 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:09.953 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:22:09.954 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:16.475 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUser(int)
+2022-12-30 20:22:16.476 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/user/get/user/27", parameters={}
+2022-12-30 20:22:16.476 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUser(int)
+2022-12-30 20:22:16.482 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:16.482 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=27, name=tesla, gmail=tesla@gmail.com, password=$2a$10$de4cAb2UxD42u.qlL8sOi.6ktuV8B2QkeskBb (truncated)...]
+2022-12-30 20:22:16.483 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:16.500 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:16.500 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672380219_compositor.jfif", parameters={}
+2022-12-30 20:22:16.501 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:16.503 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:16.510 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:22:16.513 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:19.562 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#updateUser(int, User)
+2022-12-30 20:22:19.563 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/user/user/update/27", parameters={}
+2022-12-30 20:22:19.563 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#updateUser(int, User)
+2022-12-30 20:22:19.564 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:19.566 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#updateUser(int, User)
+2022-12-30 20:22:19.567 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/user/user/update/27", parameters={}
+2022-12-30 20:22:19.567 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#updateUser(int, User)
+2022-12-30 20:22:19.571 DEBUG 10216 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(id=27, name=tesla11, gmail=tesla@gmail.com, password=$2a$10$de4cAb2UxD42u.qlL8sOi.6ktuV8B2Qkesk (truncated)...]
+2022-12-30 20:22:19.591 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:19.591 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2022-12-30 20:22:19.592 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:19.598 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:22:19.598 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/user/get/users", parameters={}
+2022-12-30 20:22:19.598 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:22:19.602 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:19.603 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[User(id=9, name=bon, gmail=bon1@gmail.com, password=$2a$10$FZB0bp06.92lB2aT1T.wTeZkkdD.h8C.m4h220yG (truncated)...]
+2022-12-30 20:22:19.603 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:42.066 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-30 20:22:42.067 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/brand/get/brands", parameters={}
+2022-12-30 20:22:42.067 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.BrandController#getBrands()
+2022-12-30 20:22:42.073 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:42.073 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Brand(id=3, brandName=Lexus, produceCountry=Japan), Brand(id=21, brandName=Tesla1, produceCountry=A (truncated)...]
+2022-12-30 20:22:42.074 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:47.611 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:22:47.612 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/user/get/users", parameters={}
+2022-12-30 20:22:47.612 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:22:47.617 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:22:47.617 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[User(id=9, name=bon, gmail=bon1@gmail.com, password=$2a$10$FZB0bp06.92lB2aT1T.wTeZkkdD.h8C.m4h220yG (truncated)...]
+2022-12-30 20:22:47.618 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:47.865 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.866 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672293481_1.jpg", parameters={}
+2022-12-30 20:22:47.867 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.869 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:47.873 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:22:47.874 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:47.874 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.874 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672380219_compositor.jfif", parameters={}
+2022-12-30 20:22:47.875 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.876 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:47.891 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:22:47.892 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:47.919 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.920 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672293481_1.jpg", parameters={}
+2022-12-30 20:22:47.920 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.921 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:47.926 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:22:47.927 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:22:47.939 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.939 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672380219_compositor.jfif", parameters={}
+2022-12-30 20:22:47.940 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:22:47.942 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:22:47.946 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:22:47.948 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:17.162 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#createFile(MultipartFile, String)
+2022-12-30 20:23:17.163 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/user/file/create", parameters={multipart}
+2022-12-30 20:23:17.173 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#createFile(MultipartFile, String)
+2022-12-30 20:23:17.183 DEBUG 10216 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:23:17.183 DEBUG 10216 --- [http-nio-8088-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["/media/jpg/1672408397_1.jpg"]
+2022-12-30 20:23:17.184 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:17.187 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#register(User)
+2022-12-30 20:23:17.187 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/user/register", parameters={}
+2022-12-30 20:23:17.188 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#register(User)
+2022-12-30 20:23:17.188 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:17.190 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#register(User)
+2022-12-30 20:23:17.191 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/user/register", parameters={}
+2022-12-30 20:23:17.191 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#register(User)
+2022-12-30 20:23:17.192 DEBUG 10216 --- [http-nio-8088-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(id=0, name=koko, gmail=koko@gmail.com, password=1111, imagePath=/media/jpg/1672408397_1.jpg, ph (truncated)...]
+2022-12-30 20:23:17.292 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:23:17.292 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=35, name=koko, gmail=koko@gmail.com, password=$2a$10$GPIdAjjckcS4uXtJoYIQpO/Cm1Owab0zcobJCds (truncated)...]
+2022-12-30 20:23:17.293 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:17.311 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-30 20:23:17.312 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/carList", parameters={}
+2022-12-30 20:23:17.312 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCars()
+2022-12-30 20:23:17.319 DEBUG 10216 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:23:17.319 DEBUG 10216 --- [http-nio-8088-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car(id=6, name=Lexus 20221, brandId=3, categoryId=4, discountId=5, status=2, quantity=1, price=9999 (truncated)...]
+2022-12-30 20:23:17.323 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:17.568 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-30 20:23:17.568 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-30 20:23:17.568 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672380159_compositor.jfif", parameters={}
+2022-12-30 20:23:17.569 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672320940_1200x-1.jpg", parameters={}
+2022-12-30 20:23:17.569 DEBUG 10216 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-30 20:23:17.569 DEBUG 10216 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-30 20:23:17.569 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-30 20:23:17.570 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/media/png/1672381489_HSS-PO-Dashing-Deals_Cover-Image-1200x628-1200x628.webp", parameters={}
+2022-12-30 20:23:17.570 DEBUG 10216 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2022-12-30 20:23:17.579 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:17.579 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:17.584 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:23:17.587 DEBUG 10216 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:17.591 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 72, 0, 72, 0, 0, -1, -37, 0, 67, 0, 6, 4, 5 (truncated)...]
+2022-12-30 20:23:17.595 DEBUG 10216 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:17.612 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/png' in response
+2022-12-30 20:23:17.619 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{82, 73, 70, 70, -4, -98, 1, 0, 87, 69, 66, 80, 86, 80, 56, 32, -16, -98, 1, 0, -80, 52, 5, -99, 1,  (truncated)...]
+2022-12-30 20:23:17.620 DEBUG 10216 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:23.239 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:23:23.240 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/user/get/users", parameters={}
+2022-12-30 20:23:23.240 DEBUG 10216 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getUsers()
+2022-12-30 20:23:23.244 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-30 20:23:23.245 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[User(id=9, name=bon, gmail=bon1@gmail.com, password=$2a$10$FZB0bp06.92lB2aT1T.wTeZkkdD.h8C.m4h220yG (truncated)...]
+2022-12-30 20:23:23.246 DEBUG 10216 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:23.480 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.481 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672293481_1.jpg", parameters={}
+2022-12-30 20:23:23.481 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.481 DEBUG 10216 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.481 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672380219_compositor.jfif", parameters={}
+2022-12-30 20:23:23.482 DEBUG 10216 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.482 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:23.483 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:23.484 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:23:23.485 DEBUG 10216 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:23.488 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:23:23.490 DEBUG 10216 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:23.497 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.498 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672408397_1.jpg", parameters={}
+2022-12-30 20:23:23.499 DEBUG 10216 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.509 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:23.512 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:23:23.513 DEBUG 10216 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:23.545 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.546 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.545 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.546 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672380219_compositor.jfif", parameters={}
+2022-12-30 20:23:23.546 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672408397_1.jpg", parameters={}
+2022-12-30 20:23:23.546 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/user/media/jpg/1672293481_1.jpg", parameters={}
+2022-12-30 20:23:23.547 DEBUG 10216 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.547 DEBUG 10216 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.547 DEBUG 10216 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getPoster(String, String)
+2022-12-30 20:23:23.548 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:23.548 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:23.548 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2022-12-30 20:23:23.550 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:23:23.550 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -31, 19, 101, 69, 120, 105, 102, 0, 0, 73, 73, 42, 0, 8, 0, 0, 0, 12, 0, 0, 1, 3, 0, 1 (truncated)...]
+2022-12-30 20:23:23.551 DEBUG 10216 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:23.551 DEBUG 10216 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-30 20:23:23.556 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2022-12-30 20:23:23.558 DEBUG 10216 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
