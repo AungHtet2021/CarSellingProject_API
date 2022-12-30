@@ -12,12 +12,12 @@ import com.carSelling.CarSelling.entity.Admin;
 public interface AdminService {
 
 	public List<Admin> getAll();
-//	public  Admin get(int id);
+	public  Admin get(int id);
 	public  Admin create(Admin Admin);
-//	public  Admin update(int id, Admin Admin); 
+	public  Admin update(int id, Admin Admin); 
 	public  boolean delete(int id); 
 	public  Admin getByName(String name);
-//	public Admin getAdmin(int id);
+	public Admin getAdmin(int id);
 	public List<Admin> getAdmins();
 	}
 

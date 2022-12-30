@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Service;
 
 import com.carSelling.CarSelling.entity.Admin;
-
+import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.repository.AdminRepository;
 
 
@@ -15,11 +15,11 @@ import com.carSelling.CarSelling.repository.AdminRepository;
 public class AdminServiceImpl implements AdminService{
 
 	@Autowired
-	AdminRepository AdminRepository;
+	AdminRepository adminRepository;
 	
 	@Override
 	public List<Admin> getAll() {
-		return AdminRepository.findAll();
+		return adminRepository.findAll();
 	}
 	
 //	@Autowired
@@ -34,22 +34,24 @@ public class AdminServiceImpl implements AdminService{
 //	}
 	public Admin create(Admin Admin) {
 		Admin.setCreatedAt(LocalDateTime.now());
-		return AdminRepository.save(Admin);
+		return adminRepository.save(Admin);
 	}
 	
-//	public Admin update(int id, Admin Admin) {
-//		Admin toUpdateAdmin = this.get(id);
-//		if (toUpdateAdmin == null) {
-//			return null;
-//		}
-//		toUpdateAdmin.setName(Admin.getName());
-//		toUpdateAdmin.setId(Admin.getId());
-//		toUpdateAdmin.setPassword(Admin.getPassword());
-//		toUpdateAdmin.setGmail(Admin.getGmail());
-//		toUpdateAdmin.setUpdatedAt(LocalDateTime.now());
-//		AdminRepository.save(toUpdateAdmin);
-//		return toUpdateAdmin;
-//	}
+	public Admin update(int id, Admin Admin) {
+		Admin toUpdateAdmin = this.get(id);
+		if (toUpdateAdmin == null) {
+			return null;
+		}
+		toUpdateAdmin.setName(Admin.getName());
+		toUpdateAdmin.setId(Admin.getId());
+		toUpdateAdmin.setPassword(Admin.getPassword());
+		toUpdateAdmin.setAdminRole(Admin.getAdminRole());
+		toUpdateAdmin.setGmail(Admin.getGmail());
+		toUpdateAdmin.setImagePath(Admin.getImagePath());
+		toUpdateAdmin.setCreatedAt(LocalDateTime.now());
+		adminRepository.save(toUpdateAdmin);
+		return toUpdateAdmin;
+	}
 	
 	
 //	public boolean delete(int id) {
@@ -65,8 +67,8 @@ public class AdminServiceImpl implements AdminService{
 
 	@Override
 	public List<Admin> getAdmins() {
-		// TODO Auto-generated method stub
-	 return AdminRepository.findAll();
+		List Admin=adminRepository.findAll();
+	 return  Admin;
 	}
 
 	@Override
@@ -77,8 +79,34 @@ public class AdminServiceImpl implements AdminService{
 
 	@Override
 	public boolean delete(int id) {
-		// TODO Auto-generated method stub
-		return false;
+		Admin admin=this.get(id);
+		if(admin == null) {
+			return false;
+		}
+		adminRepository.deleteById(id);
+		return true;
+	}
+
+//	@Override
+//	public boolean delete(int id) {
+//		Car car = this.get(id);
+//		if (car == null) {
+//			return false;
+//		}
+//		carRepository.deleteById(id);
+//		return true;
+//	}
+	@Override
+	public Admin getAdmin(int id) {
+		
+		Admin admin=adminRepository.findById(id).orElse(null);
+		return admin;
+	}
+
+	@Override
+	public Admin get(int id) {
+
+		return adminRepository.findById(id).orElse(null);
 	}
 
 

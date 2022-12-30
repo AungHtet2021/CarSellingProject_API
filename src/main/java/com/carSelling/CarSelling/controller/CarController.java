@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +18,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import com.carSelling.CarSelling.entity.Car;
-import com.carSelling.CarSelling.entity.Category;
+import com.carSelling.CarSelling.entity.CarDetails;
+import com.carSelling.CarSelling.repository.CarRepository;
 import com.carSelling.CarSelling.service.CarService;
 import com.carSelling.CarSelling.service.StorageService;
 
@@ -28,6 +30,11 @@ public class CarController {
 	@Autowired
 	CarService carService;
 	
+
+	  @Autowired
+	    CarRepository carRepository;
+	  
+
 	@Autowired
 	StorageService storageService;
 	
@@ -53,6 +60,28 @@ public class CarController {
 		return ResponseEntity.ok().body(car);
 	}
 	
+//	@GetMapping("/CarDetailsList")
+//	public Object getCarDetails() {
+//		List<CarDetails> carLists = carService.join();
+//		if(carLists.size() > 0) {
+//			return carLists;
+//		} else {
+//			return "There is no car list";
+//		}
+//
+//	}
+	
+//    @GetMapping("/carDetails/{id}")
+//    public String index(@PathVariable("id")Integer id, Model model) {
+//
+//        List<Car> list2 =carRepository.find(id);
+//        model.addAttribute("lists2", list2);
+//
+//
+//        return "index";
+//    }
+//	
+    
 	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Car> createCategory(@RequestBody Car car){
 		

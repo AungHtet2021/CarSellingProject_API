@@ -1,5 +1,6 @@
 package com.carSelling.CarSelling.controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -8,14 +9,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.carSelling.CarSelling.entity.Admin;
 import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.entity.LoginRequest;
 import com.carSelling.CarSelling.entity.User;
@@ -70,7 +75,45 @@ public class UserController {
 //		List<Brand> brands=brandService.getBrands();
 //		return new ResponseEntity<List<Brand>>(brands,HttpStatus.OK);
 //	}
+//	@PutMapping("/admin/update/{id}")
+//	public ResponseEntity<Admin> updateAdmin(
+//			@PathVariable int id, @Valid @RequestBody Admin Admin
+//	) {
+//		Admin updatedAdmin = adminService.update(id, Admin);
+//		if (updatedAdmin == null) {
+//			return ResponseEntity.notFound().build();
+//		}
+//		return ResponseEntity.ok().body(updatedAdmin);
+//	}
 	
+	@GetMapping(value="/get/user/{id}")
+	public ResponseEntity <User> getUser(@PathVariable("id") int id){
+		User user=userService.getUser(id);
+		return new ResponseEntity<User>(user,HttpStatus.OK);
+	}
+
+	@PutMapping("user/update/{id}")
+	public ResponseEntity<User> updateUser(@PathVariable int id,@Valid @RequestBody User user){
+		User updatedUser=userService.update(id,user);
+		if(updatedUser == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().build();
+	}
+	
+	@DeleteMapping(value = "/delete/{id}")
+	public ResponseEntity<?> deleteUser(@PathVariable int id) {
+		User user = userService.get(id);
+		if (user == null) {
+			return ResponseEntity.notFound().build();
+		}
+		String imagePath=user.getImagePath();
+		boolean isDeleted=userService.delete(id);
+		if(!isDeleted) {
+			return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+		}
+		return ResponseEntity.ok().build();
+	}
 	@GetMapping(value="/get/users")
 	public ResponseEntity<List<User>> getUsers(){
 		List<User>users=userService.getUsers();
@@ -92,6 +135,33 @@ public class UserController {
 	{
 		String fileName=storageService.create(file, fileType);
 		return fileName;
+	}
+	
+	@GetMapping("/media/{fileType}/{fileName}")
+	public ResponseEntity<?> getPoster(
+			@PathVariable("fileType") String fileType,
+			@PathVariable("fileName") String fileName
+	) throws IOException {
+		MediaType contentType = MediaType.IMAGE_PNG;
+		switch (fileType) {
+			case "mp4" :
+				contentType = MediaType.APPLICATION_OCTET_STREAM;
+				break;
+			case "jpg" :
+				contentType = MediaType.IMAGE_JPEG;
+				break;
+			case "png" :
+				contentType = MediaType.IMAGE_PNG;
+				break;
+			default :
+				return ResponseEntity.badRequest()
+						.body("Unsupported File Type");
+		}
+		byte[] fileBytes = storageService.load(fileName);
+		if (fileBytes == null) {
+			return ResponseEntity.notFound().build();
+		}
+		return ResponseEntity.ok().contentType(contentType).body(fileBytes);
 	}
 	
 }
