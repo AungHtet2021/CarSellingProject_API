@@ -43,7 +43,7 @@ public class AdminController {
 	@Autowired
 	StorageService  storageService;
 
-	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping("/create")
 	public ResponseEntity<?> createAdmin(@Valid @RequestBody Admin Admin) {
 //		if (Admin.getName() == null) {
 //			return ResponseEntity.badRequest().body("Name is empty");
