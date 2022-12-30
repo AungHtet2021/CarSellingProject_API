@@ -12,10 +12,14 @@ public interface CarService {
 	public Car update(int id, Car car);
 	public boolean delete(int id);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 //	public List<CarDetails> join();
 
+=======
+//	public List<CarDetails> join();
+>>>>>>> 3dc2a04b67164bfe3bad20f08b5d4bc8234cb0ef
 =======
 //	public List<CarDetails> join();
 >>>>>>> 3dc2a04b67164bfe3bad20f08b5d4bc8234cb0ef
