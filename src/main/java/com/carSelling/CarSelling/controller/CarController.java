@@ -65,20 +65,9 @@ public class CarController {
 	@GetMapping("/CarDetailsList")
 	public ResponseEntity<List<CarData>> getCarDetailLists() {
 		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
-<<<<<<< HEAD
 
-=======
-	}
-	
-	@GetMapping("/trend")
-	public ResponseEntity<List<TrendCar>> getTrendCarLists() {
-		return new ResponseEntity<List<TrendCar>>(joinQueryService.getTrendCarLists(), HttpStatus.OK);
-	}
-	
-	@GetMapping("/discount")
-	public ResponseEntity<List<TrendCar>> getDiscountCarLists() {
-		return new ResponseEntity<List<TrendCar>>(joinQueryService.getDiscountCarLists(), HttpStatus.OK);
->>>>>>> 90ac7ba07cb67b28613042a7169afef045222db5
+
+
 	}
 	
 	@GetMapping("/trend")
@@ -91,6 +80,8 @@ public class CarController {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getDiscountCarLists(), HttpStatus.OK);
 
 	}
+	
+
 	
 
 	

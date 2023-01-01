@@ -26,10 +26,7 @@ import com.carSelling.CarSelling.entity.TrendCar;
 @EnableJpaRepositories
 public interface CarRepository extends JpaRepository<Car, Integer>{
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 90ac7ba07cb67b28613042a7169afef045222db5
 	 @Query(nativeQuery = true, value ="select c.id,c.description from car c")
 	  List<CarData> carDetailList();
 	 
@@ -38,9 +35,6 @@ public interface CarRepository extends JpaRepository<Car, Integer>{
 	 
 	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description, disc.percentage from car c , discount disc where c.discount_id = disc.id and c.discount_id != '0'")
 	  List<TrendCar> discountCarList();
-<<<<<<< HEAD
 
-=======
->>>>>>> 90ac7ba07cb67b28613042a7169afef045222db5
 	
 }
