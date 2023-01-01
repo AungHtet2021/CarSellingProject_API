@@ -27,9 +27,6 @@ import com.carSelling.CarSelling.entity.TrendCar;
 public interface CarRepository extends JpaRepository<Car, Integer>{
 
 
-
-
-
 	 @Query(nativeQuery = true, value ="select c.id,c.description from car c")
 	  List<CarData> carDetailList();
 	 

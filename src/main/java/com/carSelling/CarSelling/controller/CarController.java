@@ -65,6 +65,7 @@ public class CarController {
 	@GetMapping("/CarDetailsList")
 	public ResponseEntity<List<CarData>> getCarDetailLists() {
 		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
+
 	}
 	
 	@GetMapping("/trend")
@@ -75,7 +76,12 @@ public class CarController {
 	@GetMapping("/discount")
 	public ResponseEntity<List<TrendCar>> getDiscountCarLists() {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getDiscountCarLists(), HttpStatus.OK);
+
 	}
+	
+
+	
+
 	
 
 //	public Object getCarDetails() {
