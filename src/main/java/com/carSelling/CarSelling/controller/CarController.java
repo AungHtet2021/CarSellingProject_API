@@ -19,13 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.carSelling.CarSelling.entity.Car;
-import com.carSelling.CarSelling.entity.CarDetails;
+import com.carSelling.CarSelling.entity.CarData;
+import com.carSelling.CarSelling.entity.TrendCar;
 import com.carSelling.CarSelling.repository.CarRepository;
 import com.carSelling.CarSelling.service.CarService;
 import com.carSelling.CarSelling.service.JoinQueryService;
 import com.carSelling.CarSelling.service.StorageService;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 
 @RestController
 @RequestMapping("/car")
@@ -65,8 +64,18 @@ public class CarController {
 	}
 	
 	@GetMapping("/CarDetailsList")
-	public ResponseEntity<List<CarDetails>> getCarDetailLists() {
-		return new ResponseEntity<List<CarDetails>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
+	public ResponseEntity<List<CarData>> getCarDetailLists() {
+		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
+	}
+	
+	@GetMapping("/trend")
+	public ResponseEntity<List<TrendCar>> getTrendCarLists() {
+		return new ResponseEntity<List<TrendCar>>(joinQueryService.getTrendCarLists(), HttpStatus.OK);
+	}
+	
+	@GetMapping("/discount")
+	public ResponseEntity<List<TrendCar>> getDiscountCarLists() {
+		return new ResponseEntity<List<TrendCar>>(joinQueryService.getDiscountCarLists(), HttpStatus.OK);
 	}
 	
 //	public Object getCarDetails() {
