@@ -26,6 +26,7 @@ import com.carSelling.CarSelling.service.CarService;
 import com.carSelling.CarSelling.service.JoinQueryService;
 import com.carSelling.CarSelling.service.StorageService;
 
+
 @RestController
 @RequestMapping("/car")
 public class CarController {
@@ -71,6 +72,10 @@ public class CarController {
 	@GetMapping("/trend")
 	public ResponseEntity<List<TrendCar>> getTrendCarLists() {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getTrendCarLists(), HttpStatus.OK);
+	}
+	@GetMapping("/brand")
+	public ResponseEntity<List<TrendCar>> getBrandCarLists() {
+		return new ResponseEntity<List<TrendCar>>(joinQueryService.getBrandCarLists(), HttpStatus.OK);
 	}
 	
 	@GetMapping("/discount")
