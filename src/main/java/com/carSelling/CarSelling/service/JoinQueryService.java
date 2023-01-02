@@ -40,4 +40,10 @@ public class JoinQueryService {
 
 	}
 
+	public List<TrendCar> getUsedCarLists() {
+		// TODO Auto-generated method stub
+		List<TrendCar>lists=carRepository.UsedCarList();
+		return lists;
+	}
+
 }

@@ -77,6 +77,10 @@ public class CarController {
 	public ResponseEntity<List<TrendCar>> getBrandCarLists() {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getBrandCarLists(), HttpStatus.OK);
 	}
+	@GetMapping("/used")
+	public ResponseEntity<List<TrendCar>> getUsedCarLists() {
+		return new ResponseEntity<List<TrendCar>>(joinQueryService.getUsedCarLists(), HttpStatus.OK);
+	}
 	
 	@GetMapping("/discount")
 	public ResponseEntity<List<TrendCar>> getDiscountCarLists() {

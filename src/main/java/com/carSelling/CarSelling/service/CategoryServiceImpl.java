@@ -7,7 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.carSelling.CarSelling.entity.Category;
 import com.carSelling.CarSelling.repository.CategoryRepository;
+
+import lombok.Data;
 @Service
+
 public class CategoryServiceImpl implements CategoryService{
  @Autowired
  CategoryRepository categoryRepository;
