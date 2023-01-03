@@ -36,9 +36,7 @@ public class CarController {
 	@Autowired
 	JoinQueryService joinQueryService;
 	
-	  @Autowired
-	    CarRepository carRepository;
-	  
+
 	@Autowired
 	StorageService storageService;
 	
@@ -50,8 +48,8 @@ public class CarController {
 		} else {
 			return "There is no car list";
 		}
-
 	}
+	
 	
 	@GetMapping("/{car_id}")
 	public ResponseEntity<Car> getCar(
@@ -67,7 +65,10 @@ public class CarController {
 	@GetMapping("/CarDetailsList")
 	public ResponseEntity<List<CarData>> getCarDetailLists() {
 		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
+
 	}
+	
+
 	
 	@GetMapping("/trend")
 	public ResponseEntity<List<TrendCar>> getTrendCarLists() {
@@ -85,8 +86,16 @@ public class CarController {
 	@GetMapping("/discount")
 	public ResponseEntity<List<TrendCar>> getDiscountCarLists() {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getDiscountCarLists(), HttpStatus.OK);
+
 	}
 	
+
+	
+
+	
+
+	
+
 //	public Object getCarDetails() {
 //		List<CarDetails> carLists = carService.join();
 //		if(carLists.size() > 0) {
@@ -96,7 +105,7 @@ public class CarController {
 //		}
 //
 //	}
-//	
+
 	
 //    @GetMapping("/carDetails/{id}")
 //    public String index(@PathVariable("id")Integer id, Model model) {
@@ -111,6 +120,7 @@ public class CarController {
     
 	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Car> createCategory(@RequestBody Car car){
+		
 		Car newCar=carService.create(car);
 		return new ResponseEntity<Car>(newCar,HttpStatus.OK);
 	}
