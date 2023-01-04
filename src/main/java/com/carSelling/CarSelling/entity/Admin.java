@@ -67,6 +67,7 @@ public class Admin implements java.io.Serializable{
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
 
+
 	public String getImagePath() {
 		// TODO Auto-generated method stub
 		return null;
@@ -136,5 +137,56 @@ public class Admin implements java.io.Serializable{
 		// TODO Auto-generated method stub
 		
 	}
+
+//	private LocalDateTime updatedAt;
+
+//	public int getId() {
+//		return id;
+//	}
+//
+//	public void setId(int id) {
+//		this.id = id;
+//	}
+//
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//
+//	public String getPassword() {
+//		return password;
+//	}
+//
+//	public void setPassword(String password) {
+//		this.password = password;
+//	}
+//
+//	public String getGmail() {
+//		return gmail;
+//	}
+//
+//	public void setGmail(String gmail) {
+//		this.gmail = gmail;
+//	}
+//
+//	public LocalDateTime getCreatedAt() {
+//		return createdAt;
+//	}
+//
+//	public void setCreatedAt(LocalDateTime createdAt) {
+//		this.createdAt = createdAt;
+//	}
+
+//	public LocalDateTime getUpdatedAt() {
+//		return updatedAt;
+//	}
+//
+//	public void setUpdatedAt(LocalDateTime updatedAt) {
+//		this.updatedAt = updatedAt;
+//	}
+
 	
 }

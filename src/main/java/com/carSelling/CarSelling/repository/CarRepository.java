@@ -42,6 +42,7 @@ public interface CarRepository extends JpaRepository<Car, Integer>{
 	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description , disc.percentage  from car c , discount disc  where c.discount_id =disc.id and c.status  = '1'")
 	  List<TrendCar> UsedCarList();
 
+
 	
 
 }

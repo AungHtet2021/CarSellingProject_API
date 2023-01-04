@@ -61,6 +61,7 @@ public class User implements java.io.Serializable{
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
 
+
 	public String getImagePath() {
 		// TODO Auto-generated method stub
 		return null;
@@ -117,6 +118,7 @@ public class User implements java.io.Serializable{
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
+
 
 	
 }
