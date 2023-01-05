@@ -36,10 +36,10 @@ public interface CarRepository extends JpaRepository<Car, Integer>{
 	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description, disc.percentage from car c , discount disc where c.discount_id = disc.id and c.discount_id != '0'")
 	  List<TrendCar> discountCarList();
 
-	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description , disc.percentage  from car c ,discount disc  where c.discount_id =disc.id and c.status  = '2'")
+	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description , disc.percentage  from car c left join discount disc on c.discount_id = disc.id where c.status='1'")
 	  List<TrendCar> BrandCarList();
 
-	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description , disc.percentage  from car c , discount disc  where c.discount_id =disc.id and c.status  = '1'")
+	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description , disc.percentage  from car c left join discount disc on c.discount_id = disc.id where c.status='2'")
 	  List<TrendCar> UsedCarList();
 
 
