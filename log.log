@@ -5880,3 +5880,23 @@ This generated password is for development use only. Your security configuration
 2023-01-06 17:58:33.931 DEBUG 15244 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 5, 3, 4 (truncated)...]
 2023-01-06 17:58:33.933 DEBUG 15244 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2023-01-06 17:58:33.937 DEBUG 15244 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 17:58:48.835 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 17:58:48.836 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 17:58:48.837 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 17:58:48.840 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 17:58:48.841 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 17:58:48.841 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 17:58:48.842 DEBUG 15244 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 17:58:48.843 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 17:58:48.843 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 17:58:48 MMT 2023, status=404, error=Not Found, path=/car/detail/6}]
+2023-01-06 17:58:48.845 DEBUG 15244 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 17:58:48.865 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 17:58:48.866 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 17:58:48.867 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 17:58:48.869 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 17:58:48.870 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 17:58:48.872 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 17:58:48.873 DEBUG 15244 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 17:58:48.874 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 17:58:48.875 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 17:58:48 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 17:58:48.876 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
