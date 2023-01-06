@@ -67,6 +67,9 @@ public class Admin implements java.io.Serializable{
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
 
+
+	
+
 //	private LocalDateTime updatedAt;
 
 //	public int getId() {
@@ -116,5 +119,6 @@ public class Admin implements java.io.Serializable{
 //	public void setUpdatedAt(LocalDateTime updatedAt) {
 //		this.updatedAt = updatedAt;
 //	}
+
 	
 }

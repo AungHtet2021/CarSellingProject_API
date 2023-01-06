@@ -41,6 +41,7 @@ public class CarServiceImpl implements CarService{
 		toUpdateCar.setPrice(car.getPrice());
 		toUpdateCar.setWaitingTime(car.getWaitingTime());
 		toUpdateCar.setIsPublic(car.getIsPublic());
+		toUpdateCar.setAvailableTestDrive(car.getAvailableTestDrive());
 		toUpdateCar.setDescription(car.getDescription());
 		toUpdateCar.setImagePath(car.getImagePath());
 		toUpdateCar.setUpdatedAt(LocalDateTime.now());

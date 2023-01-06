@@ -2,6 +2,7 @@ package com.carSelling.CarSelling.service;
 import java.util.List;
 
 import com.carSelling.CarSelling.entity.Car;
+import com.carSelling.CarSelling.entity.CarDetails;
 
 public interface CarService {
 	
@@ -10,7 +11,6 @@ public interface CarService {
 	public Car create(Car car);
 	public Car update(int id, Car car);
 	public boolean delete(int id);
-
 
 
 //	public List<CarDetails> join();

@@ -33,5 +33,17 @@ public class JoinQueryService {
 		return lists;
 	}
 
+	public List<TrendCar> getBrandCarLists() {
+		// TODO Auto-generated method stub
+		List<TrendCar>lists=carRepository.BrandCarList();
+		return lists;
+
+	}
+
+	public List<TrendCar> getUsedCarLists() {
+		// TODO Auto-generated method stub
+		List<TrendCar>lists=carRepository.UsedCarList();
+		return lists;
+	}
 
 }

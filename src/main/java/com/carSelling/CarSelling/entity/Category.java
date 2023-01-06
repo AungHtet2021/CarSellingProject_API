@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-@Data
+
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,6 +29,22 @@ import lombok.ToString;
 
 public class Category implements java.io.Serializable {
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
 	private static final long serialVersionUID = 1L;
 	
 	@Id
