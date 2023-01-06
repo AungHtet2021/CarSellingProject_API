@@ -36,6 +36,7 @@ public class Brand implements java.io.Serializable {
 	@NotBlank(message = "Required ")
 	private String produceCountry;
 
+
 //	public Integer getId() {
 //		// TODO Auto-generated method stub
 //		return null;
@@ -60,6 +61,7 @@ public class Brand implements java.io.Serializable {
 //		// TODO Auto-generated method stub
 //		
 //	}
+
 }
 
 

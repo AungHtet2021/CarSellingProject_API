@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.carSelling.CarSelling.entity.CarData;
+import com.carSelling.CarSelling.entity.CarDetail;
 import com.carSelling.CarSelling.entity.TrendCar;
 import com.carSelling.CarSelling.repository.CarRepository;
 
@@ -17,7 +18,11 @@ public class JoinQueryService {
 	@Autowired
 	private CarRepository carRepository;
 
-
+	public CarDetail getCarDetail(int carId) {
+		CarDetail list = carRepository.CarDetail(carId);
+		return list;
+		}
+	
 	public List<CarData> getCarDetailLists() {
 	List<CarData> list = carRepository.carDetailList();
 	return list;

@@ -16,70 +16,13 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-
+@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 
 public class Discount implements java.io.Serializable {
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getDiscountName() {
-		return discountName;
-	}
-
-	public void setDiscountName(String discountName) {
-		this.discountName = discountName;
-	}
-
-	public String getPercentage() {
-		return percentage;
-	}
-
-	public void setPercentage(String percentage) {
-		this.percentage = percentage;
-	}
-
-	public String getFromDate() {
-		return fromDate;
-	}
-
-	public void setFromDate(String fromDate) {
-		this.fromDate = fromDate;
-	}
-
-	public String getToDate() {
-		return toDate;
-	}
-
-	public void setToDate(String toDate) {
-		this.toDate = toDate;
-	}
-
-	public LocalDateTime getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(LocalDateTime createdAt) {
-		this.createdAt = createdAt;
-	}
-
-	public LocalDateTime getUpdatedAt() {
-		return updatedAt;
-	}
-
-	public void setUpdatedAt(LocalDateTime updatedAt) {
-		this.updatedAt = updatedAt;
-	}
-
 	private static final long serialVersionUID = 1L;
 
 	@Id
