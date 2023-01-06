@@ -51,7 +51,6 @@ public class CarController {
 		}
 	}
 	
-	
 	@GetMapping("/{car_id}")
 	public ResponseEntity<Car> getCar(
 			@PathVariable("car_id") int carId
