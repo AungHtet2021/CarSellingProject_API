@@ -36,30 +36,6 @@ public class Brand implements java.io.Serializable {
 	@NotBlank(message = "Required ")
 	private String produceCountry;
 
-	public Integer getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Object getBrandName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void setBrandName(Object brandName2) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public Object getProduceCountry() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void setProduceCountry(Object produceCountry2) {
-		// TODO Auto-generated method stub
-		
-	}
 }
 
 
