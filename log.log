@@ -5900,3 +5900,487 @@ This generated password is for development use only. Your security configuration
 2023-01-06 17:58:48.874 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
 2023-01-06 17:58:48.875 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 17:58:48 MMT 2023, status=404, error=Not Found, path=/carundefined}]
 2023-01-06 17:58:48.876 DEBUG 15244 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:22:23.463  INFO 13464 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.3 on DESKTOP-300RN1B with PID 13464 (D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi\target\classes started by DELL in D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi)
+2023-01-06 18:22:23.465  INFO 13464 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-06 18:22:24.108  INFO 13464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-06 18:22:24.175  INFO 13464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 7 JPA repository interfaces.
+2023-01-06 18:22:25.118  INFO 13464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-06 18:22:25.131  INFO 13464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-06 18:22:25.132  INFO 13464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-06 18:22:25.255  INFO 13464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-06 18:22:25.255  INFO 13464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1729 ms
+2023-01-06 18:22:25.455  INFO 13464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-06 18:22:25.519  INFO 13464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-06 18:22:25.726  INFO 13464 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-06 18:22:25.850  INFO 13464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-06 18:22:26.014  INFO 13464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-06 18:22:26.033  INFO 13464 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-06 18:22:26.878  INFO 13464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-06 18:22:26.885  INFO 13464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-06 18:22:27.534  WARN 13464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-06 18:22:27.601  WARN 13464 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 96fd3596-e0c8-472c-a027-f059bf49a10f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-06 18:22:27.765 DEBUG 13464 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 51 mappings in 'requestMappingHandlerMapping'
+2023-01-06 18:22:27.855 DEBUG 13464 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-01-06 18:22:27.863  WARN 13464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:22:27.864  INFO 13464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2023-01-06 18:22:27.864  WARN 13464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:22:27.864  INFO 13464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2023-01-06 18:22:27.864  WARN 13464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:22:27.864  INFO 13464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2023-01-06 18:22:27.915  INFO 13464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61555218, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fcf73b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@fa689db, org.springframework.security.web.header.HeaderWriterFilter@236f3885, org.springframework.security.web.authentication.logout.LogoutFilter@e08d871, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b170692, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75df4b1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b80bb63, org.springframework.security.web.session.SessionManagementFilter@71817f66, org.springframework.security.web.access.ExceptionTranslationFilter@7df23848, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@447630c4]
+2023-01-06 18:22:27.981 DEBUG 13464 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-06 18:22:28.027 DEBUG 13464 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-06 18:22:28.139  INFO 13464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-06 18:22:28.148  INFO 13464 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.161 seconds (JVM running for 5.611)
+2023-01-06 18:22:41.046  INFO 13464 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-06 18:22:41.046  INFO 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-06 18:22:41.046 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-06 18:22:41.046 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-01-06 18:22:41.046 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-01-06 18:22:41.049 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3182143c
+2023-01-06 18:22:41.050 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@47e70f54
+2023-01-06 18:22:41.051 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-06 18:22:41.051  INFO 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-01-06 18:22:41.086 DEBUG 13464 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getTrendCarLists()
+2023-01-06 18:22:41.093 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:22:41.103 DEBUG 13464 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/trend", parameters={}
+2023-01-06 18:22:41.103 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:22:41.105 DEBUG 13464 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getTrendCarLists()
+2023-01-06 18:22:41.107 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:22:41.113 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:22:41.117 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:22:41.120 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:22:41.122 DEBUG 13464 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:22:41.153 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:22:41.154 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:22:41 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:22:41.210 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:22:41.224 DEBUG 13464 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:22:41.226 DEBUG 13464 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@15faf0 (truncated)...]
+2023-01-06 18:22:41.245 DEBUG 13464 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:41.255 DEBUG 13464 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.257 DEBUG 13464 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.257 DEBUG 13464 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672320940_1200x-1.jpg", parameters={}
+2023-01-06 18:22:41.257 DEBUG 13464 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672380159_compositor.jfif", parameters={}
+2023-01-06 18:22:41.258 DEBUG 13464 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.258 DEBUG 13464 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.258 DEBUG 13464 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.259 DEBUG 13464 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672570246_2022-Toyota-Land-Cruiser-300-exterior.jpg", parameters={}
+2023-01-06 18:22:41.260 DEBUG 13464 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.260 DEBUG 13464 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672887705_bmw-banner-xseries-1.jpg", parameters={}
+2023-01-06 18:22:41.260 DEBUG 13464 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.259 DEBUG 13464 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.261 DEBUG 13464 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.261 DEBUG 13464 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672584283_CKS_9844.jpg", parameters={}
+2023-01-06 18:22:41.261 DEBUG 13464 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.262 DEBUG 13464 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672906115_car.jfif", parameters={}
+2023-01-06 18:22:41.262 DEBUG 13464 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.263 DEBUG 13464 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.284 DEBUG 13464 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:22:41.284 DEBUG 13464 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:22:41.284 DEBUG 13464 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:22:41.285 DEBUG 13464 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:22:41.284 DEBUG 13464 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:22:41.299 DEBUG 13464 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:22:41.378 DEBUG 13464 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2023-01-06 18:22:41.450 DEBUG 13464 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 72, 0, 72, 0, 0, -1, -37, 0, 67, 0, 6, 4, 5 (truncated)...]
+2023-01-06 18:22:41.452 DEBUG 13464 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:41.462 DEBUG 13464 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:41.479 DEBUG 13464 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.479 DEBUG 13464 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672935470_Bugatti-1.jpg", parameters={}
+2023-01-06 18:22:41.480 DEBUG 13464 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:22:41.492 DEBUG 13464 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:22:41.494 DEBUG 13464 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 7, 7, 7 (truncated)...]
+2023-01-06 18:22:41.496 DEBUG 13464 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:41.501 DEBUG 13464 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 8, 6, 6 (truncated)...]
+2023-01-06 18:22:41.503 DEBUG 13464 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:41.504 DEBUG 13464 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -37, 0, 67, 0, 6, 4, 5, 6, 5, 4, 6, 6, 5, 6, 7, 7, 6, 8, 10, 16, 10, 10, 9, 9, 10, 20, (truncated)...]
+2023-01-06 18:22:41.505 DEBUG 13464 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:41.525 DEBUG 13464 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 5, 3, 4 (truncated)...]
+2023-01-06 18:22:41.535 DEBUG 13464 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:41.543 DEBUG 13464 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, 67, 0, 8, 6, 6,  (truncated)...]
+2023-01-06 18:22:41.556 DEBUG 13464 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:22:42.594 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:22:42.594 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 18:22:42.595 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:22:42.600 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:22:42.601 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:22:42.602 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:22:42.602 DEBUG 13464 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:22:42.603 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:22:42.603 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:22:42 MMT 2023, status=404, error=Not Found, path=/car/detail/6}]
+2023-01-06 18:22:42.604 DEBUG 13464 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:22:42.608 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:22:42.608 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:22:42.609 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:22:42.611 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:22:42.612 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:22:42.614 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:22:42.615 DEBUG 13464 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:22:42.617 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:22:42.618 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:22:42 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:22:42.621 DEBUG 13464 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:25:16.541  INFO 17788 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.3 on DESKTOP-300RN1B with PID 17788 (D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi\target\classes started by DELL in D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi)
+2023-01-06 18:25:16.545  INFO 17788 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-06 18:25:17.250  INFO 17788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-06 18:25:17.323  INFO 17788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 7 JPA repository interfaces.
+2023-01-06 18:25:18.260  INFO 17788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-06 18:25:18.274  INFO 17788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-06 18:25:18.275  INFO 17788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-06 18:25:18.403  INFO 17788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-06 18:25:18.403  INFO 17788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1800 ms
+2023-01-06 18:25:18.615  INFO 17788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-06 18:25:18.678  INFO 17788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-06 18:25:18.861  INFO 17788 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-06 18:25:18.989  INFO 17788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-06 18:25:19.148  INFO 17788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-06 18:25:19.166  INFO 17788 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-06 18:25:19.973  INFO 17788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-06 18:25:19.982  INFO 17788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-06 18:25:20.652  WARN 17788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-06 18:25:20.725  WARN 17788 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 70c39410-b196-4fb7-8f13-a03c855cfd29
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-06 18:25:20.895 DEBUG 17788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 51 mappings in 'requestMappingHandlerMapping'
+2023-01-06 18:25:20.978 DEBUG 17788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-01-06 18:25:20.986  WARN 17788 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:25:20.987  INFO 17788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2023-01-06 18:25:20.988  WARN 17788 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:25:20.988  INFO 17788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2023-01-06 18:25:20.988  WARN 17788 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:25:20.988  INFO 17788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2023-01-06 18:25:21.049  INFO 17788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3cb376a3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7022fb5c, org.springframework.security.web.context.SecurityContextPersistenceFilter@27b7e663, org.springframework.security.web.header.HeaderWriterFilter@539bb233, org.springframework.security.web.authentication.logout.LogoutFilter@be9cc86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@703eead0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68feca3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@426940f9, org.springframework.security.web.session.SessionManagementFilter@73417494, org.springframework.security.web.access.ExceptionTranslationFilter@4f0cdd0f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f02b6d1]
+2023-01-06 18:25:21.120 DEBUG 17788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-06 18:25:21.161 DEBUG 17788 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-06 18:25:21.268  INFO 17788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-06 18:25:21.279  INFO 17788 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.228 seconds (JVM running for 5.683)
+2023-01-06 18:25:26.951  INFO 17788 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-06 18:25:26.951  INFO 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-06 18:25:26.952 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-06 18:25:26.952 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-01-06 18:25:26.952 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-01-06 18:25:26.955 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6ac4f31d
+2023-01-06 18:25:26.955 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@f26cd76
+2023-01-06 18:25:26.956 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-06 18:25:26.956  INFO 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-01-06 18:25:27.017 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:25:27.019 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:25:27.032 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 18:25:27.032 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:25:27.035 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:25:27.035 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:25:27.045 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:25:27.046 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:25:27.050 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:25:27.055 DEBUG 17788 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:25:27.060 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:25:27.061 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:25:27.062 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:25:27.062 DEBUG 17788 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:25:27.100 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:25:27.100 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:25:27.102 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:25:27 MMT 2023, status=404, error=Not Found, path=/car/detail/6}]
+2023-01-06 18:25:27.102 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:25:27 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:25:27.161 DEBUG 17788 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:25:27.161 DEBUG 17788 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:30:14.215  INFO 7840 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.3 on DESKTOP-300RN1B with PID 7840 (D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi\target\classes started by DELL in D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi)
+2023-01-06 18:30:14.217  INFO 7840 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-06 18:30:14.936  INFO 7840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-06 18:30:15.012  INFO 7840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 7 JPA repository interfaces.
+2023-01-06 18:30:15.985  INFO 7840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-06 18:30:15.997  INFO 7840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-06 18:30:15.998  INFO 7840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-06 18:30:16.142  INFO 7840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-06 18:30:16.143  INFO 7840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1861 ms
+2023-01-06 18:30:16.347  INFO 7840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-06 18:30:16.404  INFO 7840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-06 18:30:16.599  INFO 7840 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-06 18:30:16.747  INFO 7840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-06 18:30:16.902  INFO 7840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-06 18:30:16.922  INFO 7840 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-06 18:30:17.776  INFO 7840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-06 18:30:17.784  INFO 7840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-06 18:30:18.510  WARN 7840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-06 18:30:18.573  WARN 7840 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 89fef3f4-f4a8-44c7-8a41-ae9a8f75e71d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-06 18:30:18.736 DEBUG 7840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 51 mappings in 'requestMappingHandlerMapping'
+2023-01-06 18:30:18.813 DEBUG 7840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-01-06 18:30:18.820  WARN 7840 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:30:18.821  INFO 7840 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2023-01-06 18:30:18.822  WARN 7840 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:30:18.823  INFO 7840 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2023-01-06 18:30:18.823  WARN 7840 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:30:18.823  INFO 7840 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2023-01-06 18:30:18.875  INFO 7840 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3435a4e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31434b63, org.springframework.security.web.context.SecurityContextPersistenceFilter@25e24908, org.springframework.security.web.header.HeaderWriterFilter@ad585fb, org.springframework.security.web.authentication.logout.LogoutFilter@3bf41cd0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6130a6f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7772ec28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64d42d3d, org.springframework.security.web.session.SessionManagementFilter@1a22c1ba, org.springframework.security.web.access.ExceptionTranslationFilter@71817f66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f2ab6ec]
+2023-01-06 18:30:18.956 DEBUG 7840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-06 18:30:19.000 DEBUG 7840 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-06 18:30:19.116  INFO 7840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-06 18:30:19.129  INFO 7840 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.391 seconds (JVM running for 5.866)
+2023-01-06 18:30:23.595  INFO 7840 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-06 18:30:23.595  INFO 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-06 18:30:23.596 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-06 18:30:23.596 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-01-06 18:30:23.597 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-01-06 18:30:23.599 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@531b1778
+2023-01-06 18:30:23.600 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@b272860
+2023-01-06 18:30:23.601 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-06 18:30:23.601  INFO 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-01-06 18:30:23.643 DEBUG 7840 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2023-01-06 18:30:23.647 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:30:23.659 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:30:23.659 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 18:30:23.661 DEBUG 7840 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2023-01-06 18:30:23.662 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:30:23.667 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:30:23.668 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:30:23.673 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:30:23.675 DEBUG 7840 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:30:23.710 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:30:23.711 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:30:23 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:30:23.783 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:30:23.824 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:30:23.825 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=6, name=Lexus 20221, brandId=3, categoryId=4, discountId=5, status=2, quantity=1, price=99998 (truncated)...]
+2023-01-06 18:30:23.830 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.634 DEBUG 7840 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getTrendCarLists()
+2023-01-06 18:30:34.634 DEBUG 7840 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/trend", parameters={}
+2023-01-06 18:30:34.635 DEBUG 7840 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getTrendCarLists()
+2023-01-06 18:30:34.637 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:30:34.638 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:30:34.641 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:30:34.644 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:30:34.645 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:30:34.646 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:30:34.647 DEBUG 7840 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:30:34.649 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:30:34.650 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:30:34 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:30:34.654 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:30:34.709 DEBUG 7840 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:30:34.711 DEBUG 7840 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@679f1e (truncated)...]
+2023-01-06 18:30:34.723 DEBUG 7840 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.732 DEBUG 7840 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.732 DEBUG 7840 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.732 DEBUG 7840 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.732 DEBUG 7840 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672320940_1200x-1.jpg", parameters={}
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672570246_2022-Toyota-Land-Cruiser-300-exterior.jpg", parameters={}
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672584283_CKS_9844.jpg", parameters={}
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672887705_bmw-banner-xseries-1.jpg", parameters={}
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672380159_compositor.jfif", parameters={}
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.733 DEBUG 7840 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.734 DEBUG 7840 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.734 DEBUG 7840 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.734 DEBUG 7840 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.735 DEBUG 7840 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.736 DEBUG 7840 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672906115_car.jfif", parameters={}
+2023-01-06 18:30:34.737 DEBUG 7840 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.750 DEBUG 7840 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:30:34.750 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:30:34.751 DEBUG 7840 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:30:34.750 DEBUG 7840 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:30:34.755 DEBUG 7840 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:30:34.763 DEBUG 7840 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:30:34.799 DEBUG 7840 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2023-01-06 18:30:34.858 DEBUG 7840 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.877 DEBUG 7840 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.878 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672935470_Bugatti-1.jpg", parameters={}
+2023-01-06 18:30:34.878 DEBUG 7840 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 7, 7, 7 (truncated)...]
+2023-01-06 18:30:34.879 DEBUG 7840 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:30:34.886 DEBUG 7840 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, 67, 0, 8, 6, 6,  (truncated)...]
+2023-01-06 18:30:34.889 DEBUG 7840 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.880 DEBUG 7840 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.910 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:30:34.915 DEBUG 7840 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -37, 0, 67, 0, 6, 4, 5, 6, 5, 4, 6, 6, 5, 6, 7, 7, 6, 8, 10, 16, 10, 10, 9, 9, 10, 20, (truncated)...]
+2023-01-06 18:30:34.915 DEBUG 7840 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 72, 0, 72, 0, 0, -1, -37, 0, 67, 0, 6, 4, 5 (truncated)...]
+2023-01-06 18:30:34.927 DEBUG 7840 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.931 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 8, 6, 6 (truncated)...]
+2023-01-06 18:30:34.931 DEBUG 7840 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.934 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:34.942 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 5, 3, 4 (truncated)...]
+2023-01-06 18:30:34.945 DEBUG 7840 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:36.171 DEBUG 7840 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2023-01-06 18:30:36.172 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 18:30:36.173 DEBUG 7840 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCar(int)
+2023-01-06 18:30:36.183 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:30:36.183 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Car(id=6, name=Lexus 20221, brandId=3, categoryId=4, discountId=5, status=2, quantity=1, price=99998 (truncated)...]
+2023-01-06 18:30:36.186 DEBUG 7840 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:30:36.193 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:30:36.194 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:30:36.195 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:30:36.196 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:30:36.197 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:30:36.199 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:30:36.200 DEBUG 7840 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:30:36.203 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:30:36.204 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:30:36 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:30:36.206 DEBUG 7840 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:40:00.919 DEBUG 7840 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:40:00.919 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672320940_1200x-1.jpg", parameters={}
+2023-01-06 18:40:00.920 DEBUG 7840 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:40:00.939 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:40:00.946 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 72, 0, 72, 0, 0, -1, -37, 0, 67, 0, 6, 4, 5 (truncated)...]
+2023-01-06 18:40:00.948 DEBUG 7840 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:08.408  INFO 10048 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.3 on DESKTOP-300RN1B with PID 10048 (D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi\target\classes started by DELL in D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi)
+2023-01-06 18:53:08.411  INFO 10048 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-06 18:53:09.157  INFO 10048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-06 18:53:09.261  INFO 10048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 7 JPA repository interfaces.
+2023-01-06 18:53:10.388  INFO 10048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-06 18:53:10.404  INFO 10048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-06 18:53:10.404  INFO 10048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-06 18:53:10.549  INFO 10048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-06 18:53:10.549  INFO 10048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2065 ms
+2023-01-06 18:53:10.735  INFO 10048 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-06 18:53:10.801  INFO 10048 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-06 18:53:11.001  INFO 10048 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-06 18:53:11.135  INFO 10048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-06 18:53:11.336  INFO 10048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-06 18:53:11.362  INFO 10048 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-06 18:53:12.256  INFO 10048 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-06 18:53:12.265  INFO 10048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-06 18:53:12.949  WARN 10048 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-06 18:53:13.011  WARN 10048 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fb32a043-e100-48a8-b475-bb479714fcd0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-06 18:53:13.177 DEBUG 10048 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 52 mappings in 'requestMappingHandlerMapping'
+2023-01-06 18:53:13.268 DEBUG 10048 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-01-06 18:53:13.276  WARN 10048 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:53:13.277  INFO 10048 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2023-01-06 18:53:13.278  WARN 10048 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:53:13.278  INFO 10048 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2023-01-06 18:53:13.278  WARN 10048 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-06 18:53:13.279  INFO 10048 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2023-01-06 18:53:13.346  INFO 10048 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61555218, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fcf73b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@fa689db, org.springframework.security.web.header.HeaderWriterFilter@236f3885, org.springframework.security.web.authentication.logout.LogoutFilter@e08d871, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b170692, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75df4b1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b80bb63, org.springframework.security.web.session.SessionManagementFilter@71817f66, org.springframework.security.web.access.ExceptionTranslationFilter@7df23848, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@447630c4]
+2023-01-06 18:53:13.426 DEBUG 10048 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-06 18:53:13.469 DEBUG 10048 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-06 18:53:13.588  INFO 10048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-06 18:53:13.600  INFO 10048 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.721 seconds (JVM running for 6.169)
+2023-01-06 18:53:18.324  INFO 10048 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-06 18:53:18.324  INFO 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-06 18:53:18.324 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-06 18:53:18.324 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-01-06 18:53:18.325 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-01-06 18:53:18.326 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3182143c
+2023-01-06 18:53:18.327 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@47e70f54
+2023-01-06 18:53:18.327 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-06 18:53:18.328  INFO 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-01-06 18:53:18.364 DEBUG 10048 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCarDetail(int)
+2023-01-06 18:53:18.368 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:18.377 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:53:18.377 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 18:53:18.380 DEBUG 10048 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCarDetail(int)
+2023-01-06 18:53:18.380 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:18.389 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:53:18.391 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:53:18.396 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:53:18.398 DEBUG 10048 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:53:18.434 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:18.435 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:53:18 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:53:18.498 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:53:18.524 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:18.524 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2023-01-06 18:53:18.525 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:23.531 DEBUG 10048 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCarDetail(int)
+2023-01-06 18:53:23.532 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 18:53:23.533 DEBUG 10048 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCarDetail(int)
+2023-01-06 18:53:23.536 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:23.536 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2023-01-06 18:53:23.537 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:23.563 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:23.564 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:53:23.565 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:23.568 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:53:23.569 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:53:23.570 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:53:23.571 DEBUG 10048 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:53:23.574 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:23.576 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:53:23 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:53:23.580 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:53:29.756 DEBUG 10048 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getTrendCarLists()
+2023-01-06 18:53:29.757 DEBUG 10048 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/car/trend", parameters={}
+2023-01-06 18:53:29.757 DEBUG 10048 --- [http-nio-8088-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getTrendCarLists()
+2023-01-06 18:53:29.758 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:29.759 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:53:29.760 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:29.761 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:53:29.762 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:53:29.764 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:53:29.765 DEBUG 10048 --- [http-nio-8088-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:53:29.766 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:29.767 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:53:29 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:53:29.768 DEBUG 10048 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-06 18:53:29.773 DEBUG 10048 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:29.774 DEBUG 10048 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@67676d (truncated)...]
+2023-01-06 18:53:29.786 DEBUG 10048 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:29.802 DEBUG 10048 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.803 DEBUG 10048 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672320940_1200x-1.jpg", parameters={}
+2023-01-06 18:53:29.802 DEBUG 10048 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.804 DEBUG 10048 --- [http-nio-8088-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.804 DEBUG 10048 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672380159_compositor.jfif", parameters={}
+2023-01-06 18:53:29.804 DEBUG 10048 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.804 DEBUG 10048 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.804 DEBUG 10048 --- [http-nio-8088-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.805 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672570246_2022-Toyota-Land-Cruiser-300-exterior.jpg", parameters={}
+2023-01-06 18:53:29.805 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672887705_bmw-banner-xseries-1.jpg", parameters={}
+2023-01-06 18:53:29.805 DEBUG 10048 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.805 DEBUG 10048 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.806 DEBUG 10048 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.806 DEBUG 10048 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672584283_CKS_9844.jpg", parameters={}
+2023-01-06 18:53:29.807 DEBUG 10048 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.807 DEBUG 10048 --- [http-nio-8088-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.809 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672906115_car.jfif", parameters={}
+2023-01-06 18:53:29.810 DEBUG 10048 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.827 DEBUG 10048 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:53:29.827 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:53:29.827 DEBUG 10048 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:53:29.828 DEBUG 10048 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:53:29.839 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:53:29.839 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:53:29.863 DEBUG 10048 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 4, 4, 4 (truncated)...]
+2023-01-06 18:53:29.904 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 7, 7, 7 (truncated)...]
+2023-01-06 18:53:29.918 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:29.922 DEBUG 10048 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.923 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/car/media/jpg/1672935470_Bugatti-1.jpg", parameters={}
+2023-01-06 18:53:29.923 DEBUG 10048 --- [http-nio-8088-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 1, 0, 72, 0, 72, 0, 0, -1, -37, 0, 67, 0, 6, 4, 5 (truncated)...]
+2023-01-06 18:53:29.926 DEBUG 10048 --- [http-nio-8088-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getPoster(String, String)
+2023-01-06 18:53:29.938 DEBUG 10048 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:29.939 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:image/jpeg' in response
+2023-01-06 18:53:29.955 DEBUG 10048 --- [http-nio-8088-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:29.962 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, 67, 0, 8, 6, 6,  (truncated)...]
+2023-01-06 18:53:29.964 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 5, 3, 4 (truncated)...]
+2023-01-06 18:53:29.966 DEBUG 10048 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:29.966 DEBUG 10048 --- [http-nio-8088-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:29.997 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -32, 0, 16, 74, 70, 73, 70, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, -1, -37, 0, -124, 0, 8, 6, 6 (truncated)...]
+2023-01-06 18:53:30.002 DEBUG 10048 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{-1, -40, -1, -37, 0, 67, 0, 6, 4, 5, 6, 5, 4, 6, 6, 5, 6, 7, 7, 6, 8, 10, 16, 10, 10, 9, 9, 10, 20, (truncated)...]
+2023-01-06 18:53:30.003 DEBUG 10048 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:30.005 DEBUG 10048 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:31.315 DEBUG 10048 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCarDetail(int)
+2023-01-06 18:53:31.316 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/car/detail/6", parameters={}
+2023-01-06 18:53:31.316 DEBUG 10048 --- [http-nio-8088-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.CarController#getCarDetail(int)
+2023-01-06 18:53:31.321 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:31.322 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2023-01-06 18:53:31.322 DEBUG 10048 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-06 18:53:31.333 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:31.334 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/carundefined", parameters={}
+2023-01-06 18:53:31.334 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-06 18:53:31.335 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-06 18:53:31.335 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-06 18:53:31.336 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-06 18:53:31.337 DEBUG 10048 --- [http-nio-8088-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-01-06 18:53:31.339 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-06 18:53:31.339 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Jan 06 18:53:31 MMT 2023, status=404, error=Not Found, path=/carundefined}]
+2023-01-06 18:53:31.343 DEBUG 10048 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404

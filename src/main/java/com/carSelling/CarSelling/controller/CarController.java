@@ -62,6 +62,7 @@ public class CarController {
 		return ResponseEntity.ok().body(car);
 	}
 	
+	
 	@GetMapping("/CarDetailsList")
 	public ResponseEntity<List<CarData>> getCarDetailLists() {
 		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
