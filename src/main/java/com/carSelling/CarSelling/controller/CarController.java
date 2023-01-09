@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.entity.CarData;
+import com.carSelling.CarSelling.entity.CarDetail;
 import com.carSelling.CarSelling.entity.TrendCar;
 import com.carSelling.CarSelling.repository.CarRepository;
 import com.carSelling.CarSelling.service.CarService;
@@ -61,6 +62,13 @@ public class CarController {
 		return ResponseEntity.ok().body(car);
 	}
 	
+	
+	@GetMapping("/detail/{car_id}")
+	public ResponseEntity <CarDetail> getCarDetail(
+			@PathVariable("car_id") int carId
+	) {
+		return new ResponseEntity <CarDetail> (joinQueryService.getCarDetail(carId), HttpStatus.OK);
+	}
 	
 	@GetMapping("/CarDetailsList")
 	public ResponseEntity<List<CarData>> getCarDetailLists() {
