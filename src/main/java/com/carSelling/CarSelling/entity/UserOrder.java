@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+//import javax.persistence.JoinColumn;
+//import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.annotations.ColumnDefault;
@@ -26,7 +28,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 
-public class Order implements java.io.Serializable{
+public class UserOrder implements java.io.Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
@@ -36,11 +38,15 @@ public class Order implements java.io.Serializable{
 
 	@Column(nullable = false)
 	@NotBlank(message = "Required")
+//	   @ManyToOne
+//	    @JoinColumn(name = "customer_id")
 	private int carId;
 	
 	
 	@Column(nullable = false)
 	@NotBlank(message = "Required")
+//	   @ManyToOne
+//	    @JoinColumn(name = "user_id")
 	private int  userId;
 	
 	@Column(nullable = false)
@@ -54,6 +60,8 @@ public class Order implements java.io.Serializable{
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
+
+	
 
 
 

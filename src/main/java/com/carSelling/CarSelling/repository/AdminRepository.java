@@ -11,7 +11,8 @@ import com.carSelling.CarSelling.entity.Admin;
 @EnableJpaRepositories
 public interface AdminRepository extends JpaRepository<Admin, Integer>{
 	
-
+	public Admin findByGmail(String gmail);
+	public Admin findByName(String name);
 	/*public interface UserRepo extends JpaRepository<User, Integer> {
 
 		public Admin findByGmail(String gmail);

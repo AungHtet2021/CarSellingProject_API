@@ -3,6 +3,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.carSelling.CarSelling.entity.Admin;
@@ -16,6 +17,21 @@ public class AdminServiceImpl implements AdminService{
 
 	@Autowired
 	AdminRepository adminRepository;
+	
+	@Autowired
+	PasswordEncoder passwordEncoder;
+	
+	public Admin checkLoginAdmin(String gmail, String password) {
+		Admin admin=adminRepository.findByGmail(gmail);
+		if(admin==null) {
+			return null;
+		}
+		if(!passwordEncoder.matches(password, admin.getPassword())) {
+			return null;
+		}
+		return admin;
+	}
+	
 	
 	@Override
 	public List<Admin> getAll() {

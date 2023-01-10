@@ -25,6 +25,7 @@ import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.entity.Admin;
 import com.carSelling.CarSelling.entity.Brand;
 import com.carSelling.CarSelling.entity.Discount;
+import com.carSelling.CarSelling.entity.LoginRequest;
 import com.carSelling.CarSelling.entity.User;
 import com.carSelling.CarSelling.service.CategoryService;
 import com.carSelling.CarSelling.service.AdminService;
@@ -42,6 +43,15 @@ public class AdminController {
 	
 	@Autowired
 	StorageService  storageService;
+	
+	@PostMapping("/login")
+	public ResponseEntity<Admin> login(@Valid @RequestBody LoginRequest loginRequest){
+		Admin admin=adminService.checkLoginAdmin(loginRequest.getGmail(),loginRequest.getPassword());
+		if(admin==null) {
+			return ResponseEntity.badRequest().build();
+		}
+		return ResponseEntity.ok().body(admin);
+	}
 
 	@PostMapping("/create")
 	public ResponseEntity<?> createAdmin(@Valid @RequestBody Admin Admin) {
