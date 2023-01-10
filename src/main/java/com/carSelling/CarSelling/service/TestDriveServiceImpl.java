@@ -1,5 +1,6 @@
 package com.carSelling.CarSelling.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,8 @@ public class TestDriveServiceImpl implements TestDriveService{
 			original.setGmail(testDrive.getGmail());
 			original.setGender(testDrive.getGender());
 			original.setCountry(testDrive.getCountry());
-			original.setDate(testDrive.getDate());
+			original.setRequestDate(testDrive.getRequestDate());
+			original.setCreatedAt(LocalDateTime.now());
 			original=testDriveRepository.save(original);
 		}
 		return original;

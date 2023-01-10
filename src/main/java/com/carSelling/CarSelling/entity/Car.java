@@ -32,7 +32,7 @@ public class Car implements java.io.Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int orderId;
+	private int id;
 
 	@Column(length = 50, nullable = false, unique = true)
 	@NotBlank(message = "Required")
