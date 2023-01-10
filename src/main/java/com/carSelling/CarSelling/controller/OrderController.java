@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.carSelling.CarSelling.entity.Car;
-import com.carSelling.CarSelling.entity.Order;
+import com.carSelling.CarSelling.entity.OrderHistory;
 import com.carSelling.CarSelling.service.OrderService;
 
 
@@ -28,11 +28,15 @@ public class OrderController {
 	OrderService orderService;
 	
 	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Order> createOrder(@RequestBody Order order){
+	public ResponseEntity<OrderHistory> createOrder(@RequestBody String orderHistory){
+
+//		for (OrderHistory order : orderHistory) {
+//			OrderHistory newOrder=orderService.create(order);
+//		}
 //		System.out.println(order);
 //		return null;
-		Order newOrder=orderService.create(order);
-		return new ResponseEntity<Order>(newOrder,HttpStatus.OK);
+
+		return null;
 	}
 	
 }

@@ -26,7 +26,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 
-public class Order implements java.io.Serializable{
+public class OrderHistory implements java.io.Serializable{
 	
 	private static final long serialVersionUID = 1L;
 

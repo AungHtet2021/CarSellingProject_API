@@ -1,11 +1,15 @@
 package com.carSelling.CarSelling.entity;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
+
+import org.hibernate.annotations.ColumnDefault;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -48,9 +52,11 @@ public class TestDrive implements java.io.Serializable{
 	private String phone;
 	
 	@Column(nullable = false)
-	private String date;
+	private String requestDate;
 			
-	
+	@Column(nullable = false)
+	@ColumnDefault("CURRENT_TIMESTAMP")
+	private LocalDateTime createdAt;
 }
 
 
