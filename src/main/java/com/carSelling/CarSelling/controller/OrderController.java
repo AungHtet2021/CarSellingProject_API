@@ -28,15 +28,12 @@ public class OrderController {
 	OrderService orderService;
 	
 	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<OrderHistory> createOrder(@RequestBody String orderHistory){
-
-//		for (OrderHistory order : orderHistory) {
-//			OrderHistory newOrder=orderService.create(order);
-//		}
-//		System.out.println(order);
-//		return null;
-
+	public ResponseEntity<OrderHistory> createOrder(@RequestBody ArrayList<OrderHistory> orderHistory){
+		for (OrderHistory order : orderHistory) {
+			OrderHistory newOrder=orderService.create(order);
+		}
 		return null;
+
 	}
 	
 }

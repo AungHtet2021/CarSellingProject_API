@@ -17,7 +17,7 @@ import com.carSelling.CarSelling.entity.CarDetail;
 public interface CarRepository extends JpaRepository<Car, Integer>{
 
 
-	@Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path,c.video,c.description,c.status,cate.category_name,disc.percentage  from car c left join discount disc on c.discount_id = disc.id left join category cate on c.category_id = cate.id where c.id = " + 6)
+	@Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path,c.video,c.description,c.status,cate.category_name,disc.percentage  from car c left join discount disc on c.discount_id = disc.id left join category cate on c.category_id = cate.id where c.id = :carId")
 	  CarDetail CarDetail(int carId);
 	
 //
