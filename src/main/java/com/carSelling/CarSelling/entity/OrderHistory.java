@@ -35,20 +35,16 @@ public class OrderHistory implements java.io.Serializable{
 	private int orderId;
 
 	@Column(nullable = false)
-	@NotBlank(message = "Required")
 	private int carId;
 	
 	
 	@Column(nullable = false)
-	@NotBlank(message = "Required")
 	private int  userId;
 	
 	@Column(nullable = false)
-	@NotBlank(message = "Required")
 	private int total;
 	
 	@Column(nullable = false)
-	@NotBlank(message = "Required")
 	private int carQuantity;
 
 	@Column(nullable = false)
