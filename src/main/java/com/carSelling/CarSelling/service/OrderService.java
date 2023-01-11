@@ -5,6 +5,6 @@ import com.carSelling.CarSelling.entity.OrderHistory;
 
 public interface OrderService {
 
-	public OrderHistory create(OrderHistory order);
+	public OrderHistory create(OrderHistory order,int maxId);
 	
 }

@@ -11,12 +11,16 @@ import com.carSelling.CarSelling.entity.CarData;
 import com.carSelling.CarSelling.entity.CarDetail;
 import com.carSelling.CarSelling.entity.TrendCar;
 import com.carSelling.CarSelling.repository.CarRepository;
+import com.carSelling.CarSelling.repository.OrderRepository;
 
 @Service
 public class JoinQueryService {
 
 	@Autowired
 	private CarRepository carRepository;
+	
+	@Autowired
+	private OrderRepository orderRepository;
 
 	public CarDetail getCarDetail(int carId) {
 		CarDetail list = carRepository.CarDetail(carId);
@@ -49,6 +53,12 @@ public class JoinQueryService {
 		// TODO Auto-generated method stub
 		List<TrendCar>lists=carRepository.UsedCarList();
 		return lists;
+	}
+	
+	public int getMaxOrderId() {
+		// TODO Auto-generated method stub
+		int maxId= orderRepository.getMaxOrderId();
+		return maxId;
 	}
 
 }
