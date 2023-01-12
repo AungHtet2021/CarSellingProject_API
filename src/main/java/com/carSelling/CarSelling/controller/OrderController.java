@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.entity.OrderHistory;
+import com.carSelling.CarSelling.service.JoinQueryService;
 import com.carSelling.CarSelling.service.OrderService;
 
 
@@ -26,13 +27,16 @@ public class OrderController {
 
 	@Autowired
 	OrderService orderService;
+	@Autowired
+	JoinQueryService joinQueryService;
 	
 	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<OrderHistory> createOrder(@RequestBody ArrayList<OrderHistory> orderHistory){
+	public ResponseEntity<String> createOrder(@RequestBody ArrayList<OrderHistory> orderHistory){
+		int maxId =joinQueryService.getMaxOrderId();
 		for (OrderHistory order : orderHistory) {
-			OrderHistory newOrder=orderService.create(order);
+			OrderHistory newOrder=orderService.create(order,maxId + 1);
 		}
-		return null;
+		return ResponseEntity.ok().body("Order Success");
 
 	}
 	

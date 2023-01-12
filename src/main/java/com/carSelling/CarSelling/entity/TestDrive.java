@@ -55,6 +55,9 @@ public class TestDrive implements java.io.Serializable{
 	private String requestDate;
 			
 	@Column(nullable = false)
+	private String carId;
+	
+	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
 }

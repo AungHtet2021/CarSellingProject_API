@@ -23,8 +23,8 @@ public class OrderServiceImpl implements OrderService{
 	OrderRepository orderRepository;
 
 	@Override
-	public OrderHistory create( OrderHistory order) {
-		order.setOrderId(order.getOrderId());
+	public OrderHistory create( OrderHistory order,int maxId) {
+		order.setOrderId(maxId);
 		order.setCarId(order.getCarId());
 		order.setUserId(order.getUserId());
 		order.setCarQuantity(order.getCarQuantity());
