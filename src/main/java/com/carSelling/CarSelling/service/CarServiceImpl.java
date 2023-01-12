@@ -40,6 +40,10 @@ public class CarServiceImpl implements CarService{
 		toUpdateCar.setQuantity(car.getQuantity());
 		toUpdateCar.setPrice(car.getPrice());
 		toUpdateCar.setWaitingTime(car.getWaitingTime());
+		
+		toUpdateCar.setBrandId(car.getBrandId());
+		toUpdateCar.setCategoryId(car.getCategoryId());
+		toUpdateCar.setDiscountId(car.getDiscountId());
 		toUpdateCar.setIsPublic(car.getIsPublic());
 		toUpdateCar.setAvailableTestDrive(car.getAvailableTestDrive());
 		toUpdateCar.setDescription(car.getDescription());
