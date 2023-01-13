@@ -37,6 +37,11 @@ public class JoinQueryService {
 		return lists;
 	}
 	
+	public List<TrendCar> getTestDriveCarLists() {
+		List<TrendCar>lists=carRepository.testDriveCarList();
+		return lists;
+	}
+	
 	public List<TrendCar> getDiscountCarLists() {
 		List<TrendCar> lists = carRepository.discountCarList();
 		return lists;
@@ -60,5 +65,7 @@ public class JoinQueryService {
 		int maxId= orderRepository.getMaxOrderId();
 		return maxId;
 	}
+
+
 
 }

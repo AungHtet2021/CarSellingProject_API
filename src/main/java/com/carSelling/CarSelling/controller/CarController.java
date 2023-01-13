@@ -82,6 +82,12 @@ public class CarController {
 	public ResponseEntity<List<TrendCar>> getTrendCarLists() {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getTrendCarLists(), HttpStatus.OK);
 	}
+	
+	@GetMapping("testdrive")
+	public ResponseEntity<List<TrendCar>> getTestDriveCarLists(){	
+		return new ResponseEntity<List<TrendCar>>(joinQueryService.getTestDriveCarLists(),HttpStatus.OK);
+	}
+	
 	@GetMapping("/brand")
 	public ResponseEntity<List<TrendCar>> getBrandCarLists() {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getBrandCarLists(), HttpStatus.OK);

@@ -31,6 +31,9 @@ public interface CarRepository extends JpaRepository<Car, Integer>{
 	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description, disc.percentage from car c left join discount disc on c.discount_id = disc.id where c.is_public = '1'")
 	  List<TrendCar> trendCarList();
 	 
+	 @Query(nativeQuery = true, value="select c.id,c.name,c.price,c.quantity,c.image_path,c.description,disc.percentage from car c left join discount disc on c.discount_id=disc.id where c.available_test_drive='1'")
+	 List<TrendCar> testDriveCarList();
+	 
 	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description, disc.percentage from car c , discount disc where c.discount_id = disc.id and c.discount_id != '0'")
 	  List<TrendCar> discountCarList();
 
@@ -39,8 +42,5 @@ public interface CarRepository extends JpaRepository<Car, Integer>{
 
 	 @Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path, c.description , disc.percentage  from car c left join discount disc on c.discount_id = disc.id where c.status='2'")
 	  List<TrendCar> UsedCarList();
-
-
-	
 
 }

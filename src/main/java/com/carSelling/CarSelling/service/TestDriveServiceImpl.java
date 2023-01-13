@@ -17,6 +17,7 @@ public class TestDriveServiceImpl implements TestDriveService{
 	@Override
 	public TestDrive create(TestDrive testDrive) {
 		testDrive.setCreatedAt(LocalDateTime.now());
+		testDrive.setCarId(testDrive.getCarId());
 		TestDrive drive=testDriveRepository.save(testDrive);
 		return drive;
 	}
