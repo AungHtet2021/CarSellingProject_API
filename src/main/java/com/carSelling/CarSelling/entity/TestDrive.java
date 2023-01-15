@@ -39,7 +39,7 @@ public class TestDrive implements java.io.Serializable{
 	@NotBlank(message="Required")
 	private String gmail;
 	
-	@Column(length=30,nullable=false,unique=true)
+	@Column(length=30,nullable=false,unique=false)
 	@NotBlank(message="Required")
 	private String gender;
 	
