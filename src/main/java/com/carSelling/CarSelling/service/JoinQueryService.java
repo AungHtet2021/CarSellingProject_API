@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.carSelling.CarSelling.entity.CarData;
 import com.carSelling.CarSelling.entity.CarDetail;
 import com.carSelling.CarSelling.entity.TrendCar;
+import com.carSelling.CarSelling.entity.UserOrderId;
 import com.carSelling.CarSelling.repository.CarRepository;
 import com.carSelling.CarSelling.repository.OrderRepository;
 
@@ -62,10 +63,13 @@ public class JoinQueryService {
 	
 	public int getMaxOrderId() {
 		// TODO Auto-generated method stub
-		int maxId= orderRepository.getMaxOrderId();
+		int maxId= orderRepository.getMaxOrderId() == null ? 0 : orderRepository.getMaxOrderId();
 		return maxId;
 	}
-
-
+	
+	public List<UserOrderId> getOrderIdList(int userId) {
+		List<UserOrderId>lists=orderRepository.getOrderIdList(userId);
+		return lists;
+	}
 
 }
