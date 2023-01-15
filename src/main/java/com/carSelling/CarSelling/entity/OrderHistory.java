@@ -7,6 +7,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
@@ -25,20 +26,18 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-
+@IdClass(OrderHistoryId.class)
 public class OrderHistory implements java.io.Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	
 	private int orderId;
-
-	@Column(nullable = false)
+	
+	@Id
 	private int carId;
 	
-	
-	@Column(nullable = false)
+	@Id
 	private int  userId;
 	
 	@Column(nullable = false)

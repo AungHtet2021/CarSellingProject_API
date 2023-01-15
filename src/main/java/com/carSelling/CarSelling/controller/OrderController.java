@@ -2,6 +2,8 @@ package com.carSelling.CarSelling.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -38,6 +40,15 @@ public class OrderController {
 		}
 		return ResponseEntity.ok().body("Order Success");
 
+	}
+	
+	@GetMapping("/getOrder/{id}")
+	public List getUserOrder(
+			@PathVariable("id") int userId
+	) {
+		List idList =joinQueryService.getOrderIdList(userId);
+		
+		return idList;
 	}
 	
 }
