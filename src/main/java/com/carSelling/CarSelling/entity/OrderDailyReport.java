@@ -5,6 +5,13 @@ public interface OrderDailyReport {
 
 	
 	
+	
+	
+	
+	
+	
+	
+	
 	 int getOrder_id();
 	 int getUser_id();
 	 int getCar_id();
