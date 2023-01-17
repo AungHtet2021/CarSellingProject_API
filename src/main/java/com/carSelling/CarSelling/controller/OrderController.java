@@ -22,6 +22,7 @@ import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.entity.CarData;
 import com.carSelling.CarSelling.entity.OrderDailyReport;
 import com.carSelling.CarSelling.entity.OrderHistory;
+import com.carSelling.CarSelling.entity.User;
 import com.carSelling.CarSelling.entity.UserOrderDetail;
 import com.carSelling.CarSelling.entity.UserOrderId;
 import com.carSelling.CarSelling.service.JoinQueryService;
@@ -61,23 +62,21 @@ public class OrderController {
 		return array_list;
 	}
 	
-	
-//	@GetMapping(value="/get/brands")
-//	public ResponseEntity<List<Brand>> getBrands(){
-//		List<Brand> brands=brandService.getBrands();
-//		return new ResponseEntity<List<Brand>>(brands,HttpStatus.OK);
-//	}
-	
-//	@GetMapping("/CarDetailsList")
-//	public ResponseEntity<List<CarData>> getCarDetailLists() {
-//		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
-//
-//	}
-	
 	@GetMapping("/get/orders")
 	public ResponseEntity <List<OrderDailyReport>> getOrders(){
 //		List orders=joinQueryService.getOrders();
 		return new ResponseEntity<List<OrderDailyReport>>(joinQueryService.getOrders(),HttpStatus.OK);
 	}
 	
+//	@GetMapping(value="/getToDayRegistration/{id}")
+//	public ResponseEntity<List<User>> getToDayRegistration(@PathVariable("id") String date){
+//		return new ResponseEntity<List<User>>(joinQueryService.getToDayRegistration(date +" 00:00:00",date + " 23:59:59"),HttpStatus.OK);                      
+//	
+//	}
+	
+	@GetMapping(value="/getToDayOrder/{id}")
+	public ResponseEntity<List<OrderHistory>> getToDayOrder(@PathVariable("id") String date){
+		
+		return new ResponseEntity<List<OrderHistory>>(joinQueryService.getToDayOrder(date +" 00:00:00",date +" 23:59:59"),HttpStatus.OK);
+	}
 }

@@ -95,4 +95,9 @@ public class JoinQueryService {
 	return lists;
 	}
 
+	public List<OrderHistory> getToDayOrder(String from, String to) {
+		List<OrderHistory >orders=orderRepository.getToDayOrder(from,to);
+		return orders;
+	}
+
 }

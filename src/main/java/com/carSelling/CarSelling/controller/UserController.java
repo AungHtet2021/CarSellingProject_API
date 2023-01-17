@@ -136,6 +136,7 @@ public class UserController {
 	@GetMapping(value="/getToDayRegistration/{id}")
 	public ResponseEntity<List<User>> getToDayRegistration(@PathVariable("id") String date){
 		return new ResponseEntity<List<User>>(joinQueryService.getToDayRegistration(date +" 00:00:00",date + " 23:59:59"),HttpStatus.OK);
+	
 	}
 	
 	

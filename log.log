@@ -1,0 +1,60 @@
+2023-01-18 01:37:34.565  INFO 13240 --- [main] c.c.CarSelling.CarSellingApplication     : Starting CarSellingApplication using Java 17.0.3 on DESKTOP-300RN1B with PID 13240 (D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi\target\classes started by DELL in D:\BSCAMP\CAR OJT PROJECT\BACKEND\CarSellingProjectApi)
+2023-01-18 01:37:34.568  INFO 13240 --- [main] c.c.CarSelling.CarSellingApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-18 01:37:35.205  INFO 13240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-18 01:37:35.297  INFO 13240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 8 JPA repository interfaces.
+2023-01-18 01:37:36.227  INFO 13240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-18 01:37:36.240  INFO 13240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-18 01:37:36.240  INFO 13240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-18 01:37:36.361  INFO 13240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-18 01:37:36.361  INFO 13240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1738 ms
+2023-01-18 01:37:36.529  INFO 13240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-18 01:37:36.591  INFO 13240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-18 01:37:36.767  INFO 13240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-18 01:37:36.891  INFO 13240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-18 01:37:37.048  INFO 13240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-18 01:37:37.068  INFO 13240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-18 01:37:37.441  WARN 13240 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.carSelling.CarSelling.entity.OrderHistoryId
+2023-01-18 01:37:37.441  WARN 13240 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.carSelling.CarSelling.entity.OrderHistoryId
+2023-01-18 01:37:37.916  INFO 13240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-18 01:37:37.924  INFO 13240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-18 01:37:38.295  WARN 13240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-18 01:37:38.621  WARN 13240 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cb943e06-009d-420d-a39a-a165fe9b5fee
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-18 01:37:38.765 DEBUG 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 59 mappings in 'requestMappingHandlerMapping'
+2023-01-18 01:37:38.853 DEBUG 13240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-01-18 01:37:38.860  WARN 13240 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-18 01:37:38.861  INFO 13240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/images/**']
+2023-01-18 01:37:38.862  WARN 13240 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-18 01:37:38.862  INFO 13240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/js/**']
+2023-01-18 01:37:38.862  WARN 13240 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-01-18 01:37:38.863  INFO 13240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/css/**']
+2023-01-18 01:37:38.909  INFO 13240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a48a582, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1221d607, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b984ba5, org.springframework.security.web.header.HeaderWriterFilter@598f1faf, org.springframework.security.web.authentication.logout.LogoutFilter@23ee70a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41433530, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@247a8411, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b45c8e4, org.springframework.security.web.session.SessionManagementFilter@5d2bc446, org.springframework.security.web.access.ExceptionTranslationFilter@6c4e486e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51eafec0]
+2023-01-18 01:37:38.974 DEBUG 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-18 01:37:39.012 DEBUG 13240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-18 01:37:39.112  INFO 13240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-18 01:37:39.124  INFO 13240 --- [main] c.c.CarSelling.CarSellingApplication     : Started CarSellingApplication in 5.064 seconds (JVM running for 5.591)
+2023-01-18 01:37:43.029  INFO 13240 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-18 01:37:43.029  INFO 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-18 01:37:43.029 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-18 01:37:43.029 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-01-18 01:37:43.029 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-01-18 01:37:43.030 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4516c2ef
+2023-01-18 01:37:43.032 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@52b6561b
+2023-01-18 01:37:43.032 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-18 01:37:43.032  INFO 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-01-18 01:37:43.073 DEBUG 13240 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getToDayRegistration(String)
+2023-01-18 01:37:43.086 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/user/getToDayRegistration/2023-1-18", parameters={}
+2023-01-18 01:37:43.088 DEBUG 13240 --- [http-nio-8088-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.UserController#getToDayRegistration(String)
+2023-01-18 01:37:43.293 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-18 01:37:43.294 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[User(id=37, name=NayToe , gmail=naytoe@gmail.com, password=$2a$10$0vzWZcHdoZHU7vU0bnLS8.dWlacrDqnct (truncated)...]
+2023-01-18 01:37:43.341 DEBUG 13240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-18 01:37:43.348 DEBUG 13240 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.OrderController#getToDayOrder(String)
+2023-01-18 01:37:43.348 DEBUG 13240 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/order/getToDayOrder/2023-1-18", parameters={}
+2023-01-18 01:37:43.349 DEBUG 13240 --- [http-nio-8088-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.carSelling.CarSelling.controller.OrderController#getToDayOrder(String)
+2023-01-18 01:37:43.360 DEBUG 13240 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-18 01:37:43.360 DEBUG 13240 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[OrderHistory(orderId=22, carId=6, userId=36, total=19000, carQuantity=2, createdAt=2023-01-18T00:55 (truncated)...]
+2023-01-18 01:37:43.364 DEBUG 13240 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

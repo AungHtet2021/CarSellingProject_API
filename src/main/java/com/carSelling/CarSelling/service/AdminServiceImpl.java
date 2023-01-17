@@ -49,6 +49,7 @@ public class AdminServiceImpl implements AdminService{
 //		return null;
 //	}
 	public Admin create(Admin Admin) {
+		Admin.setPassword(passwordEncoder.encode(Admin.getPassword()));
 		Admin.setCreatedAt(LocalDateTime.now());
 		return adminRepository.save(Admin);
 	}
