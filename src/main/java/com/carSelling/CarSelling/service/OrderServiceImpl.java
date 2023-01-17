@@ -26,10 +26,16 @@ public class OrderServiceImpl implements OrderService{
 	public OrderHistory create( OrderHistory order,int maxId) {
 		order.setOrderId(maxId);
 		order.setCarId(order.getCarId());
-		order.setUserId(order.getUserId());
+//		order.setUserId(order.getUserId());
 		order.setCarQuantity(order.getCarQuantity());
 		order.setTotal(order.getTotal());
 		order.setCreatedAt(LocalDateTime.now());
 		return orderRepository.save(order);
 	}
+
+//	@Override
+//	public List<OrderHistory> getOrders() {
+//		// TODO Auto-generated method stub
+//		return orderRepository.findAll();
+//	}
 }

@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 import com.carSelling.CarSelling.entity.CarData;
 import com.carSelling.CarSelling.entity.CarDetail;
+import com.carSelling.CarSelling.entity.OrderDailyReport;
+import com.carSelling.CarSelling.entity.OrderHistory;
 import com.carSelling.CarSelling.entity.TrendCar;
 import com.carSelling.CarSelling.entity.UserOrderId;
 import com.carSelling.CarSelling.repository.CarRepository;
@@ -70,6 +72,11 @@ public class JoinQueryService {
 	public List<UserOrderId> getOrderIdList(int userId) {
 		List<UserOrderId>lists=orderRepository.getOrderIdList(userId);
 		return lists;
+	}
+
+	public List<OrderDailyReport> getOrders() {
+		List <OrderDailyReport> orders=orderRepository.getOrders();
+		return orders;
 	}
 
 }

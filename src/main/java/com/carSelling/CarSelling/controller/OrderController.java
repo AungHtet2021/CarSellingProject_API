@@ -17,7 +17,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.carSelling.CarSelling.entity.Car;
+import com.carSelling.CarSelling.entity.CarData;
+import com.carSelling.CarSelling.entity.OrderDailyReport;
 import com.carSelling.CarSelling.entity.OrderHistory;
 import com.carSelling.CarSelling.service.JoinQueryService;
 import com.carSelling.CarSelling.service.OrderService;
@@ -49,6 +52,25 @@ public class OrderController {
 		List idList =joinQueryService.getOrderIdList(userId);
 		
 		return idList;
+	}
+	
+	
+//	@GetMapping(value="/get/brands")
+//	public ResponseEntity<List<Brand>> getBrands(){
+//		List<Brand> brands=brandService.getBrands();
+//		return new ResponseEntity<List<Brand>>(brands,HttpStatus.OK);
+//	}
+	
+//	@GetMapping("/CarDetailsList")
+//	public ResponseEntity<List<CarData>> getCarDetailLists() {
+//		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
+//
+//	}
+	
+	@GetMapping("/get/orders")
+	public ResponseEntity <List<OrderDailyReport>> getOrders(){
+//		List orders=joinQueryService.getOrders();
+		return new ResponseEntity<List<OrderDailyReport>>(joinQueryService.getOrders(),HttpStatus.OK);
 	}
 	
 }
