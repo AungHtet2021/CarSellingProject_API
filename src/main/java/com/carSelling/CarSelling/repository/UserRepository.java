@@ -1,6 +1,9 @@
 package com.carSelling.CarSelling.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import com.carSelling.CarSelling.entity.User;
 
@@ -9,4 +12,9 @@ public interface UserRepository extends JpaRepository<User,Integer>{
 	public User findByGmail(String gmail);
 	public User findByName(String name);
 
+	@Query(nativeQuery = true, value ="select * from user where created_at between :from and :to")
+//			+ ""
+//			+ "select distinct order_id from order_history history where history.user_id = :userId")
+	   List<User> getToDayRegistration(String from,String to);
+	
 }

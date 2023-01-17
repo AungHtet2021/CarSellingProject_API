@@ -22,8 +22,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.carSelling.CarSelling.entity.Admin;
 import com.carSelling.CarSelling.entity.Car;
+import com.carSelling.CarSelling.entity.DateFilter;
 import com.carSelling.CarSelling.entity.LoginRequest;
+import com.carSelling.CarSelling.entity.TrendCar;
 import com.carSelling.CarSelling.entity.User;
+import com.carSelling.CarSelling.entity.UserOrderDetail;
+import com.carSelling.CarSelling.service.JoinQueryService;
 import com.carSelling.CarSelling.service.StorageService;
 import com.carSelling.CarSelling.service.UserService;
 
@@ -37,7 +41,8 @@ public class UserController {
 	@Autowired
 	StorageService storageService;
 	
-	
+	@Autowired
+	JoinQueryService joinQueryService;
 //	@PostMapping("/login")
 //	public ResponseEntity<User> login(
 //			@Valid @RequestBody LoginRequest lognReq
@@ -127,6 +132,12 @@ public class UserController {
 //		String fileName = storageService.create(file, fileType);
 //		return fileName;
 //	}
+	
+	@GetMapping(value="/getToDayRegistration/{id}")
+	public ResponseEntity<List<User>> getToDayRegistration(@PathVariable("id") String date){
+		return new ResponseEntity<List<User>>(joinQueryService.getToDayRegistration(date +" 00:00:00",date + " 23:59:59"),HttpStatus.OK);
+	}
+	
 	
 	@PostMapping("/file/create")
 	public String createFile(

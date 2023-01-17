@@ -23,5 +23,4 @@ public interface UserService {
 	public boolean delete(int id);
 
 	public User getUser(int id); 
-
 }

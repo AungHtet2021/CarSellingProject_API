@@ -12,9 +12,12 @@ import com.carSelling.CarSelling.entity.CarDetail;
 import com.carSelling.CarSelling.entity.OrderDailyReport;
 import com.carSelling.CarSelling.entity.OrderHistory;
 import com.carSelling.CarSelling.entity.TrendCar;
+import com.carSelling.CarSelling.entity.User;
+import com.carSelling.CarSelling.entity.UserOrderDetail;
 import com.carSelling.CarSelling.entity.UserOrderId;
 import com.carSelling.CarSelling.repository.CarRepository;
 import com.carSelling.CarSelling.repository.OrderRepository;
+import com.carSelling.CarSelling.repository.UserRepository;
 
 @Service
 public class JoinQueryService {
@@ -24,6 +27,9 @@ public class JoinQueryService {
 	
 	@Autowired
 	private OrderRepository orderRepository;
+	
+	@Autowired
+	private UserRepository userRepository;
 
 	public CarDetail getCarDetail(int carId) {
 		CarDetail list = carRepository.CarDetail(carId);
@@ -77,6 +83,16 @@ public class JoinQueryService {
 	public List<OrderDailyReport> getOrders() {
 		List <OrderDailyReport> orders=orderRepository.getOrders();
 		return orders;
+	}
+	
+	public List<UserOrderDetail> getUserOrderDetailList(int orderId) {
+		List<UserOrderDetail> lists = orderRepository.userOrderDetailList(orderId);
+		return lists;
+	}
+	
+	public List<User> getToDayRegistration(String from , String to){;
+	List<User>lists=userRepository.getToDayRegistration(from,to);
+	return lists;
 	}
 
 }

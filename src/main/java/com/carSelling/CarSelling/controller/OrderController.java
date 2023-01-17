@@ -22,6 +22,8 @@ import com.carSelling.CarSelling.entity.Car;
 import com.carSelling.CarSelling.entity.CarData;
 import com.carSelling.CarSelling.entity.OrderDailyReport;
 import com.carSelling.CarSelling.entity.OrderHistory;
+import com.carSelling.CarSelling.entity.UserOrderDetail;
+import com.carSelling.CarSelling.entity.UserOrderId;
 import com.carSelling.CarSelling.service.JoinQueryService;
 import com.carSelling.CarSelling.service.OrderService;
 
@@ -49,9 +51,14 @@ public class OrderController {
 	public List getUserOrder(
 			@PathVariable("id") int userId
 	) {
-		List idList =joinQueryService.getOrderIdList(userId);
+		List<UserOrderId> idList =joinQueryService.getOrderIdList(userId);
+		List<UserOrderDetail> array_list =  new ArrayList<UserOrderDetail>();
+		for (UserOrderId item : idList){
+			List<UserOrderDetail> orderList = joinQueryService.getUserOrderDetailList(item.getorder_id());
+			array_list.add((UserOrderDetail) orderList);
+		}
 		
-		return idList;
+		return array_list;
 	}
 	
 	

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.carSelling.CarSelling.entity.CarDetail;
 import com.carSelling.CarSelling.entity.OrderDailyReport;
 import com.carSelling.CarSelling.entity.OrderHistory;
+import com.carSelling.CarSelling.entity.UserOrderDetail;
 import com.carSelling.CarSelling.entity.UserOrderId;
 @Repository
 @EnableJpaRepositories
@@ -27,7 +28,8 @@ public interface OrderRepository extends JpaRepository<OrderHistory, Integer>{
 	List<OrderDailyReport> getOrders();
 
 	
-	
+	 @Query(nativeQuery = true, value ="select c.name,userOrder.order_id, userOrder.car_quantity,userOrder.total from order_history userOrder left join car c on c.id = userOrder.car_id where userOrder.order_id = :orderId")
+	  List<UserOrderDetail> userOrderDetailList(int orderId);
 }
 
 
