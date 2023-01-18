@@ -39,6 +39,10 @@ public interface OrderRepository extends JpaRepository<OrderHistory, Integer>{
 	 
 	 @Query(nativeQuery = true ,value="select * from order_history where created_at between :from and :to")
 	List<OrderHistory> getToDayOrder(String from, String to);
+
+	 
+	@Query(nativeQuery =true ,value="select * from order_history where created_at between :from and :to")
+	List<OrderHistory> getToDaySellingAmount(String from, String to);
 	 
 	 
 }

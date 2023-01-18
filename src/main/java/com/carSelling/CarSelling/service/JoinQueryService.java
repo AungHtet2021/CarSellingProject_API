@@ -100,4 +100,9 @@ public class JoinQueryService {
 		return orders;
 	}
 
+	public List<OrderHistory> getToDaySellingAmount(String from, String to) {
+		List<OrderHistory> amounts=orderRepository.getToDaySellingAmount(from,to);
+		return amounts;
+	}
+
 }

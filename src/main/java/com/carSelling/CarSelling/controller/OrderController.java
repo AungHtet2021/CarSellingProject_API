@@ -80,4 +80,21 @@ public class OrderController {
 		
 		return new ResponseEntity<List<OrderHistory>>(joinQueryService.getToDayOrder(date +" 00:00:00",date +" 23:59:59"),HttpStatus.OK);
 	}
+	
+	@GetMapping(value="/getToDaySellingAmount/{id}")
+	public ResponseEntity<List<OrderHistory>> getToDaySellingAmount(@PathVariable("id") String date){
+		
+		return new ResponseEntity<List<OrderHistory>>(joinQueryService.getToDaySellingAmount(date +" 00:00:00",date +" 23:59:59"),HttpStatus.OK);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
