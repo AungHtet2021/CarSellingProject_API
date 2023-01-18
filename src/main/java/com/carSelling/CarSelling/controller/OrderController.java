@@ -56,7 +56,8 @@ public class OrderController {
 		List<UserOrderDetail> array_list =  new ArrayList<UserOrderDetail>();
 		for (UserOrderId item : idList){
 			List<UserOrderDetail> orderList = joinQueryService.getUserOrderDetailList(item.getorder_id());
-			array_list.add((UserOrderDetail) orderList);
+			array_list.addAll(orderList);
+
 		}
 		
 		return array_list;
