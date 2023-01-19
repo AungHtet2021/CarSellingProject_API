@@ -31,15 +31,15 @@ public class TestDrive implements java.io.Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	@Column(length = 50, nullable = false, unique = true)
+	@Column(length = 50, nullable = false)
 	@NotBlank(message = "Required")
 	private String name;
 	
-	@Column(length=50,nullable=false,unique=true)
+	@Column(length=50,nullable=false)
 	@NotBlank(message="Required")
 	private String gmail;
 	
-	@Column(length=30,nullable=false,unique=false)
+	@Column(length=30,nullable=false)
 	@NotBlank(message="Required")
 	private String gender;
 	
@@ -47,7 +47,7 @@ public class TestDrive implements java.io.Serializable{
 	@NotBlank(message = "Required ")
 	private String country;
 	
-	@Column(length=20,nullable=false,unique=true)
+	@Column(length=20,nullable=false)
 	@NotBlank(message="Required")
 	private String phone;
 	
@@ -56,6 +56,9 @@ public class TestDrive implements java.io.Serializable{
 			
 	@Column(nullable = false)
 	private String carId;
+	
+	@Column(nullable= false)
+	private String status ; 
 	
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")

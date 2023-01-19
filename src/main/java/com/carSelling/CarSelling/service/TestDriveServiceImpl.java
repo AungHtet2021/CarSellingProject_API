@@ -22,6 +22,7 @@ public class TestDriveServiceImpl implements TestDriveService{
 //		testDrive.setPhone(testDrive.getPhone());
 //		testDrive.setCountry(testDrive.getCountry());
 //		testDrive.setRequestDate(testDrive.getRequestDate());
+		testDrive.setStatus(testDrive.getStatus());
 		testDrive.setCreatedAt(LocalDateTime.now());
 		testDrive.setCarId(testDrive.getCarId());
 		TestDrive drive=testDriveRepository.save(testDrive);
@@ -47,10 +48,12 @@ public class TestDriveServiceImpl implements TestDriveService{
 	public TestDrive updateTestDrive(TestDrive testDrive) {
 		TestDrive original=testDriveRepository.findById(testDrive.getId()).orElse(null);
 		if(original!=null) {
+			original.setCarId(testDrive.getCarId());		
 			original.setName(testDrive.getName());
 			original.setGmail(testDrive.getGmail());
 			original.setGender(testDrive.getGender());
 			original.setCountry(testDrive.getCountry());
+			original.setStatus(testDrive.getStatus());
 			original.setRequestDate(testDrive.getRequestDate());
 			original.setCreatedAt(LocalDateTime.now());
 			original=testDriveRepository.save(original);
