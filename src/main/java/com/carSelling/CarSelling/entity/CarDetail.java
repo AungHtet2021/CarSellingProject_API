@@ -11,6 +11,7 @@ public interface CarDetail {
 	 String getDescription();
 	 String getStatus();
 	 String getCategory_name();
+	 String getBrand_name();
 	 String getPercentage();
 
 	 
