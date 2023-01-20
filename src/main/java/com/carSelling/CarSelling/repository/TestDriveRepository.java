@@ -9,4 +9,6 @@ import com.carSelling.CarSelling.entity.TestDrive;
 @EnableJpaRepositories
 public interface TestDriveRepository extends JpaRepository <TestDrive , Integer>{
 
+	
+	
 }
