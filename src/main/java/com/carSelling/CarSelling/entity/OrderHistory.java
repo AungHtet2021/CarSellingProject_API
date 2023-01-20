@@ -1,7 +1,9 @@
 package com.carSelling.CarSelling.entity;
+
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -26,30 +28,30 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@IdClass(OrderHistoryId.class)
-public class OrderHistory implements java.io.Serializable{
-	
+//@IdClass(OrderHistoryId.class)
+public class OrderHistory implements java.io.Serializable {
+
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	private int orderId;
-	
-	@Id
-	private int carId;
-	
-	@Id
-	private int  userId;
-	
+	@EmbeddedId
+	private OrderHistoryId id;
+//	@Id
+//	private int orderId;
+//	
+//	@Id
+//	private int carId;
+//	
+//	@Id
+//	private int  userId;
+
 	@Column(nullable = false)
 	private int total;
-	
+
 	@Column(nullable = false)
 	private int carQuantity;
 
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
-
-
 
 }

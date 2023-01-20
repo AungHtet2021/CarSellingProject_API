@@ -27,7 +27,7 @@ import com.carSelling.CarSelling.entity.UserOrderDetail;
 import com.carSelling.CarSelling.entity.UserOrderId;
 import com.carSelling.CarSelling.service.JoinQueryService;
 import com.carSelling.CarSelling.service.OrderService;
-
+import com.carSelling.CarSelling.entity.Brand;
 
 @RestController
 @RequestMapping("/order")
@@ -48,15 +48,16 @@ public class OrderController {
 
 	}
 	
-	@GetMapping("/getOrder/{id}")
+
+@GetMapping("/getOrder/{id}")
 	public List getUserOrder(
 			@PathVariable("id") int userId
 	) {
 		List<UserOrderId> idList =joinQueryService.getOrderIdList(userId);
-		List<UserOrderDetail> array_list =  new ArrayList<UserOrderDetail>();
+		ArrayList<List<UserOrderDetail>> array_list =  new ArrayList<List<UserOrderDetail>>();
 		for (UserOrderId item : idList){
 			List<UserOrderDetail> orderList = joinQueryService.getUserOrderDetailList(item.getorder_id());
-			array_list.addAll(orderList);
+			array_list.add(orderList);
 
 		}
 		
@@ -85,6 +86,13 @@ public class OrderController {
 	public ResponseEntity<List<OrderHistory>> getToDaySellingAmount(@PathVariable("id") String date){
 		
 		return new ResponseEntity<List<OrderHistory>>(joinQueryService.getToDaySellingAmount(date +" 00:00:00",date +" 23:59:59"),HttpStatus.OK);
+	}
+	
+
+@DeleteMapping(value="/delete/{id}")
+	public ResponseEntity<OrderHistory> deleteOrder(@PathVariable("id") int orderId){
+		orderService.deleteOrder(orderId);
+		return new ResponseEntity<OrderHistory>(HttpStatus.OK);
 	}
 }
 
