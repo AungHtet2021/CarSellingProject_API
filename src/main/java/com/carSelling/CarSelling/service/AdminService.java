@@ -19,7 +19,7 @@ public interface AdminService {
 	public  Admin getByName(String name);
 	public Admin getAdmin(int id);
 	public List<Admin> getAdmins();
-	
 	public Admin checkLoginAdmin(String gmail, String password);
-	}
+	
+}
 

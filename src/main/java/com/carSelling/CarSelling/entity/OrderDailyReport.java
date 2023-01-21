@@ -2,15 +2,6 @@ package com.carSelling.CarSelling.entity;
 
 public interface OrderDailyReport {
 	
-
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	 int getOrder_id();
 	 int getUser_id();

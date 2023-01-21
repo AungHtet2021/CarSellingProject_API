@@ -34,19 +34,12 @@ public interface OrderRepository extends JpaRepository<OrderHistory, OrderHistor
 	@Query(nativeQuery = true, value = "select c.name,userOrder.order_id, userOrder.car_quantity,userOrder.total from order_history userOrder left join car c on c.id = userOrder.car_id where userOrder.order_id = :orderId")
 	List<UserOrderDetail> userOrderDetailList(int orderId);
 
-//		@Query(nativeQuery = true, value ="select * from user where created_at between :from and :to")
-////		+ ""
-////		+ "select distinct order_id from order_history history where history.user_id = :userId")
-//   List<User> getToDayRegistration(String from,String to);
-
 	@Query(nativeQuery = true, value = "select * from order_history where created_at between :from and :to")
 	List<OrderHistory> getToDayOrder(String from, String to);
 	
 	@Query(nativeQuery =true ,value="select * from order_history where created_at between :from and :to")
 	List<OrderHistory> getToDaySellingAmount(String from, String to);
 
-//	@Modifying
-//	@Query(nativeQuery = true, value = "delete from order_history where order_id = :orderId")
 	@Transactional
 	void deleteById_OrderId(int orderId);
 

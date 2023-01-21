@@ -13,22 +13,6 @@ public interface AdminRepository extends JpaRepository<Admin, Integer>{
 	
 	public Admin findByGmail(String gmail);
 	public Admin findByName(String name);
-	/*public interface UserRepo extends JpaRepository<User, Integer> {
-
-		public Admin findByGmail(String gmail);
-
-		public Admin findByName(String name);
-		
-
-	}
-
-	/*public List<com.carSelling.CarSelling.entity.Admin> findAll();
-
-	public Integer findById(int id);
-
-	public Admin save(Admin admin);
-
-	public void deleteById(int id);*/
 
 }
 

@@ -50,8 +50,6 @@ public class User implements java.io.Serializable{
 	@NotBlank(message="Requied")
 	private String imagePath;
 	
-//	@Column(nullable=false)
-//	private LocalDate DateOfBirth;
 	
 	@Column(length=20,nullable=false,unique=true)
 	@NotBlank(message="Required")
@@ -60,12 +58,5 @@ public class User implements java.io.Serializable{
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
-
-
-
-
-
-
-
 	
 }

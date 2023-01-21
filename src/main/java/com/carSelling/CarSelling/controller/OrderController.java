@@ -48,8 +48,7 @@ public class OrderController {
 
 	}
 	
-
-@GetMapping("/getOrder/{id}")
+	@GetMapping("/getOrder/{id}")
 	public List getUserOrder(
 			@PathVariable("id") int userId
 	) {
@@ -66,15 +65,8 @@ public class OrderController {
 	
 	@GetMapping("/get/orders")
 	public ResponseEntity <List<OrderDailyReport>> getOrders(){
-//		List orders=joinQueryService.getOrders();
 		return new ResponseEntity<List<OrderDailyReport>>(joinQueryService.getOrders(),HttpStatus.OK);
 	}
-	
-//	@GetMapping(value="/getToDayRegistration/{id}")
-//	public ResponseEntity<List<User>> getToDayRegistration(@PathVariable("id") String date){
-//		return new ResponseEntity<List<User>>(joinQueryService.getToDayRegistration(date +" 00:00:00",date + " 23:59:59"),HttpStatus.OK);                      
-//	
-//	}
 	
 	@GetMapping(value="/getToDayOrder/{id}")
 	public ResponseEntity<List<OrderHistory>> getToDayOrder(@PathVariable("id") String date){
@@ -88,8 +80,7 @@ public class OrderController {
 		return new ResponseEntity<List<OrderHistory>>(joinQueryService.getToDaySellingAmount(date +" 00:00:00",date +" 23:59:59"),HttpStatus.OK);
 	}
 	
-
-@DeleteMapping(value="/delete/{id}")
+	@DeleteMapping(value="/delete/{id}")
 	public ResponseEntity<OrderHistory> deleteOrder(@PathVariable("id") int orderId){
 		orderService.deleteOrder(orderId);
 		return new ResponseEntity<OrderHistory>(HttpStatus.OK);

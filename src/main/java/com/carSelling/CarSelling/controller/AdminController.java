@@ -54,36 +54,17 @@ public class AdminController {
 	}
 
 	@PostMapping("/create")
-	public ResponseEntity<?> createAdmin(@Valid @RequestBody Admin Admin) {
-//		if (Admin.getName() == null) {
-//			return ResponseEntity.badRequest().body("Name is empty");
-//		}
-//		if (Admin.getId() == 0) {
-//			return ResponseEntity.badRequest().body("Admin ID is invalid");
-//		}
-//		if (Admin.getPassword() == null) {
-//			return ResponseEntity.badRequest().body("password is empty");
-//		}
-//		
-//		if (Admin.getGmail() == null) {
-//			return ResponseEntity.badRequest().body("gmail is empty");
-//		}
-//		User createdUser =userService.create(user);
-//		if(createdUser==null) {
-//			return ResponseEntity.badRequest().body("Already Exist Gmail");
-//		}
-//		return ResponseEntity.ok().body(createdUser);
-			
+	public ResponseEntity<?> createAdmin(@Valid @RequestBody Admin Admin) {	
 		Admin createdAdmin=adminService.create(Admin);
 		return ResponseEntity.ok().body(createdAdmin);
-//		return ResponseEntity.ok(adminService.create(Admin));
 	}
+	
 	@GetMapping(value="/get/admin/{id}")
 	public ResponseEntity <Admin> getAdmin(@PathVariable("id") int id){
 		Admin Admin=adminService.getAdmin(id);
 		return new ResponseEntity<Admin>(Admin,HttpStatus.OK);
 	}
-//	
+
 	@GetMapping(value="/get/admins")
 	public ResponseEntity<List<Admin>> getAdmins(){
 		List<Admin> admins=adminService.getAdmins();
@@ -140,28 +121,6 @@ public class AdminController {
 		return ResponseEntity.ok().build();
 	}
 	
-//	Car car = carService.get(id);
-//	if (car == null) {
-//		return ResponseEntity.notFound().build();
-//	}
-//	String imagePath = car.getImagePath();
-//	boolean isDeleted = carService.delete(id);
-//	if (!isDeleted) {
-//		return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
-//	}
-//	storageService.delete(imagePath);
-//	return ResponseEntity.ok().build();
-//	@GetMapping("/Admin/name/{name}")
-//	public ResponseEntity<Boolean> findAdminByName(
-//			@PathVariable("name") String name
-//	) {
-//		Admin Admin = adminService.getByName(name);
-//		if (Admin == null) {
-//			return ResponseEntity.ok().body(false);
-//		}
-//		return ResponseEntity.ok().body(true);
-//	}
-	
 	@GetMapping("/media/{fileType}/{fileName}")
 	public ResponseEntity<?> getPoster(
 			@PathVariable("fileType") String fileType,
@@ -188,7 +147,6 @@ public class AdminController {
 		}
 		return ResponseEntity.ok().contentType(contentType).body(fileBytes);
 	}
-
 
 }
 

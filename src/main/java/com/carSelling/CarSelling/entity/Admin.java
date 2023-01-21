@@ -47,8 +47,6 @@ public class Admin implements java.io.Serializable{
 	@NotBlank(message = "Required")
 	private String gmail;
 
-
-//	@Column(columnDefinition = "ENUM('ADMIN', 'SUPERADMIN') NOT NULL")
 	@Enumerated(EnumType.STRING)
 	private AdminRole adminRole;
 	
@@ -56,71 +54,8 @@ public class Admin implements java.io.Serializable{
 	@NotBlank(message="Requied")
 	private String imagePath;
 
-//	@Column(nullable = false)
-//	private LocalDate startJoinDate;
-//
-//	private LocalDate lastJoinDate;
-//
-//	private int accessCount;
-
 	@Column(nullable = false)
 	@ColumnDefault("CURRENT_TIMESTAMP")
 	private LocalDateTime createdAt;
-
-
-
-	
-
-//	private LocalDateTime updatedAt;
-
-//	public int getId() {
-//		return id;
-//	}
-//
-//	public void setId(int id) {
-//		this.id = id;
-//	}
-//
-//	public String getName() {
-//		return name;
-//	}
-//
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//
-//	public String getPassword() {
-//		return password;
-//	}
-//
-//	public void setPassword(String password) {
-//		this.password = password;
-//	}
-//
-//	public String getGmail() {
-//		return gmail;
-//	}
-//
-//	public void setGmail(String gmail) {
-//		this.gmail = gmail;
-//	}
-//
-//	public LocalDateTime getCreatedAt() {
-//		return createdAt;
-//	}
-//
-//	public void setCreatedAt(LocalDateTime createdAt) {
-//		this.createdAt = createdAt;
-//	}
-
-//	public LocalDateTime getUpdatedAt() {
-//		return updatedAt;
-//	}
-//
-//	public void setUpdatedAt(LocalDateTime updatedAt) {
-//		this.updatedAt = updatedAt;
-//	}
-
-	
 
 }

@@ -8,6 +8,6 @@ public interface OrderService {
 	public OrderHistory create(OrderHistory order,int maxId);
 
 	public OrderHistory deleteOrder(int orderId);
-//	public List<OrderHistory> getOrders();
+
 	
 }

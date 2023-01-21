@@ -19,11 +19,6 @@ public interface CarRepository extends JpaRepository<Car, Integer>{
 
 	@Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path,c.video,c.description,c.status,cate.category_name,b.brand_name,disc.percentage  from car c left join discount disc on c.discount_id = disc.id left join category cate on c.category_id = cate.id left join brand b on c.brand_id = b.id where c.id = :carId")
 	  CarDetail CarDetail(int carId);
-	
-//
-//	@Query(nativeQuery = true, value ="select c.id,c.name,c.price,c.quantity,c.image_path,c.video,c.description,c.status,cate.category_name,disc.percentage  from car c left join discount disc on c.discount_id = disc.id left join category cate on c.category_id = cate.id where c.id = :carId ")
-//	  CarDetail CarDetail(@Param("carId") Integer carId);
-
 
 	 @Query(nativeQuery = true, value ="select c.id,c.description from car c")
 	  List<CarData> carDetailList();

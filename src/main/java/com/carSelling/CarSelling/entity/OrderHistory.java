@@ -35,14 +35,6 @@ public class OrderHistory implements java.io.Serializable {
 
 	@EmbeddedId
 	private OrderHistoryId id;
-//	@Id
-//	private int orderId;
-//	
-//	@Id
-//	private int carId;
-//	
-//	@Id
-//	private int  userId;
 
 	@Column(nullable = false)
 	private int total;

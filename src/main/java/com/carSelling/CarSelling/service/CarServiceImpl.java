@@ -39,8 +39,7 @@ public class CarServiceImpl implements CarService{
 		toUpdateCar.setStatus(car.getStatus());
 		toUpdateCar.setQuantity(car.getQuantity());
 		toUpdateCar.setPrice(car.getPrice());
-		toUpdateCar.setWaitingTime(car.getWaitingTime());
-		
+		toUpdateCar.setWaitingTime(car.getWaitingTime());		
 		toUpdateCar.setVideo(car.getVideo());
 		toUpdateCar.setBrandId(car.getBrandId());
 		toUpdateCar.setCategoryId(car.getCategoryId());
@@ -64,11 +63,4 @@ public class CarServiceImpl implements CarService{
 		return true;
 	}
 
-
-	
-//	@Override
-//	public List<CarDetails> join() {
-//		return carRepository.join();
-//	}
-//	
 }

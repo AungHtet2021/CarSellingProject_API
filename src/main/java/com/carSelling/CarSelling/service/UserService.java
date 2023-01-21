@@ -12,15 +12,10 @@ import com.carSelling.CarSelling.entity.User;
 public interface UserService {
 
 	public User create(User user);
-
 	public User checkLoginUser(String gmail, String password);
-
 	public List<User> getUsers();
-
 	public  User get(int id);
 	public  User update(int id, User user);
-
 	public boolean delete(int id);
-
 	public User getUser(int id); 
 }

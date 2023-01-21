@@ -43,17 +43,7 @@ public class UserController {
 	
 	@Autowired
 	JoinQueryService joinQueryService;
-//	@PostMapping("/login")
-//	public ResponseEntity<User> login(
-//			@Valid @RequestBody LoginRequest lognReq
-//	) {
-//		User user = userService
-//				.checkLoginUser(lognReq.getGmail(), lognReq.getPassword());
-//		if (user == null) {
-//			return ResponseEntity.badRequest().build();
-//		}
-//		return ResponseEntity.ok().body(user);
-//	}
+
 	@PostMapping("/login")
 	public ResponseEntity<User> login(@Valid @RequestBody LoginRequest loginRequest){
 		User user=userService.checkLoginUser(loginRequest.getGmail(),loginRequest.getPassword());
@@ -65,31 +55,12 @@ public class UserController {
 	
 	@PostMapping(value="/register",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> register(@Valid @RequestBody User user){
-//		System.out.println(user);
 		User createdUser =userService.create(user);
 		if(createdUser==null) {
 			return ResponseEntity.badRequest().body("Already Exist Gmail");
 		}
 		return ResponseEntity.ok().body(createdUser);
-		
-//		return new ResponseEntity<User>(createdUser,HttpStatus.OK);
 	}
-	
-//	@GetMapping(value="/get/brands")
-//	public ResponseEntity<List<Brand>> getBrands(){
-//		List<Brand> brands=brandService.getBrands();
-//		return new ResponseEntity<List<Brand>>(brands,HttpStatus.OK);
-//	}
-//	@PutMapping("/admin/update/{id}")
-//	public ResponseEntity<Admin> updateAdmin(
-//			@PathVariable int id, @Valid @RequestBody Admin Admin
-//	) {
-//		Admin updatedAdmin = adminService.update(id, Admin);
-//		if (updatedAdmin == null) {
-//			return ResponseEntity.notFound().build();
-//		}
-//		return ResponseEntity.ok().body(updatedAdmin);
-//	}
 	
 	@GetMapping(value="/get/user/{id}")
 	public ResponseEntity <User> getUser(@PathVariable("id") int id){
@@ -124,21 +95,11 @@ public class UserController {
 		List<User>users=userService.getUsers();
 		return new ResponseEntity<List<User>>(users,HttpStatus.OK);
 	}
-//	@PostMapping("/file/create")
-//	public String createFile(
-//			@RequestParam("file") MultipartFile file,
-//			@RequestParam("fileType") String fileType
-//	) {
-//		String fileName = storageService.create(file, fileType);
-//		return fileName;
-//	}
 	
 	@GetMapping(value="/getToDayRegistration/{id}")
 	public ResponseEntity<List<User>> getToDayRegistration(@PathVariable("id") String date){
-		return new ResponseEntity<List<User>>(joinQueryService.getToDayRegistration(date +" 00:00:00",date + " 23:59:59"),HttpStatus.OK);
-	
+		return new ResponseEntity<List<User>>(joinQueryService.getToDayRegistration(date +" 00:00:00",date + " 23:59:59"),HttpStatus.OK);	
 	}
-	
 	
 	@PostMapping("/file/create")
 	public String createFile(

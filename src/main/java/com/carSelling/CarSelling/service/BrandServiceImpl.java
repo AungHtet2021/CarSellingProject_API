@@ -38,7 +38,6 @@ public class BrandServiceImpl implements BrandService{
 		return null;
 	}
 
-
 	@Override
 	public Brand updateBrand(Brand brand) {
 		Brand original=brandRepository.findById(brand.getId()).orElse(null);

@@ -32,23 +32,8 @@ public class UserServiceImpl implements UserService{
 		user.setPhone(user.getPhone());
 		user.setCreatedAt(LocalDateTime.now());
 		return userRepository.save(user);
-//		user.setCreatedAt(LocalDateTime.now());
-//		return userRepository.save(user);
-//		
-	
 	}
 	
-//	@Override
-//	public User checkLoginUser(String gmail, String password) {
-//		User user = userRepo.findByGmail(gmail);
-//		if (user == null) {
-//			return null;
-//		}
-//		if (!pwEncoder.matches(password, user.getPassword())) {
-//			return null;
-//		}
-//		return user;
-//	}
 	@Override
 	public User checkLoginUser(String gmail, String password) {
 		User user=userRepository.findByGmail(gmail);
@@ -59,7 +44,6 @@ public class UserServiceImpl implements UserService{
 			return null;
 		}
 		return user;
-//		return null;
 	}
 
 	@Override
@@ -68,11 +52,6 @@ public class UserServiceImpl implements UserService{
 		return users;
 	}
 
-//	@Override
-//	public User update(int id, User user) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
 	public User update(int id, User user) {
 		User toUpdateUser = this.get(id);
 		if (toUpdateUser == null) {
@@ -90,24 +69,24 @@ public class UserServiceImpl implements UserService{
 		return toUpdateUser;
 	}
 
-@Override
-public User get(int id) {
-	// TODO Auto-generated method stub
-	 return userRepository.findById(id).orElse(null);
-}
-
-@Override
-public boolean delete(int id) {
-	User user=this.get(id);
-	if(user== null) {
-		return false;
+	@Override
+	public User get(int id) {
+		// TODO Auto-generated method stub
+		 return userRepository.findById(id).orElse(null);
 	}
-	userRepository.deleteById(id);
-	return true;
-}
-public User getUser(int id) {
 	
-	User user=userRepository.findById(id).orElse(null);
-	return user;
-}
+	@Override
+	public boolean delete(int id) {
+		User user=this.get(id);
+		if(user== null) {
+			return false;
+		}
+		userRepository.deleteById(id);
+		return true;
+	}
+	public User getUser(int id) {
+		
+		User user=userRepository.findById(id).orElse(null);
+		return user;
+	}
 }

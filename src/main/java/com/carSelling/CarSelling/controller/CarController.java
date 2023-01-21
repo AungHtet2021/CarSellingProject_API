@@ -61,8 +61,7 @@ public class CarController {
 		}
 		return ResponseEntity.ok().body(car);
 	}
-	
-	
+		
 	@GetMapping("/detail/{car_id}")
 	public ResponseEntity <CarDetail> getCarDetail(
 			@PathVariable("car_id") int carId
@@ -73,10 +72,7 @@ public class CarController {
 	@GetMapping("/CarDetailsList")
 	public ResponseEntity<List<CarData>> getCarDetailLists() {
 		return new ResponseEntity<List<CarData>>(joinQueryService.getCarDetailLists(), HttpStatus.OK);
-
 	}
-	
-
 	
 	@GetMapping("/trend")
 	public ResponseEntity<List<TrendCar>> getTrendCarLists() {
@@ -100,38 +96,8 @@ public class CarController {
 	@GetMapping("/discount")
 	public ResponseEntity<List<TrendCar>> getDiscountCarLists() {
 		return new ResponseEntity<List<TrendCar>>(joinQueryService.getDiscountCarLists(), HttpStatus.OK);
-
 	}
-	
-
-	
-
-	
-
-	
-
-//	public Object getCarDetails() {
-//		List<CarDetails> carLists = carService.join();
-//		if(carLists.size() > 0) {
-//			return carLists;
-//		} else {
-//			return "There is no car list";
-//		}
-//
-//	}
-
-	
-//    @GetMapping("/carDetails/{id}")
-//    public String index(@PathVariable("id")Integer id, Model model) {
-//
-//        List<Car> list2 =carRepository.find(id);
-//        model.addAttribute("lists2", list2);
-//
-//
-//        return "index";
-//    }
-//	
-    
+	   
 	@PostMapping(value="/create",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Car> createCategory(@RequestBody Car car){
 		
@@ -149,8 +115,7 @@ public class CarController {
 		}
 		return ResponseEntity.ok().body(updateCar);
 	}
-	
-	
+		
 	@DeleteMapping(value = "/delete/{id}")
 	public ResponseEntity<?> deleteCar(@PathVariable int id) {
 		Car car = carService.get(id);
@@ -212,5 +177,4 @@ public class CarController {
 		return ResponseEntity.ok().contentType(contentType).body(fileBytes);
 	}
 
-	
 }

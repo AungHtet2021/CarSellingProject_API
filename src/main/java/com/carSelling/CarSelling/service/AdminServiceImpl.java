@@ -32,22 +32,11 @@ public class AdminServiceImpl implements AdminService{
 		return admin;
 	}
 	
-	
 	@Override
 	public List<Admin> getAll() {
 		return adminRepository.findAll();
 	}
 	
-//	@Autowired
-//	public Admin get(int id) {
-//		return ( AdminRepository.findById(id)).orElse(null);
-//	}
-
-//	@Override
-//	public Admin getAdmin(int id) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
 	public Admin create(Admin Admin) {
 		Admin.setPassword(passwordEncoder.encode(Admin.getPassword()));
 		Admin.setCreatedAt(LocalDateTime.now());
@@ -70,18 +59,6 @@ public class AdminServiceImpl implements AdminService{
 		return toUpdateAdmin;
 	}
 	
-	
-//	public boolean delete(int id) {
-//		Admin Admin = this.get(id);
-//		if (Admin == null) {
-//			return false;
-//		}
-//		AdminRepository.deleteById(id);
-//		return true;
-//	}
-
-
-
 	@Override
 	public List<Admin> getAdmins() {
 		List Admin=adminRepository.findAll();
@@ -104,28 +81,15 @@ public class AdminServiceImpl implements AdminService{
 		return true;
 	}
 
-//	@Override
-//	public boolean delete(int id) {
-//		Car car = this.get(id);
-//		if (car == null) {
-//			return false;
-//		}
-//		carRepository.deleteById(id);
-//		return true;
-//	}
 	@Override
-	public Admin getAdmin(int id) {
-		
+	public Admin getAdmin(int id) {	
 		Admin admin=adminRepository.findById(id).orElse(null);
 		return admin;
 	}
 
 	@Override
 	public Admin get(int id) {
-
 		return adminRepository.findById(id).orElse(null);
 	}
-
-
 	
 }

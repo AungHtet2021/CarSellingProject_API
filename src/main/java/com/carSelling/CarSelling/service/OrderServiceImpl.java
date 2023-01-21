@@ -28,9 +28,6 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public OrderHistory create(OrderHistory order, int maxId) {
 		OrderHistoryId id = new OrderHistoryId(maxId, order.getId().getCarId() , order.getId().getUserId());
-//		order.setOrderId(maxId);
-//		order.setCarId(order.getId());
-//		order.setUserId(order.getUserId());
 		order.setId(id);
 		order.setCarQuantity(order.getCarQuantity());
 		order.setTotal(order.getTotal());
@@ -44,9 +41,4 @@ public class OrderServiceImpl implements OrderService {
 		return null;
 	}
 
-//	@Override
-//	public List<OrderHistory> getOrders() {
-//		// TODO Auto-generated method stub
-//		return orderRepository.findAll();
-//	}
 }

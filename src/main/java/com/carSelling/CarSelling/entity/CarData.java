@@ -5,6 +5,4 @@ public interface CarData {
 	 int getId();
 	 String getDescription();
 	
-	
-
 }
